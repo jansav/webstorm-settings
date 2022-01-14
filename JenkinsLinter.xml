@@ -1,0 +1,5 @@
+<application>
+  <component name="JenkinsLinterState">
+    <option name="jenkinsUrl" value="https://ci.kcr.eficode.io" />
+  </component>
+</application>
