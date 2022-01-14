@@ -1,0 +1,15 @@
+<application>
+  <component name="ActionMacroManager">
+    <macro name="Edit imports">
+      <action id="EditorTextStart" />
+      <action id="EditorEnter" />
+      <action id="EditorUp" />
+      <typing text-keycode="73:0;77:0;80:0">imp</typing>
+    </macro>
+    <macro name="Cycle files in directory">
+      <action id="ShowNavBar" />
+      <shortuct text="DOWN" />
+      <shortuct text="ENTER" />
+    </macro>
+  </component>
+</application>

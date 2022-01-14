@@ -1,0 +1,12 @@
+<templateSet group="user">
+  <template name="umd" value="(function(root, factory) {&#10;&#10;  // AMD&#10;  if (typeof define === 'function' &amp;&amp; define.amd) {&#10;    define([$dependencies$], factory);&#10;  }&#10;&#10;  // Node, CommonJS&#10;  else if (typeof exports === 'object') {&#10;    module.exports = factory(&#10;      require($list$)&#10;    );&#10;  }&#10;&#10;  // Browser globals&#10;  else {&#10;    root.$nameOfModule$ = factory($dependenciesCommaSeparated$);&#10;  }&#10;})(this, function($dependencyList$) {&#10;&#10;  'use strict';&#10;    &#10;  $END$&#10;});&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="dependencies" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="list" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="nameOfModule" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="dependenciesCommaSeparated" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="dependencyList" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,22 @@
+<application>
+  <component name="ParameterNameHintsSettings">
+    <blacklists>
+      <blacklist language="TypeScript" />
+      <blacklist language="Angular HTML Template" />
+      <blacklist language="JavaScript">
+        <added pattern="it(*)" />
+        <added pattern="desc(*)" />
+        <added pattern="it(name,fn,timeout)" />
+        <added pattern="describe(name,fn)" />
+        <added pattern="beforeEach(fn,timeout)" />
+        <added pattern="jest.Matchers.toEqual(expected)" />
+        <added pattern="jest.Matchers.toBe(expected)" />
+        <added pattern="jest.Matchers.toHaveBeenCalledWith(params)" />
+        <added pattern="func({districtData: {id, name, costCentreId, teams}, routingModel, deleteBusinessObject, onDeletionFinished})" />
+        <added pattern="describe(title,fn)" />
+        <added pattern="it(title,fn)" />
+        <added pattern="innerJoin(leftObject,rightObject,rest)" />
+      </blacklist>
+    </blacklists>
+  </component>
+</application>

@@ -1,0 +1,9 @@
+<toolSet name="External Tools">
+  <tool name="Prettier" description="Run Prettier in current file for consistent code style" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="$ProjectFileDir$/node_modules/.bin/prettier" />
+      <option name="PARAMETERS" value="--write $FilePathRelativeToProjectRoot$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+</toolSet>
