@@ -158,7 +158,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="implod" value="import $FUNCTION$ from 'lodash/fp/$FUNCTION$';$END$" description="Import lodash fp stuff" toReformat="false" toShortenFQNames="false">
+  <template name="implod" value="import { $FUNCTION$ } from 'lodash/fp';$END$" description="Import lodash fp stuff" toReformat="false" toShortenFQNames="false">
     <variable name="FUNCTION" expression="" defaultValue="&quot;map&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -264,6 +264,12 @@
     <variable name="VERB" expression="enum(&quot;GET&quot;, &quot;POST&quot;, &quot;PUT&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="SPINNER_NAME" expression="" defaultValue="&quot;doing-something&quot;" alwaysStopAt="true" />
     <variable name="SHOW_SPINNER_INSTANTLY" expression="enum(&quot;false&quot;, &quot;true&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="renderProp" value="&lt;$ASD$&gt;&#10;  {() =&gt; (&#10;    $SELECTION$&#10;  )}&#10;&lt;/$ASD$&gt;&#10;" description="Wrap with render prop" toReformat="false" toShortenFQNames="true">
+    <variable name="ASD" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
