@@ -3,8 +3,6 @@
     <option name="lastAction">
       <UniversalActionModel>
         <option name="actionClassName" value="osmedile.intellij.stringmanip.swap.SwapAction" />
-        <option name="modelClass" value="osmedile.intellij.stringmanip.swap.SwapActionExecutor" />
-        <option name="modelData" value="&lt;SwapActionExecutor /&gt;" />
       </UniversalActionModel>
     </option>
     <option name="version" value="2" />
