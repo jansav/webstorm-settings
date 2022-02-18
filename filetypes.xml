@@ -22,6 +22,7 @@
       <mapping pattern="mikon-skripti" type="Shell Script" />
       <mapping pattern="asd" type="Shell Script" />
       <mapping pattern="build-async-fn" type="Shell Script" />
+      <mapping ext="plantuml" type="PlantUML file" />
       <mapping pattern=".gitignore_global" type="Git file" />
       <mapping pattern="janne" type="Bash" />
       <mapping pattern="mikko" type="Bash" />
