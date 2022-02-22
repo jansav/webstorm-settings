@@ -8,7 +8,7 @@
     <option name="lastBundledVersion" value="1.2022.1" />
     <option name="previewSettings">
       <PreviewSettings>
-        <option name="splitEditorLayout" value="Show editor and preview - horizontal split" />
+        <option name="splitEditorLayout" value="Show preview only" />
       </PreviewSettings>
     </option>
   </component>
