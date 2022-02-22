@@ -14,8 +14,8 @@
     <mask>*.mts</mask>
     <mask>*.cts</mask>
     <mask>*.ats</mask>
-    <mask>*.ts</mask>
     <mask>*.cjs</mask>
     <mask>*.js</mask>
+    <mask>*.ts</mask>
   </component>
 </application>
