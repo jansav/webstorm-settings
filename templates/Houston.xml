@@ -147,8 +147,8 @@
     </context>
   </template>
   <template name="snap" value="expect($COMPONENT$).toMatch$HTML$Snapshot();$END$" description="Expect to match snapshot" toReformat="false" toShortenFQNames="true">
-    <variable name="COMPONENT" expression="" defaultValue="&quot;component&quot;" alwaysStopAt="true" />
-    <variable name="HTML" expression="" defaultValue="&quot;Html&quot;" alwaysStopAt="true" />
+    <variable name="COMPONENT" expression="" defaultValue="&quot;rendered.container&quot;" alwaysStopAt="true" />
+    <variable name="HTML" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>

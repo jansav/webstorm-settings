@@ -1,7 +1,9 @@
 <application>
   <component name="ParameterNameHintsSettings">
     <blacklists>
-      <blacklist language="TypeScript" />
+      <blacklist language="TypeScript">
+        <added pattern="mikkoPipeline(arg,f1,f2,f3,f4)" />
+      </blacklist>
       <blacklist language="Angular HTML Template" />
       <blacklist language="JavaScript">
         <added pattern="it(*)" />
