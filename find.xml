@@ -2,7 +2,10 @@
   <component name="FindSettings">
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
+    <option name="regularExpressions" value="true" />
+    <option name="REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="FILE_MASK" value="*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json" />
     <mask>*.xml</mask>
     <mask>*.css</mask>
     <mask>*.shtml</mask>
@@ -14,9 +17,11 @@
     <mask>*.mts</mask>
     <mask>*.cts</mask>
     <mask>*.ats</mask>
-    <mask>*.ts</mask>
     <mask>*.cjs</mask>
     <mask>*.js</mask>
-    <mask>*-route.injectable.ts*</mask>
+    <mask>*.ts</mask>
+    <mask>*.ts,*.tsx</mask>
+    <mask>*.ts,*.tsx,*.js</mask>
+    <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json</mask>
   </component>
 </application>
