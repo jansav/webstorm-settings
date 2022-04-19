@@ -279,4 +279,9 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="gra" value="import {&#10;  registerDependencyGraphing,&#10;  plantUmlDependencyGraphInjectable,&#10;} from '@ogre-tools/injectable-extension-for-dependency-graphing';&#10;&#10;import fs from 'fs';&#10;&#10;const graph = di.inject(plantUmlDependencyGraphInjectable);&#10;fs.writeFileSync('./graph.puml', graph, 'utf-8');&#10;$END$" description="Injectable graph" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
