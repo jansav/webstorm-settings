@@ -140,7 +140,8 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="test" value="import $FILE$ from './$FILE$';&#10;&#10;describe('$FILE$', () =&gt; {&#10;  $END$&#10;});&#10;" description="Test for module" toReformat="false" toShortenFQNames="false">
+  <template name="test" value="import $FILE_IN_CAMELCASE$ from './$FILE$';&#10;&#10;describe('$FILE$', () =&gt; {&#10;  $END$&#10;});&#10;" description="Test for module" toReformat="false" toShortenFQNames="false">
+    <variable name="FILE_IN_CAMELCASE" expression="camelCase(FILE)" defaultValue="" alwaysStopAt="true" />
     <variable name="FILE" expression="regularExpression(fileNameWithoutExtension(), &quot;\.test&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
