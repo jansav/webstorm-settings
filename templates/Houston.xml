@@ -140,7 +140,8 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="test" value="import $FILE$ from './$FILE$';&#10;&#10;describe('$FILE$', () =&gt; {&#10;  $END$&#10;});&#10;" description="Test for module" toReformat="false" toShortenFQNames="false">
+  <template name="test" value="import $FILE_IN_CAMELCASE$ from './$FILE$';&#10;&#10;describe('$FILE$', () =&gt; {&#10;  $END$&#10;});&#10;" description="Test for module" toReformat="false" toShortenFQNames="false">
+    <variable name="FILE_IN_CAMELCASE" expression="camelCase(FILE)" defaultValue="" alwaysStopAt="true" />
     <variable name="FILE" expression="regularExpression(fileNameWithoutExtension(), &quot;\.test&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -275,6 +276,11 @@
     </context>
   </template>
   <template name="depr" value="/** &#10; * @deprecated $END$&#10; */" description="Deprecated" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="gra" value="import {&#10;  registerDependencyGraphing,&#10;  plantUmlDependencyGraphInjectable,&#10;} from '@ogre-tools/injectable-extension-for-dependency-graphing';&#10;&#10;import fs from 'fs';&#10;&#10;const graph = di.inject(plantUmlDependencyGraphInjectable);&#10;fs.writeFileSync('./graph.puml', graph, 'utf-8');&#10;$END$" description="Injectable graph" toReformat="false" toShortenFQNames="false">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
