@@ -6,6 +6,7 @@
     <option name="highlightInImages" value="true" />
     <option name="includedPaths" value="" />
     <option name="lastBundledVersion" value="1.2022.5" />
+    <option name="maxSvgSize" value="32768" />
     <option name="previewSettings">
       <PreviewSettings>
         <option name="splitEditorLayout" value="Show editor and preview - horizontal split" />
