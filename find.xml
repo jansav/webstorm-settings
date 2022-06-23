@@ -5,7 +5,7 @@
     <option name="localCaseSensitive" value="true" />
     <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
     <option name="SEARCH_SCOPE" value="All Places" />
-    <option name="FILE_MASK" value="*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json" />
+    <option name="FILE_MASK" value="*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md" />
     <mask>*.xml</mask>
     <mask>*.css</mask>
     <mask>*.shtml</mask>
@@ -23,5 +23,6 @@
     <mask>*.ts,*.tsx</mask>
     <mask>*.ts,*.tsx,*.js</mask>
     <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json</mask>
+    <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md</mask>
   </component>
 </application>
