@@ -125,19 +125,28 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="incom" value="import { withInjectables } from &quot;@ogre-tools/injectable-react&quot;;&#10;import React from &quot;react&quot;;&#10;&#10;interface Dependencies {&#10;  $DEPENDENCY$: $END$&#10;}&#10;&#10;const NonInjected$FILE_IN_UPPER_FIRST_CAMEL_CASE$ = ({ $DEPENDENCY$ }: Dependencies) =&gt; &lt;div /&gt;;&#10;&#10;export const $FILE_IN_UPPER_FIRST_CAMEL_CASE$ = withInjectables&lt;Dependencies&gt;(&#10;  NonInjected$FILE_IN_UPPER_FIRST_CAMEL_CASE$,&#10;&#10;  {&#10;    getProps: (di) =&gt; ({&#10;      $DEPENDENCY$: di.inject($DEPENDENCY$Injectable),&#10;    }),&#10;  },&#10;);&#10;" description="Injectable component" toReformat="true" toShortenFQNames="true">
-    <variable name="FILE_IN_UPPER_FIRST_CAMEL_CASE" expression="capitalize(camelCase(fileNameWithoutExtension))" defaultValue="" alwaysStopAt="true" />
-    <variable name="DEPENDENCY" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-    </context>
-  </template>
   <template name="tok" value="import { getInjectionToken } from &quot;@ogre-tools/injectable&quot;;&#10;&#10;export interface $TYPE$ {&#10;  $END$&#10;}&#10;&#10;const $FILE$ = getInjectionToken&lt;$TYPE$&gt;({&#10;  id: &quot;$FILE_IN_KEBAB_CASE$&quot;,&#10;});&#10;&#10;export default $FILE$;" description="New injection token" toReformat="false" toShortenFQNames="true">
     <variable name="FILE" expression="camelCase(fileNameWithoutExtension)" defaultValue="" alwaysStopAt="false" />
     <variable name="TYPE" expression="regularExpression(capitalize(camelCase(fileNameWithoutExtension)), &quot;InjectionToken&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="false" />
     <variable name="FILE_IN_KEBAB_CASE" expression="fileNameWithoutExtension" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="incomprop" value="import React from 'react';&#10;import { withInjectables } from '@ogre-tools/injectable-react';&#10;&#10;interface Dependencies {&#10;  $DEPENDENCY$: $DEPENDENCY_TYPE$&#10;}&#10;&#10;interface $FILE$Props {&#10;&#10;}&#10;&#10;const NonInjected$FILE$ = ({ $DEPENDENCY$ }: $FILE$Props &amp; Dependencies) =&gt; (&#10;  &lt;div&gt;&#10;    $END$&#10;  &lt;/div&gt;&#10;);&#10;&#10;export const $FILE$ = withInjectables&lt;Dependencies, $FILE$Props&gt;(&#10;  NonInjected$FILE$,&#10;&#10;  {&#10;    getProps: (di, props) =&gt; ({&#10;      $DEPENDENCY$: di.inject($DEPENDENCY$Injectable),&#10;      ...props,&#10;    }),&#10;  },&#10;);&#10;" description="React component with injectables and props" toReformat="false" toShortenFQNames="true">
+    <variable name="FILE" expression="capitalize(camelCase(fileNameWithoutExtension))" defaultValue="" alwaysStopAt="false" />
+    <variable name="DEPENDENCY" expression="" defaultValue="&quot;someDependency&quot;" alwaysStopAt="true" />
+    <variable name="DEPENDENCY_TYPE" expression="capitalize(DEPENDENCY)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="incom" value="import React from 'react';&#10;import { withInjectables } from '@ogre-tools/injectable-react';&#10;&#10;interface Dependencies {&#10;  $DEPENDENCY$: $DEPENDENCY_TYPE$&#10;}&#10;&#10;const NonInjected$FILE$ = ({ $DEPENDENCY$ }: Dependencies) =&gt; (&#10;  &lt;div&gt;&#10;    $END$&#10;  &lt;/div&gt;&#10;);&#10;&#10;export const $FILE$ = withInjectables&lt;Dependencies&gt;(&#10;  NonInjected$FILE$,&#10;&#10;  {&#10;    getProps: (di) =&gt; ({&#10;      $DEPENDENCY$: di.inject($DEPENDENCY$Injectable),&#10;    }),&#10;  },&#10;);&#10;" description="React component with injectables and no props" toReformat="false" toShortenFQNames="true">
+    <variable name="FILE" expression="capitalize(camelCase(fileNameWithoutExtension))" defaultValue="" alwaysStopAt="false" />
+    <variable name="DEPENDENCY" expression="" defaultValue="&quot;someDependency&quot;" alwaysStopAt="true" />
+    <variable name="DEPENDENCY_TYPE" expression="capitalize(DEPENDENCY)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="TypeScript" value="true" />
     </context>
   </template>
 </templateSet>
