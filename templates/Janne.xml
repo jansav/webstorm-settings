@@ -149,4 +149,10 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name="lol" value="jannelol('$ACTION_NAME$', () =&gt; { &#10;  $SELECTION$ &#10;});" description="Performance lol" toReformat="false" toShortenFQNames="true">
+    <variable name="ACTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
