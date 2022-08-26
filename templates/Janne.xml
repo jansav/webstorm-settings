@@ -149,7 +149,7 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="lol" value="jannelol('$ACTION_NAME$', () =&gt; { &#10;  $RETURN$$SELECTION$ &#10;});" description="Performance lol" toReformat="false" toShortenFQNames="true">
+  <template name="lol" value="jannelol($ACTION_NAME$, () =&gt; { &#10;  $RETURN$$SELECTION$ &#10;});" description="Performance lol" toReformat="false" toShortenFQNames="true">
     <variable name="ACTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="RETURN" expression="" defaultValue="&quot;return &quot;" alwaysStopAt="true" />
     <context>
