@@ -156,4 +156,9 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="runa" value="runInAction(() =&gt; { &#10;  $SELECTION$ &#10;});" description="Wrap with MobX runInAction" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
