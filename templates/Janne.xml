@@ -161,4 +161,10 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="lolf" value="jannelolFor($ACTION_NAME$, $SELECTION$);" description="Performance lol decorator" toReformat="false" toShortenFQNames="true">
+    <variable name="ACTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
