@@ -2,10 +2,8 @@
   <component name="FindSettings">
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
-    <option name="localCaseSensitive" value="true" />
-    <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
     <option name="SEARCH_SCOPE" value="All Places" />
-    <option name="FILE_MASK" value="*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md" />
+    <option name="FILE_MASK" value="*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml" />
     <mask>*.xml</mask>
     <mask>*.css</mask>
     <mask>*.shtml</mask>
@@ -24,5 +22,6 @@
     <mask>*.ts,*.tsx,*.js</mask>
     <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json</mask>
     <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md</mask>
+    <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml</mask>
   </component>
 </application>
