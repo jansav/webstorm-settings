@@ -285,4 +285,23 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="beht" value="import type { DiContainer } from &quot;@ogre-tools/injectable&quot;;&#10;import type { RenderResult } from &quot;@testing-library/react&quot;;&#10;&#10;describe('$FILE$', () =&gt; {&#10;  let builder: Application$END$Builder;&#10;  let mainDi: DiContainer;&#10;  let rendererDi: DiContainer;&#10;  let rendered: RenderResult;&#10;&#10;  beforeEach(async () =&gt; {&#10;    builder = getApplicationBuilder();&#10;&#10;    await builder.render();&#10;    &#10;    mainDi = builder.mainDi;&#10;    rendererDi = builder.applicationWindow.only.di;&#10;    rendered = builder.applicationWindow.only.rendered;&#10;  });&#10;&#10;  describe(&quot;when navigating to $ROUTE$&quot;, () =&gt; {&#10;    beforeEach(async () =&gt; {&#10;      await rendererDi.inject(navigateTo$ROUTE_IN_UPPERCASE$)();&#10;    });&#10;&#10;    it(&quot;renders&quot;, () =&gt; {&#10;      expect(rendered.baseElement).toMatchSnapshot();&#10;    });&#10;  });&#10;});&#10;" description="Behavioural test" toReformat="false" toShortenFQNames="false">
+    <variable name="FILE" expression="regularExpression(fileNameWithoutExtension(), &quot;\.test&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="ROUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ROUTE_IN_UPPERCASE" expression="capitalize(camelCase(ROUTE))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="tfn" value="let $MOCK$Mock: jest.Mock;&#10;$MOCK$Mock = jest.fn();&#10;" description="Jest fn for TypeScript" toReformat="false" toShortenFQNames="false">
+    <variable name="MOCK" expression="" defaultValue="&quot;someFunction&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="spr" value="...($SELECTION$ ? { $SELECTION$ } : {})" description="Spread ternary" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
