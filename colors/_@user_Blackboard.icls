@@ -3,7 +3,7 @@
     <property name="created">2021-09-13T09:32:11</property>
     <property name="ide">WebStorm</property>
     <property name="ideVersion">2021.2.1.0.0</property>
-    <property name="modified">2021-11-26T09:08:49</property>
+    <property name="modified">2022-10-18T13:55:07</property>
     <property name="originalScheme">Blackboard</property>
   </metaInfo>
   <colors>
@@ -795,22 +795,32 @@
     </option>
     <option name="INDENT_RAINBOW_COLOR_1">
       <value>
-        <option name="BACKGROUND" value="1d2123" />
+        <option name="BACKGROUND" value="282c3f" />
       </value>
     </option>
     <option name="INDENT_RAINBOW_COLOR_2">
       <value>
-        <option name="BACKGROUND" value="142128" />
+        <option name="BACKGROUND" value="25303c" />
       </value>
     </option>
     <option name="INDENT_RAINBOW_COLOR_3">
       <value>
-        <option name="BACKGROUND" value="1d1831" />
+        <option name="BACKGROUND" value="2c313a" />
       </value>
     </option>
     <option name="INDENT_RAINBOW_COLOR_4">
       <value>
-        <option name="BACKGROUND" value="11202f" />
+        <option name="BACKGROUND" value="302e39" />
+      </value>
+    </option>
+    <option name="INDENT_RAINBOW_COLOR_5">
+      <value>
+        <option name="BACKGROUND" value="302937" />
+      </value>
+    </option>
+    <option name="INDENT_RAINBOW_COLOR_6">
+      <value>
+        <option name="BACKGROUND" value="302534" />
       </value>
     </option>
     <option name="INDENT_RAINBOW_ERROR">
@@ -935,7 +945,7 @@
         <option name="FOREGROUND" value="fbde2d" />
       </value>
     </option>
-    <option name="LESS_VARIABLE" baseAttributes="" />
+    <option name="LESS_VARIABLE" baseAttributes="DEFAULT_INSTANCE_FIELD" />
     <option name="MACRONAME">
       <value>
         <option name="FOREGROUND" value="ff6400" />
