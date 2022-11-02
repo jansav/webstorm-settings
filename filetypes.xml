@@ -5,24 +5,24 @@
       <mapping pattern="scratch_17.json" type="JSON" />
       <mapping pattern="ToggleMyPresenceOnPlanetButton" type="JSX Harmony" />
       <mapping pattern=".prettierc" type="JavaScript" />
-      <mapping pattern="pre-commit" type="PLAIN_TEXT" />
       <mapping pattern="test-coverage-for-developer" type="PLAIN_TEXT" />
-      <mapping pattern=".asd" type="PLAIN_TEXT" />
-      <mapping pattern=".env.example" type="PLAIN_TEXT" />
       <mapping pattern=".env.deployment-configuration" type="PLAIN_TEXT" />
       <mapping pattern=".aws-client" type="PLAIN_TEXT" />
+      <mapping pattern="bootstrap" type="PLAIN_TEXT" />
+      <mapping pattern="pre-commit" type="PLAIN_TEXT" />
+      <mapping pattern=".asd" type="PLAIN_TEXT" />
+      <mapping pattern=".env.example" type="PLAIN_TEXT" />
       <mapping pattern=".tproject" type="PLAIN_TEXT" />
       <mapping pattern="Jenkinsfile_deploy" type="PLAIN_TEXT" />
-      <mapping pattern="bootstrap" type="PLAIN_TEXT" />
       <mapping pattern=".envasd" type="PLAIN_TEXT" />
       <mapping ext="env" type="PLAIN_TEXT" />
       <mapping ext="woff" type="PLAIN_TEXT" />
       <mapping ext="info" type="PLAIN_TEXT" />
       <mapping ext="plantuml" type="PlantUML file" />
-      <mapping pattern="bin/build-async-fn" type="Shell Script" />
       <mapping pattern="mikon-skripti" type="Shell Script" />
       <mapping pattern="asd" type="Shell Script" />
       <mapping pattern="build-async-fn" type="Shell Script" />
+      <mapping pattern="bin/build-async-fn" type="Shell Script" />
       <mapping ext="st" type="TypeScript" />
       <mapping pattern=".gitignore_global" type="Git file" />
       <mapping pattern="janne" type="Bash" />
