@@ -304,4 +304,10 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="fe" value="import { autoRegister } from &quot;@ogre-tools/injectable-extension-for-auto-registration&quot;;&#10;import type { Feature } from &quot;@lensapp/feature-core&quot;;&#10;&#10;export const feature: Feature = {&#10;  id: &quot;$FEATURE_ID$&quot;,&#10;&#10;  register: (di) =&gt; {&#10;    autoRegister({&#10;      di,&#10;      targetModule: module,&#10;&#10;      getRequireContexts: () =&gt; [&#10;        require.context(&quot;./&quot;, true, /\.injectable\.(ts|tsx)$/),&#10;      ],&#10;    });&#10;  },&#10;};&#10;" description="Feature" toReformat="false" toShortenFQNames="false">
+    <variable name="FEATURE_ID" expression="regularExpression(regularExpression(fileRelativePath(), &quot;/src/.*&quot;, &quot;&quot;), &quot;.*/&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
