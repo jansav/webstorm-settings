@@ -317,4 +317,12 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="ex" value="expect($ACTUAL$).$EXPECTED$($ARGUMENTS$);" description="Jest expect" toReformat="false" toShortenFQNames="false">
+    <variable name="EXPECTED" expression="enum(&quot;toEqual&quot;, &quot;toHaveBeenCalledWith&quot;, &quot;toBe&quot;, &quot;toThrow&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGUMENTS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTUAL" expression="" defaultValue="&quot;actual&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
