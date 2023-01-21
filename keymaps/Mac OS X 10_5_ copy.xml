@@ -26,9 +26,14 @@
     <keyboard-shortcut first-keystroke="shift ctrl d" />
   </action>
   <action id="DebugClass" />
+  <action id="Diff.ApplyLeftSide" />
+  <action id="Diff.ApplyRightSide" />
   <action id="Diff.ShowSettingsPopup" />
   <action id="EditorCodeBlockEndWithSelection">
     <keyboard-shortcut first-keystroke="shift ctrl down" />
+  </action>
+  <action id="EditorCodeBlockStartWithSelection">
+    <keyboard-shortcut first-keystroke="shift ctrl up" />
   </action>
   <action id="EditorSortLines">
     <keyboard-shortcut first-keystroke="meta alt s" />
@@ -53,12 +58,16 @@
   <action id="Git.Rebase">
     <keyboard-shortcut first-keystroke="shift ctrl i" />
   </action>
+  <action id="Git.Rebase.Abort">
+    <keyboard-shortcut first-keystroke="ctrl meta alt a" />
+  </action>
   <action id="Git.Stash">
     <keyboard-shortcut first-keystroke="shift ctrl s" />
   </action>
   <action id="Git.Unstash">
     <keyboard-shortcut first-keystroke="shift ctrl u" />
   </action>
+  <action id="GotoRelated" />
   <action id="GotoTypeDeclaration">
     <keyboard-shortcut first-keystroke="shift meta b" />
     <mouse-shortcut keystroke="shift meta button1" />
@@ -77,6 +86,7 @@
     <keyboard-shortcut first-keystroke="alt i" />
   </action>
   <action id="MethodDown" />
+  <action id="MethodUp" />
   <action id="RecentChanges" />
   <action id="ReformatCode" />
   <action id="RenameElement">
@@ -101,15 +111,6 @@
   </action>
   <action id="StringManipulation.AlignSelections">
     <keyboard-shortcut first-keystroke="ctrl alt a" second-keystroke="s" />
-  </action>
-  <action id="StringManipulation.CreateBorder">
-    <keyboard-shortcut first-keystroke="ctrl meta alt b" />
-  </action>
-  <action id="StringManipulation.CreateSequenceAction">
-    <keyboard-shortcut first-keystroke="ctrl meta alt s" />
-  </action>
-  <action id="StringManipulation.DuplicateAndReplaceAction">
-    <keyboard-shortcut first-keystroke="ctrl meta alt d" />
   </action>
   <action id="StringManipulation.IncrementDuplicateNumbersAction">
     <keyboard-shortcut first-keystroke="shift ctrl meta alt c" />
@@ -165,16 +166,27 @@
   <action id="Vcs.ShowTabbedFileHistory">
     <keyboard-shortcut first-keystroke="shift ctrl h" />
   </action>
+  <action id="com.wallaby.javascript.actions.PlayTraceNextStepAction">
+    <keyboard-shortcut first-keystroke="f7" />
+    <keyboard-shortcut first-keystroke="ctrl meta down" />
+  </action>
   <action id="com.wallaby.javascript.actions.PlayTraceNextStepOverAction">
     <keyboard-shortcut first-keystroke="f8" />
-    <keyboard-shortcut first-keystroke="shift meta alt down" />
+    <keyboard-shortcut first-keystroke="ctrl meta right" />
+  </action>
+  <action id="com.wallaby.javascript.actions.PlayTracePrevStepAction">
+    <keyboard-shortcut first-keystroke="shift f7" />
+    <keyboard-shortcut first-keystroke="ctrl meta up" />
   </action>
   <action id="com.wallaby.javascript.actions.PlayTracePrevStepOverAction">
     <keyboard-shortcut first-keystroke="shift f8" />
-    <keyboard-shortcut first-keystroke="shift meta alt up" />
+    <keyboard-shortcut first-keystroke="ctrl meta left" />
   </action>
   <action id="com.wallaby.javascript.actions.SearchTestsAction">
     <keyboard-shortcut first-keystroke="ctrl meta alt t" />
+  </action>
+  <action id="com.wallaby.javascript.actions.ShowAssertionErrorDiffAction">
+    <keyboard-shortcut first-keystroke="ctrl meta alt d" />
   </action>
   <action id="com.wallaby.javascript.actions.ShowLineTestsAction">
     <keyboard-shortcut first-keystroke="shift meta alt t" />
