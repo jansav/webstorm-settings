@@ -131,12 +131,6 @@
   <action id="StringManipulation.SwitchStyleAction">
     <keyboard-shortcut first-keystroke="shift ctrl c" />
   </action>
-  <action id="StringManipulation.ToolWindow.Replace.Item.MoveDownAction">
-    <keyboard-shortcut first-keystroke="shift meta alt down" />
-  </action>
-  <action id="StringManipulation.ToolWindow.Replace.Item.MoveUpAction">
-    <keyboard-shortcut first-keystroke="shift meta alt up" />
-  </action>
   <action id="SwitchApply">
     <keyboard-shortcut first-keystroke="ctrl alt enter" />
   </action>
@@ -169,6 +163,26 @@
   </action>
   <action id="Vcs.ShowTabbedFileHistory">
     <keyboard-shortcut first-keystroke="shift ctrl h" />
+  </action>
+  <action id="com.wallaby.javascript.actions.PlayTraceNextStepOverAction">
+    <keyboard-shortcut first-keystroke="f8" />
+    <keyboard-shortcut first-keystroke="shift meta alt down" />
+  </action>
+  <action id="com.wallaby.javascript.actions.PlayTracePrevStepOverAction">
+    <keyboard-shortcut first-keystroke="shift f8" />
+    <keyboard-shortcut first-keystroke="shift meta alt up" />
+  </action>
+  <action id="com.wallaby.javascript.actions.SearchTestsAction">
+    <keyboard-shortcut first-keystroke="ctrl meta alt t" />
+  </action>
+  <action id="com.wallaby.javascript.actions.ShowLineTestsAction">
+    <keyboard-shortcut first-keystroke="shift meta alt t" />
+  </action>
+  <action id="com.wallaby.javascript.actions.ShowValueAction">
+    <keyboard-shortcut first-keystroke="alt x" />
+  </action>
+  <action id="com.wallaby.javascript.actions.UpdateProjectSnapshotsAction">
+    <keyboard-shortcut first-keystroke="ctrl meta alt u" />
   </action>
   <action id="org.intellij.plugins.markdown.ui.actions.editorLayout.EditorAndPreviewLayoutChangeAction">
     <keyboard-shortcut first-keystroke="shift meta p" />
