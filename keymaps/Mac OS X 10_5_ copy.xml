@@ -101,6 +101,9 @@
   <action id="StringManipulation.AlignSelections">
     <keyboard-shortcut first-keystroke="ctrl alt a" second-keystroke="s" />
   </action>
+  <action id="StringManipulation.CreateBorder">
+    <keyboard-shortcut first-keystroke="ctrl meta alt b" />
+  </action>
   <action id="StringManipulation.CreateSequenceAction">
     <keyboard-shortcut first-keystroke="ctrl meta alt s" />
   </action>
@@ -129,7 +132,6 @@
     <keyboard-shortcut first-keystroke="shift ctrl c" />
   </action>
   <action id="StringManipulation.ToolWindow.Replace.Item.MoveDownAction">
-    <keyboard-shortcut first-keystroke="ctrl meta alt down" />
     <keyboard-shortcut first-keystroke="shift meta alt down" />
   </action>
   <action id="StringManipulation.ToolWindow.Replace.Item.MoveUpAction">
@@ -182,5 +184,9 @@
   </action>
   <action id="osmedile.intellij.stringmanip.swap.SwapAction">
     <keyboard-shortcut first-keystroke="shift meta alt s" />
+    <keyboard-shortcut first-keystroke="shift ctrl less" />
+  </action>
+  <action id="osmedile.intellij.stringmanip.swap.SwapWordsAction">
+    <keyboard-shortcut first-keystroke="shift ctrl z" />
   </action>
 </keymap>
