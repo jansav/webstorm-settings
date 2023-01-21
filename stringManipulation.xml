@@ -66,8 +66,26 @@
     </option>
     <option name="lastAction">
       <UniversalActionModel>
-        <option name="actionClassName" value="osmedile.intellij.stringmanip.swap.ShiftQuoteAction" />
+        <option name="actionClassName" value="osmedile.intellij.stringmanip.align.AlignSelectionsAction" />
       </UniversalActionModel>
+    </option>
+    <option name="replaceHistory">
+      <list>
+        <ReplaceCompositeModel>
+          <option name="date" value="1674304531868" />
+          <option name="items">
+            <list>
+              <ReplaceItemModel>
+                <option name="caseSensitive" value="true" />
+                <option name="enabled" value="true" />
+                <option name="exclusiveGroup" value="1" />
+                <option name="from" value="map(" />
+                <option name="wholeWords" value="true" />
+              </ReplaceItemModel>
+            </list>
+          </option>
+        </ReplaceCompositeModel>
+      </list>
     </option>
     <option name="sortSettingsMap">
       <map>
