@@ -1,0 +1,9 @@
+<application>
+  <component name="com.wallaby.javascript.settings.ExtensionSettingsState">
+    <option name="outputInspectorSettings">
+      <OutputInspectorSettings>
+        <option name="viewModeOption" value="SplitEditor" />
+      </OutputInspectorSettings>
+    </option>
+  </component>
+</application>
