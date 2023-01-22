@@ -87,6 +87,7 @@
   </action>
   <action id="MethodDown" />
   <action id="MethodUp" />
+  <action id="PublishGroup.UploadTo" />
   <action id="RecentChanges" />
   <action id="ReformatCode" />
   <action id="RenameElement">
@@ -156,6 +157,10 @@
     <keyboard-shortcut first-keystroke="meta alt l" />
   </action>
   <action id="Uml.ShowDiff" />
+  <action id="Unwrap">
+    <keyboard-shortcut first-keystroke="shift meta delete" />
+    <keyboard-shortcut first-keystroke="meta alt back_space" />
+  </action>
   <action id="Vcs.CherryPick">
     <keyboard-shortcut first-keystroke="shift alt c" />
   </action>
@@ -165,6 +170,18 @@
   </action>
   <action id="Vcs.ShowTabbedFileHistory">
     <keyboard-shortcut first-keystroke="shift ctrl h" />
+  </action>
+  <action id="com.wallaby.javascript.actions.ClearAllValuesAction">
+    <keyboard-shortcut first-keystroke="ctrl meta alt x" />
+  </action>
+  <action id="com.wallaby.javascript.actions.ClearValueAction">
+    <keyboard-shortcut first-keystroke="shift alt x" />
+  </action>
+  <action id="com.wallaby.javascript.actions.CopyValueAction">
+    <keyboard-shortcut first-keystroke="shift meta alt x" />
+  </action>
+  <action id="com.wallaby.javascript.actions.JumpToFailingTestAction">
+    <keyboard-shortcut first-keystroke="ctrl meta alt j" />
   </action>
   <action id="com.wallaby.javascript.actions.PlayTraceNextStepAction">
     <keyboard-shortcut first-keystroke="f7" />
@@ -197,6 +214,7 @@
   <action id="com.wallaby.javascript.actions.UpdateProjectSnapshotsAction">
     <keyboard-shortcut first-keystroke="ctrl meta alt u" />
   </action>
+  <action id="context.clear" />
   <action id="org.intellij.plugins.markdown.ui.actions.editorLayout.EditorAndPreviewLayoutChangeAction">
     <keyboard-shortcut first-keystroke="shift meta p" />
   </action>
