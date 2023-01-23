@@ -41,7 +41,7 @@
     </context>
   </template>
   <template name="inj" value="import { getInjectable } from &quot;@ogre-tools/injectable&quot;;&#10;&#10;const $FILE_WITHOUT_INJECTABLE$Injectable = getInjectable({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE_IN_KEBABCASE$&quot;,&#10;  instantiate: (di) =&gt; $END$,&#10;});&#10;&#10;export default $FILE_WITHOUT_INJECTABLE$Injectable;&#10;" description="New injectable file" toReformat="false" toShortenFQNames="true">
-    <variable name="FILE_WITHOUT_INJECTABLE" expression="regularExpression(fileNameWithoutExtension, &quot;\.(injectable|test)&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="FILE_WITHOUT_INJECTABLE" expression="camelCase(regularExpression(fileNameWithoutExtension, &quot;\.(injectable|test)&quot;, &quot;&quot;))" defaultValue="" alwaysStopAt="true" />
     <variable name="FILE_WITHOUT_INJECTABLE_IN_KEBABCASE" expression="lowercaseAndDash(FILE_WITHOUT_INJECTABLE)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
