@@ -66,13 +66,13 @@
     </option>
     <option name="lastAction">
       <UniversalActionModel>
-        <option name="actionClassName" value="osmedile.intellij.stringmanip.swap.ShiftQuoteAction" />
+        <option name="actionClassName" value="osmedile.intellij.stringmanip.replace.ReplaceAction" />
       </UniversalActionModel>
     </option>
     <option name="replaceHistory">
       <list>
         <ReplaceCompositeModel>
-          <option name="date" value="1674308490132" />
+          <option name="date" value="1674471389232" />
           <option name="items">
             <list>
               <ReplaceItemModel>
@@ -81,6 +81,25 @@
                 <option name="exclusiveGroup" value="1" />
                 <option name="from" value="map(" />
                 <option name="wholeWords" value="true" />
+              </ReplaceItemModel>
+            </list>
+          </option>
+        </ReplaceCompositeModel>
+        <ReplaceCompositeModel>
+          <option name="date" value="1674471610684" />
+          <option name="items">
+            <list>
+              <ReplaceItemModel>
+                <option name="enabled" value="true" />
+                <option name="exclusiveGroup" value="1" />
+                <option name="from" value="ner" />
+                <option name="to" value="neri" />
+              </ReplaceItemModel>
+              <ReplaceItemModel>
+                <option name="enabled" value="true" />
+                <option name="exclusiveGroup" value="2" />
+                <option name="from" value="ter" />
+                <option name="to" value="teri" />
               </ReplaceItemModel>
             </list>
           </option>
