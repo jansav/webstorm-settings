@@ -66,7 +66,7 @@
     </option>
     <option name="lastAction">
       <UniversalActionModel>
-        <option name="actionClassName" value="osmedile.intellij.stringmanip.swap.ShiftQuoteAction" />
+        <option name="actionClassName" value="osmedile.intellij.stringmanip.increment.DuplicateAndIncrementAction" />
       </UniversalActionModel>
     </option>
     <option name="replaceHistory">
