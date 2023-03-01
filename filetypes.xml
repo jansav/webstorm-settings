@@ -4,7 +4,9 @@
       <mapping pattern="config-2" type="AUTO_DETECTED" />
       <mapping pattern="pre-push" type="AUTO_DETECTED" />
       <mapping pattern="prettierrc" type="AUTO_DETECTED" />
+      <mapping pattern="bin/build" type="AUTO_DETECTED" />
       <mapping pattern="commit-msg" type="AUTO_DETECTED" />
+      <mapping pattern="build" type="AUTO_DETECTED" />
       <mapping pattern="UpdateWorkOrderModel.test.js" type="ECMAScript 6" />
       <mapping pattern="scratch_17.json" type="JSON" />
       <mapping pattern="ToggleMyPresenceOnPlanetButton" type="JSX Harmony" />
