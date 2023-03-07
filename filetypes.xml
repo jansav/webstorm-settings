@@ -11,6 +11,7 @@
       <mapping pattern="scratch_17.json" type="JSON" />
       <mapping pattern="ToggleMyPresenceOnPlanetButton" type="JSX Harmony" />
       <mapping pattern=".prettierc" type="JavaScript" />
+      <mapping pattern="lint" type="JavaScript" />
       <mapping pattern="pre-commit" type="PLAIN_TEXT" />
       <mapping pattern="test-coverage-for-developer" type="PLAIN_TEXT" />
       <mapping pattern=".asd" type="PLAIN_TEXT" />
