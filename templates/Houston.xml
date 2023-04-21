@@ -330,4 +330,10 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="mco" value="let $SELECTION$Mock: AsyncFnMock&lt;$VARIABLE_IN_UPPERCASE$&gt;;&#10;$SELECTION$Mock = asyncFn();&#10;di.override($SELECTION$Injectable, () =&gt; $SELECTION$Mock);$END$&#10;" description="Mock and override" toReformat="false" toShortenFQNames="false">
+    <variable name="VARIABLE_IN_UPPERCASE" expression="capitalize(SELECTION)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
