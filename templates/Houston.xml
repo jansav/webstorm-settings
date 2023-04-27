@@ -318,14 +318,21 @@
     </context>
   </template>
   <template name="ex" value="expect($ACTUAL$).$EXPECTED$($ARGUMENTS$);" description="Jest expect" toReformat="false" toShortenFQNames="false">
-    <variable name="EXPECTED" expression="enum(&quot;toEqual&quot;, &quot;toHaveBeenCalledWith&quot;, &quot;toBe&quot;, &quot;toThrow&quot;, &quot;toBeUndefined&quot;)" defaultValue="" alwaysStopAt="true" />
-    <variable name="ARGUMENTS" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ACTUAL" expression="" defaultValue="&quot;actual&quot;" alwaysStopAt="true" />
+    <variable name="EXPECTED" expression="enum(&quot;toEqual&quot;, &quot;toHaveBeenCalledWith&quot;, &quot;toHaveBeenCalledWith&quot;, &quot;not.toHaveBeenCalled&quot;, &quot;toBe&quot;, &quot;toThrow&quot;, &quot;toBeUndefined&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGUMENTS" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
   <template name="ksing" value="type Param = string;&#10;lifecycle: lifecycleEnum.keyedSingleton({&#10;  getInstanceKey: (di, param: Param) =&gt; id,&#10;})" description="Injectable keyed singleton" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="mco" value="let $VARIABLE$Mock: AsyncFnMock&lt;$VARIABLE_IN_UPPERCASE$&gt;;&#10;$VARIABLE$Mock = asyncFn();&#10;di.override($VARIABLE$Injectable, () =&gt; $VARIABLE$Mock);$END$&#10;" description="Mock and override" toReformat="false" toShortenFQNames="false">
+    <variable name="VARIABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VARIABLE_IN_UPPERCASE" expression="capitalize(VARIABLE)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
