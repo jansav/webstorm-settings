@@ -3,7 +3,7 @@
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
     <option name="SEARCH_SCOPE" value="All Places" />
-    <option name="FILE_MASK" value="*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml,*.d.ts,!*.snap,!*.test.ts" />
+    <option name="FILE_MASK" value="*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yaml,*.yml,*.d.ts,!*.snap,!*.test.ts" />
     <mask>*.xml</mask>
     <mask>*.css</mask>
     <mask>*.shtml</mask>
@@ -26,5 +26,6 @@
     <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml,*.d.ts</mask>
     <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml,*.d.ts,!*.snap</mask>
     <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml,*.d.ts,!*.snap,!*.test.ts</mask>
+    <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yaml,*.yml,*.d.ts,!*.snap,!*.test.ts</mask>
   </component>
 </application>
