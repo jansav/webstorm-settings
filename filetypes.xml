@@ -4,8 +4,11 @@
       <mapping pattern="config-2" type="AUTO_DETECTED" />
       <mapping pattern="pre-push" type="AUTO_DETECTED" />
       <mapping pattern="linkable-push" type="AUTO_DETECTED" />
+      <mapping pattern="lens-k8s-proxy" type="AUTO_DETECTED" />
       <mapping pattern="prettierrc" type="AUTO_DETECTED" />
+      <mapping pattern="generate-tray-icons" type="AUTO_DETECTED" />
       <mapping pattern="bin/build" type="AUTO_DETECTED" />
+      <mapping pattern="bin/generate-tray-icons" type="AUTO_DETECTED" />
       <mapping pattern="commit-msg" type="AUTO_DETECTED" />
       <mapping pattern="build" type="AUTO_DETECTED" />
       <mapping pattern="UpdateWorkOrderModel.test.js" type="ECMAScript 6" />
