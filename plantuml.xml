@@ -5,11 +5,6 @@
     <option name="dotExecutable" value="/opt/homebrew/bin/dot" />
     <option name="highlightInImages" value="true" />
     <option name="includedPaths" value="" />
-    <option name="lastBundledVersion" value="1.2023.0" />
-    <option name="previewSettings">
-      <PreviewSettings>
-        <option name="splitEditorLayout" value="Show editor and preview - horizontal split" />
-      </PreviewSettings>
-    </option>
+    <option name="lastBundledVersion" value="1.2023.6" />
   </component>
 </application>
