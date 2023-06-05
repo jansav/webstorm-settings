@@ -5,7 +5,7 @@
     <option name="regularExpressions" value="true" />
     <option name="REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="All Places" />
-    <option name="FILE_MASK" value="*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml,*.d.ts" />
+    <option name="FILE_MASK" value="*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yaml,*.yml,*.d.ts,!*.snap" />
     <mask>*.xml</mask>
     <mask>*.css</mask>
     <mask>*.shtml</mask>
@@ -26,5 +26,9 @@
     <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md</mask>
     <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml</mask>
     <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml,*.d.ts</mask>
+    <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml,*.d.ts,!*.snap</mask>
+    <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml,*.d.ts,!*.snap,!*.test.ts</mask>
+    <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yaml,*.yml,*.d.ts,!*.snap,!*.test.ts</mask>
+    <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yaml,*.yml,*.d.ts,!*.snap</mask>
   </component>
 </application>
