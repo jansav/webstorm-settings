@@ -27,14 +27,15 @@
       <mapping pattern="bootstrap" type="PLAIN_TEXT" />
       <mapping pattern=".envasd" type="PLAIN_TEXT" />
       <mapping ext="env" type="PLAIN_TEXT" />
+      <mapping ext="nsh" type="PLAIN_TEXT" />
       <mapping ext="woff" type="PLAIN_TEXT" />
       <mapping ext="info" type="PLAIN_TEXT" />
-      <mapping ext="plantuml" type="PlantUML file" />
       <mapping pattern="bin/build-async-fn" type="Shell Script" />
       <mapping pattern="mikon-skripti" type="Shell Script" />
       <mapping pattern="asd" type="Shell Script" />
       <mapping pattern="build-async-fn" type="Shell Script" />
       <mapping ext="st" type="TypeScript" />
+      <mapping ext="plantuml" type="PlantUML file" />
       <mapping pattern=".gitignore_global" type="Git file" />
       <mapping pattern="janne" type="Bash" />
       <mapping pattern="mikko" type="Bash" />
