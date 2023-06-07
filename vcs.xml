@@ -1,17 +1,5 @@
 <application>
-  <component name="GitRememberedInputs">
-    <option name="visitedUrls">
-      <list>
-        <UrlAndUserName>
-          <option name="url" value="http://scm.kcr.eficode.io" />
-          <option name="userName" value="xsavolja1" />
-        </UrlAndUserName>
-      </list>
-    </option>
-  </component>
   <component name="Vcs.Log.App.Settings">
-    <option name="SHOW_TAG_NAMES" value="true" />
-    <option name="SHOW_CHANGES_FROM_PARENTS" value="true" />
     <option name="COLUMN_ID_ORDER">
       <list>
         <option value="Default.Root" />
@@ -20,6 +8,8 @@
         <option value="Default.Date" />
       </list>
     </option>
+    <option name="SHOW_CHANGES_FROM_PARENTS" value="true" />
+    <option name="SHOW_TAG_NAMES" value="true" />
   </component>
   <component name="VcsApplicationSettings">
     <option name="PATCH_STORAGE_LOCATION" value="$USER_HOME$/Desktop" />
