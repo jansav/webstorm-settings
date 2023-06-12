@@ -1,43 +1,7 @@
 <application>
   <component name="FileTypeManager" version="18">
     <extensionMap>
-      <mapping pattern="config-2" type="AUTO_DETECTED" />
-      <mapping pattern="pre-push" type="AUTO_DETECTED" />
-      <mapping pattern="linkable-push" type="AUTO_DETECTED" />
-      <mapping pattern="lens-k8s-proxy" type="AUTO_DETECTED" />
-      <mapping pattern="prettierrc" type="AUTO_DETECTED" />
-      <mapping pattern="generate-tray-icons" type="AUTO_DETECTED" />
-      <mapping pattern="bin/build" type="AUTO_DETECTED" />
-      <mapping pattern="bin/generate-tray-icons" type="AUTO_DETECTED" />
-      <mapping pattern="commit-msg" type="AUTO_DETECTED" />
-      <mapping pattern="build" type="AUTO_DETECTED" />
-      <mapping pattern="UpdateWorkOrderModel.test.js" type="ECMAScript 6" />
-      <mapping pattern="scratch_17.json" type="JSON" />
-      <mapping pattern="ToggleMyPresenceOnPlanetButton" type="JSX Harmony" />
-      <mapping pattern=".prettierc" type="JavaScript" />
-      <mapping pattern="lint" type="JavaScript" />
-      <mapping pattern="pre-commit" type="PLAIN_TEXT" />
-      <mapping pattern="test-coverage-for-developer" type="PLAIN_TEXT" />
-      <mapping pattern=".asd" type="PLAIN_TEXT" />
-      <mapping pattern=".env.example" type="PLAIN_TEXT" />
-      <mapping pattern=".env.deployment-configuration" type="PLAIN_TEXT" />
-      <mapping pattern=".aws-client" type="PLAIN_TEXT" />
-      <mapping pattern=".tproject" type="PLAIN_TEXT" />
-      <mapping pattern="Jenkinsfile_deploy" type="PLAIN_TEXT" />
-      <mapping pattern="bootstrap" type="PLAIN_TEXT" />
-      <mapping pattern=".envasd" type="PLAIN_TEXT" />
-      <mapping ext="info" type="PLAIN_TEXT" />
-      <mapping ext="woff" type="PLAIN_TEXT" />
-      <mapping ext="env" type="PLAIN_TEXT" />
       <mapping ext="plantuml" type="PlantUML file" />
-      <mapping pattern="bin/build-async-fn" type="Shell Script" />
-      <mapping pattern="mikon-skripti" type="Shell Script" />
-      <mapping pattern="asd" type="Shell Script" />
-      <mapping pattern="build-async-fn" type="Shell Script" />
-      <mapping ext="st" type="TypeScript" />
-      <mapping pattern=".gitignore_global" type="Git file" />
-      <mapping pattern="janne" type="Bash" />
-      <mapping pattern="mikko" type="Bash" />
     </extensionMap>
   </component>
 </application>
