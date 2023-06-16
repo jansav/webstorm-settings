@@ -3,7 +3,7 @@
     <option name="showTipsOnStartup" value="false" />
     <option name="autoSaveFiles" value="false" />
     <option name="confirmExit" value="false" />
-    <option name="confirmOpenNewProject2" value="0" />
+    <option name="confirmOpenNewProject2" value="1" />
     <option name="processCloseConfirmation" value="TERMINATE" />
   </component>
   <component name="Registry">
@@ -12,6 +12,7 @@
     <entry key="suppress.focus.stealing" value="false" />
     <entry key="suppress.focus.stealing.linux" value="false" />
     <entry key="suppress.focus.stealing.auto.request.focus" value="false" />
-    <entry key="ide.experimental.ui" value="false" />
+    <entry key="ide.experimental.ui" value="true" />
+    <entry key="debugger.new.tool.window.layout" value="true" />
   </component>
 </application>
