@@ -12,7 +12,6 @@
     <entry key="suppress.focus.stealing" value="false" />
     <entry key="suppress.focus.stealing.linux" value="false" />
     <entry key="suppress.focus.stealing.auto.request.focus" value="false" />
-    <entry key="ide.experimental.ui" value="true" />
-    <entry key="debugger.new.tool.window.layout" value="true" />
+    <entry key="ide.experimental.ui" value="false" />
   </component>
 </application>
