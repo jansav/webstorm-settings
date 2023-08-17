@@ -3,6 +3,7 @@
     <extensionMap>
       <removed_mapping ext="pdf" approved="true" type="Native" />
       <mapping ext="plantuml" type="PlantUML file" />
+      <removed_mapping ext="pdf" approved="true" type="Native" />
     </extensionMap>
   </component>
 </application>
