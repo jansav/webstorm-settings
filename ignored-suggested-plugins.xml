@@ -1,0 +1,11 @@
+<application>
+  <component name="IgnoredPluginSuggestions">
+    <option name="pluginIds">
+      <list>
+        <option value="Docker" />
+        <option value="com.intellij.kubernetes" />
+        <option value="dev.nx.console" />
+      </list>
+    </option>
+  </component>
+</application>
