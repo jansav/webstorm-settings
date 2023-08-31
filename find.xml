@@ -7,7 +7,7 @@
     <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
     <option name="REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="All Places" />
-    <option name="FILE_MASK" value="*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml,*.d.ts,!/.yalc/**" />
+    <option name="FILE_MASK" value="*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml,*.d.ts" />
     <mask>*.xml</mask>
     <mask>*.css</mask>
     <mask>*.shtml</mask>
@@ -27,9 +27,9 @@
     <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json</mask>
     <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md</mask>
     <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml</mask>
-    <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml,*.d.ts</mask>
     <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml,*.d.ts,!.yalc</mask>
     <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml,*.d.ts,!.yalc/*</mask>
     <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml,*.d.ts,!/.yalc/**</mask>
+    <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml,*.d.ts</mask>
   </component>
 </application>
