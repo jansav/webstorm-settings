@@ -2,32 +2,20 @@
   <component name="FindSettings">
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
-    <option name="localCaseSensitive" value="true" />
-    <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
     <option name="SEARCH_SCOPE" value="All Places" />
-    <option name="FILE_MASK" value="*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml,*.d.ts" />
     <mask>*.xml</mask>
     <mask>*.css</mask>
-    <mask>*.shtml</mask>
-    <mask>*.shtm</mask>
-    <mask>*.ng</mask>
     <mask>*.htm</mask>
     <mask>*.sht</mask>
+    <mask>*.shtm</mask>
+    <mask>*.ng</mask>
+    <mask>*.shtml</mask>
     <mask>*.html</mask>
     <mask>*.mts</mask>
-    <mask>*.cts</mask>
     <mask>*.ats</mask>
+    <mask>*.cts</mask>
+    <mask>*.ts</mask>
     <mask>*.cjs</mask>
     <mask>*.js</mask>
-    <mask>*.ts</mask>
-    <mask>*.ts,*.tsx</mask>
-    <mask>*.ts,*.tsx,*.js</mask>
-    <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json</mask>
-    <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md</mask>
-    <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml</mask>
-    <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml,*.d.ts,!.yalc</mask>
-    <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml,*.d.ts,!.yalc/*</mask>
-    <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml,*.d.ts,!/.yalc/**</mask>
-    <mask>*.ts,*.tsx,*.js,*.json,!package-lock.json,!webpack-build-stats.json,!*.md,*.yml,*.d.ts</mask>
   </component>
 </application>
