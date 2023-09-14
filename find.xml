@@ -19,6 +19,7 @@
     <mask>*.js</mask>
     <mask>*.js,*.ts,*.json,</mask>
     <mask>*.js,*.ts,*.json</mask>
+    <mask>*.injectable.*</mask>
     <mask>*.js,*.tsx,*.json</mask>
   </component>
 </application>
