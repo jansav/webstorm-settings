@@ -2,6 +2,7 @@
   <component name="FileTypeManager" version="18">
     <extensionMap>
       <mapping ext="asar" type="PLAIN_TEXT" />
+      <mapping ext="ttf" type="PLAIN_TEXT" />
       <removed_mapping ext="pdf" approved="true" type="Native" />
       <mapping ext="plantuml" type="PlantUML file" />
     </extensionMap>
