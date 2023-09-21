@@ -3,7 +3,7 @@
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
     <option name="SEARCH_SCOPE" value="All Places" />
-    <option name="FILE_MASK" value="*.js,*.jsx,*.ts,*.tsx,*.json,!package-lock.json" />
+    <option name="FILE_MASK" value="package.json" />
     <mask>*.xml</mask>
     <mask>*.css</mask>
     <mask>*.htm</mask>
@@ -24,5 +24,9 @@
     <mask>*.js,*.tsx,*.json</mask>
     <mask>*.js,*.jsx,*.ts,*.tsx,*.json</mask>
     <mask>*.js,*.jsx,*.ts,*.tsx,*.json,!package-lock.json</mask>
+    <mask>package.json,!.yalc</mask>
+    <mask>package.json,!.yalc/*</mask>
+    <mask>package.json,!*/.yalc/*</mask>
+    <mask>package.json</mask>
   </component>
 </application>
