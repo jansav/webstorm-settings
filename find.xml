@@ -2,8 +2,6 @@
   <component name="FindSettings">
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
-    <option name="regularExpressions" value="true" />
-    <option name="REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="All Places" />
     <mask>*.xml</mask>
     <mask>*.css</mask>
@@ -19,15 +17,5 @@
     <mask>*.ts</mask>
     <mask>*.cjs</mask>
     <mask>*.js</mask>
-    <mask>*.js,*.ts,*.json,</mask>
-    <mask>*.js,*.ts,*.json</mask>
-    <mask>*.injectable.*</mask>
-    <mask>*.js,*.tsx,*.json</mask>
-    <mask>*.js,*.jsx,*.ts,*.tsx,*.json</mask>
-    <mask>*.js,*.jsx,*.ts,*.tsx,*.json,!package-lock.json</mask>
-    <mask>package.json,!.yalc</mask>
-    <mask>package.json,!.yalc/*</mask>
-    <mask>package.json,!*/.yalc/*</mask>
-    <mask>package.json</mask>
   </component>
 </application>
