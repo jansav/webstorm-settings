@@ -1,24 +1,32 @@
 <application>
   <component name="PostfixTemplates">
+    <template id="mod@userDefined" key=".mod" provider="builtin.js" language-level="ES5" topmost="false">
+      <conditions />
+      <template name="fakeKey" value="$EXPR$ = getModel($EXPR$)&#10;this.dependencies.$EXPR$ = $EXPR$;&#10;" description="" toReformat="true" toShortenFQNames="true" />
+    </template>
     <template id="getter@userDefined" key=".getter" provider="builtin.js" language-level="ES5" topmost="false">
       <conditions />
-      <template name="fakeKey" value="get $EXPR$() {&#10;  return $END$;&#10;}&#10;" toReformat="true" toShortenFQNames="true" />
+      <template name="fakeKey" value="get $EXPR$() {&#10;  return $END$;&#10;}&#10;" description="" toReformat="true" toShortenFQNames="true" />
+    </template>
+    <template id="lg@userDefined" key=".lg" provider="builtin.js" language-level="ES6" topmost="false">
+      <conditions />
+      <template name="fakeKey" value="console.log(&quot;$EXPR$&quot;, $EXPR$$END$);" toReformat="true" toShortenFQNames="true" />
+    </template>
+    <template id="str@userDefined" key=".stringify" provider="builtin.js" language-level="ES6" topmost="false">
+      <conditions />
+      <template name="fakeKey" value="JSON.stringify($EXPR$, null, 2)" toReformat="true" toShortenFQNames="true" />
     </template>
     <template id="imp@userDefined" key=".imp" provider="builtin.js" language-level="ES5" topmost="false">
       <conditions />
       <template name="fakeKey" value="import $EXPR$Import from './$EXPR$/$EXPR$';&#10;$EXPR$ = $EXPR$Import&#10;this.dependencies.$EXPR$ = $EXPR$;&#10;" description="" toReformat="true" toShortenFQNames="true" />
     </template>
-    <template id="mc@userDefined" key=".mc" provider="builtin.js" language-level="ES5" topmost="false">
-      <conditions />
-      <template name="fakeKey" value="let $EXPR$Mock;&#10;$EXPR$Mock = jest.fn();" description="" toReformat="true" toShortenFQNames="true" />
-    </template>
     <template id="st@userDefined" key=".st" provider="builtin.js" language-level="ES5" topmost="false">
       <conditions />
       <template name="fakeKey" value="let $EXPR$Mock;&#10;$EXPR$Mock = jest.fn();" description="" toReformat="true" toShortenFQNames="true" />
     </template>
-    <template id="logg@userDefined" key=".logg" provider="builtin.js" language-level="ES6" topmost="false">
+    <template id="mc@userDefined" key=".mc" provider="builtin.js" language-level="ES5" topmost="false">
       <conditions />
-      <template name="fakeKey" value="console.log(JSON.stringify($EXPR$, null, 2));" description="" toReformat="true" toShortenFQNames="true" />
+      <template name="fakeKey" value="let $EXPR$Mock;&#10;$EXPR$Mock = jest.fn();" description="" toReformat="true" toShortenFQNames="true" />
     </template>
     <template id="tep@userDefined" key=".tep" provider="builtin.js" language-level="ES5" topmost="false">
       <conditions />
@@ -28,9 +36,9 @@
       <conditions />
       <template name="fakeKey" value="this.dependencies.$EXPR$$END$" description="" toReformat="true" toShortenFQNames="true" />
     </template>
-    <template id="mod@userDefined" key=".mod" provider="builtin.js" language-level="ES5" topmost="false">
+    <template id="logg@userDefined" key=".logg" provider="builtin.js" language-level="ES6" topmost="false">
       <conditions />
-      <template name="fakeKey" value="$EXPR$ = getModel($EXPR$)&#10;this.dependencies.$EXPR$ = $EXPR$;&#10;" description="" toReformat="true" toShortenFQNames="true" />
+      <template name="fakeKey" value="console.log(JSON.stringify($EXPR$, null, 2));" description="" toReformat="true" toShortenFQNames="true" />
     </template>
   </component>
   <component name="PostfixTemplatesSettings">
@@ -39,6 +47,7 @@
         <value>
           <set>
             <option value="getter@userDefined" />
+            <option value="st@userDefined" />
           </set>
         </value>
       </disabled-templates>
