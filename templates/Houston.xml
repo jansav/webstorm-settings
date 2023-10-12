@@ -337,4 +337,9 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="tryc" value="try {&#10;  $SELECTION$&#10;} catch(e: any) {&#10;  $END$&#10;}" description="Try/catch" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
