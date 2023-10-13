@@ -342,4 +342,11 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="taplog" value="$VARIABLE_NAME$ =&gt; { console.log(&quot;$BOOKMARK$&quot;, $VARIABLE_NAME$); return $VARIABLE_NAME$; }," description="Tapped console.log for pipeline" toReformat="false" toShortenFQNames="false">
+    <variable name="VARIABLE_NAME" expression="jsSuggestVariableName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="BOOKMARK" expression="enum(lowercaseAndDash(regularExpression(fileName(), &quot;\\..*&quot;, &quot;&quot;)), jsMethodName(), user())" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
