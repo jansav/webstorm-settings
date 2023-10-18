@@ -119,7 +119,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="cdin" value="const $NAME$ = di.inject($NAME$I$END$njectable);" description="constant for injected" toReformat="false" toShortenFQNames="true">
+  <template name="cdin" value="const $NAME$ = di.inject($NAME$I$END$njectable);" description="constant for injected" toReformat="false" toShortenFQNames="true" useStaticImport="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -187,6 +187,13 @@
     <variable name="TYPE" expression="capitalize(camelCase(FILE_WITHOUT_INJECTABLE))" defaultValue="" alwaysStopAt="true" />
     <variable name="FILE" expression="camelCase(fileNameWithoutExtension)" defaultValue="" alwaysStopAt="true" />
     <variable name="FILE_WITHOUT_INJECTABLE" expression="regularExpression(fileNameWithoutExtension, &quot;.injectable&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ccdin" value="const $NAME$ = di.inject($INJECTABLE_NAME$);" description="Constant for injected but better" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+    <variable name="INJECTABLE_NAME" expression="jsSuggestImportedEntityName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="regularExpression(INJECTABLE_NAME, &quot;Injectable&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
