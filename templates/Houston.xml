@@ -354,4 +354,10 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="cdi" value="let di: DiContainer;&#10;di = createContainer(&quot;$CONTAINER_NAME$&quot;);" description="Create injectable container" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="CONTAINER_NAME" expression="enum(&quot;some-container&quot;, &quot;irrelevant&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
