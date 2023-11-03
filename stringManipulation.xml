@@ -2,9 +2,11 @@
   <component name="StringManipulationState">
     <option name="lastActionModel">
       <UniversalActionModel>
-        <option name="actionClassName" value="osmedile.intellij.stringmanip.increment.DuplicateAndIncrementAction" />
-        <option name="description" value="Duplicate and increment numbers inside selected text" />
-        <option name="textWithMnemonic" value="Duplicate and Increment" />
+        <option name="actionClassName" value="osmedile.intellij.stringmanip.swap.SwapAction" />
+        <option name="description" value="Depending on what is selected or how many carets there are" />
+        <option name="modelClass" value="osmedile.intellij.stringmanip.swap.SwapActionExecutor" />
+        <option name="modelData" value="&lt;SwapActionExecutor /&gt;" />
+        <option name="textWithMnemonic" value="Swap Characters/Selections/Lines/Tokens" />
       </UniversalActionModel>
     </option>
   </component>
