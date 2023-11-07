@@ -1,9 +1,7 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="All Places" />
-    <option name="defaultScopeName" value="All Places" />
-    <option name="SEARCH_SCOPE" value="All Places" />
-    <option name="FILE_MASK" value="*.js,*.ts,*.tsx,*.json,!package-lock.json" />
+    <option name="localRegularExpressions" value="true" />
+    <option name="LOCAL_REGULAR_EXPRESSIONS" value="true" />
     <mask>*.xml</mask>
     <mask>*.css</mask>
     <mask>*.htm</mask>
@@ -18,9 +16,5 @@
     <mask>*.ts</mask>
     <mask>*.cjs</mask>
     <mask>*.js</mask>
-    <mask>*.js,*.ts,*.json,!package-lock.json</mask>
-    <mask>*.js,*.ts,*.json,</mask>
-    <mask>*.js,*.ts,*.tsx,*.json,</mask>
-    <mask>*.js,*.ts,*.tsx,*.json,!package-lock.json</mask>
   </component>
 </application>
