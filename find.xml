@@ -7,7 +7,7 @@
     <option name="REGULAR_EXPRESSIONS" value="true" />
     <option name="LOCAL_REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="All Places" />
-    <option name="FILE_MASK" value="*.js,*.ts,*.tsx,*.json,!package-lock.json" />
+    <option name="FILE_MASK" value="*.js,*.ts,*.tsx,*.json,*.jsx,!package-lock.json" />
     <mask>*.xml</mask>
     <mask>*.css</mask>
     <mask>*.htm</mask>
@@ -23,5 +23,6 @@
     <mask>*.cjs</mask>
     <mask>*.js</mask>
     <mask>*.js,*.ts,*.tsx,*.json,!package-lock.json</mask>
+    <mask>*.js,*.ts,*.tsx,*.json,*.jsx,!package-lock.json</mask>
   </component>
 </application>
