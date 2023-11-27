@@ -15,9 +15,9 @@
     <mask>*.ats</mask>
     <mask>*.cts</mask>
     <mask>*.cjs</mask>
-    <mask>*package.json</mask>
     <mask>*.tsx</mask>
     <mask>*.js</mask>
     <mask>*.ts</mask>
+    <mask>*package.json</mask>
   </component>
 </application>
