@@ -3,7 +3,7 @@
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
     <option name="SEARCH_SCOPE" value="All Places" />
-    <option name="FILE_MASK" value="*.js,*.ts,*.tsx,*.json,*.jsx,!package-lock.json,*.yml" />
+    <option name="FILE_MASK" value="*.ts,*.tsx,*.json,*.jsx,!package-lock.json,*.yml,!*.d.ts" />
     <mask>*.xml</mask>
     <mask>*.css</mask>
     <mask>*.htm</mask>
@@ -21,5 +21,7 @@
     <mask>*.js,*.ts,*.tsx,*.json,!package-lock.json</mask>
     <mask>*.js,*.ts,*.tsx,*.json,*.jsx,!package-lock.json</mask>
     <mask>*.js,*.ts,*.tsx,*.json,*.jsx,!package-lock.json,*.yml</mask>
+    <mask>*.ts,*.tsx,*.json,*.jsx,!package-lock.json,*.yml</mask>
+    <mask>*.ts,*.tsx,*.json,*.jsx,!package-lock.json,*.yml,!*.d.ts</mask>
   </component>
 </application>
