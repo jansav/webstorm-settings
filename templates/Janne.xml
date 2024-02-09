@@ -40,7 +40,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="inj" value="import { getInjectable } from &quot;@ogre-tools/injectable&quot;;&#10;&#10;export const $FILE_WITHOUT_INJECTABLE$Injectable = getInjectable({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE_IN_KEBABCASE$&quot;,&#10;  instantiate: (di) =&gt; $END$,&#10;});" description="New injectable file" toReformat="false" toShortenFQNames="true">
+  <template name="inj" value="import { getInjectable } from &quot;@lensapp/injectable&quot;;&#10;&#10;export const $FILE_WITHOUT_INJECTABLE$Injectable = getInjectable({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE_IN_KEBABCASE$&quot;,&#10;  instantiate: (di) =&gt; $END$,&#10;});" description="New injectable file" toReformat="false" toShortenFQNames="true">
     <variable name="FILE_WITHOUT_INJECTABLE" expression="camelCase(regularExpression(fileNameWithoutExtension, &quot;\.(injectable|test)&quot;, &quot;&quot;))" defaultValue="" alwaysStopAt="true" />
     <variable name="FILE_WITHOUT_INJECTABLE_IN_KEBABCASE" expression="lowercaseAndDash(FILE_WITHOUT_INJECTABLE)" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -62,6 +62,7 @@
       <option name="CSS" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="CoffeeScript" value="false" />
+      <option name="ECMAScript6" value="false" />
       <option name="HAML" value="false" />
       <option name="HTML" value="false" />
       <option name="HTTP_CLIENT_ENVIRONMENT" value="false" />
@@ -101,6 +102,7 @@
       <option name="CSS" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="CoffeeScript" value="false" />
+      <option name="ECMAScript6" value="false" />
       <option name="HAML" value="false" />
       <option name="HTML" value="false" />
       <option name="HTTP_CLIENT_ENVIRONMENT" value="false" />
@@ -123,7 +125,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="incomprop" value="import React from 'react';&#10;import { withInjectables } from '@ogre-tools/injectable-react';&#10;&#10;interface Dependencies {&#10;  $DEPENDENCY$: $DEPENDENCY_TYPE$&#10;}&#10;&#10;interface $FILE$Props {&#10;&#10;}&#10;&#10;const NonInjected$FILE$ = ({ $DEPENDENCY$ }: $FILE$Props &amp; Dependencies) =&gt; (&#10;  &lt;div&gt;&#10;    $END$&#10;  &lt;/div&gt;&#10;);&#10;&#10;export const $FILE$ = withInjectables&lt;Dependencies, $FILE$Props&gt;(&#10;  NonInjected$FILE$,&#10;&#10;  {&#10;    getProps: (di, props) =&gt; ({&#10;      $DEPENDENCY$: di.inject($DEPENDENCY$Injectable),&#10;      ...props,&#10;    }),&#10;  },&#10;);&#10;" description="React component with injectables and props" toReformat="false" toShortenFQNames="true">
+  <template name="incomprop" value="import React from 'react';&#10;import { withInjectables } from '@lensapp/injectable-react';&#10;&#10;interface Dependencies {&#10;  $DEPENDENCY$: $DEPENDENCY_TYPE$&#10;}&#10;&#10;interface $FILE$Props {&#10;&#10;}&#10;&#10;const NonInjected$FILE$ = ({ $DEPENDENCY$ }: $FILE$Props &amp; Dependencies) =&gt; (&#10;  &lt;div&gt;&#10;    $END$&#10;  &lt;/div&gt;&#10;);&#10;&#10;export const $FILE$ = withInjectables&lt;Dependencies, $FILE$Props&gt;(&#10;  NonInjected$FILE$,&#10;&#10;  {&#10;    getProps: (di, props) =&gt; ({&#10;      $DEPENDENCY$: di.inject($DEPENDENCY$Injectable),&#10;      ...props,&#10;    }),&#10;  },&#10;);&#10;" description="React component with injectables and props" toReformat="false" toShortenFQNames="true">
     <variable name="FILE" expression="capitalize(camelCase(fileNameWithoutExtension))" defaultValue="" alwaysStopAt="false" />
     <variable name="DEPENDENCY" expression="" defaultValue="&quot;someDependency&quot;" alwaysStopAt="true" />
     <variable name="DEPENDENCY_TYPE" expression="capitalize(DEPENDENCY)" defaultValue="" alwaysStopAt="false" />
@@ -131,7 +133,7 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="incom" value="import React from 'react';&#10;import { withInjectables } from '@ogre-tools/injectable-react';&#10;&#10;interface Dependencies {&#10;  $DEPENDENCY$: $DEPENDENCY_TYPE$&#10;}&#10;&#10;const NonInjected$FILE$ = ({ $DEPENDENCY$ }: Dependencies) =&gt; (&#10;  &lt;div&gt;&#10;    $END$&#10;  &lt;/div&gt;&#10;);&#10;&#10;export const $FILE$ = withInjectables&lt;Dependencies&gt;(&#10;  NonInjected$FILE$,&#10;&#10;  {&#10;    getProps: (di) =&gt; ({&#10;      $DEPENDENCY$: di.inject($DEPENDENCY$Injectable),&#10;    }),&#10;  },&#10;);&#10;" description="React component with injectables and no props" toReformat="false" toShortenFQNames="true">
+  <template name="incom" value="import React from 'react';&#10;import { withInjectables } from '@lensapp/injectable-react';&#10;&#10;interface Dependencies {&#10;  $DEPENDENCY$: $DEPENDENCY_TYPE$&#10;}&#10;&#10;const NonInjected$FILE$ = ({ $DEPENDENCY$ }: Dependencies) =&gt; (&#10;  &lt;div&gt;&#10;    $END$&#10;  &lt;/div&gt;&#10;);&#10;&#10;export const $FILE$ = withInjectables&lt;Dependencies&gt;(&#10;  NonInjected$FILE$,&#10;&#10;  {&#10;    getProps: (di) =&gt; ({&#10;      $DEPENDENCY$: di.inject($DEPENDENCY$Injectable),&#10;    }),&#10;  },&#10;);&#10;" description="React component with injectables and no props" toReformat="false" toShortenFQNames="true">
     <variable name="FILE" expression="capitalize(camelCase(fileNameWithoutExtension))" defaultValue="" alwaysStopAt="false" />
     <variable name="DEPENDENCY" expression="" defaultValue="&quot;someDependency&quot;" alwaysStopAt="true" />
     <variable name="DEPENDENCY_TYPE" expression="capitalize(DEPENDENCY)" defaultValue="" alwaysStopAt="false" />
@@ -157,7 +159,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="injt" value="import { getInjectable, getInjectionToken } from &quot;@ogre-tools/injectable&quot;;&#10;&#10;export type $TYPE$ = {};&#10;&#10;export const $FILE_IN_CAMELCASE$InjectionToken = getInjectionToken&lt;$TYPE$&gt;({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$-injection-token&quot;,&#10;});&#10;&#10;export const $FILE$ = getInjectable({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$&quot;,&#10;  instantiate: (di): $TYPE$ =&gt; ({$END$}),&#10;  injectionToken: $FILE_IN_CAMELCASE$InjectionToken&#10;});" description="New injectable file with injection token" toReformat="false" toShortenFQNames="true">
+  <template name="injt" value="import { getInjectable, getInjectionToken } from &quot;@lensapp/injectable&quot;;&#10;&#10;export type $TYPE$ = {};&#10;&#10;export const $FILE_IN_CAMELCASE$InjectionToken = getInjectionToken&lt;$TYPE$&gt;({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$-injection-token&quot;,&#10;});&#10;&#10;export const $FILE$ = getInjectable({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$&quot;,&#10;  instantiate: (di): $TYPE$ =&gt; ({$END$}),&#10;  injectionToken: $FILE_IN_CAMELCASE$InjectionToken&#10;});" description="New injectable file with injection token" toReformat="false" toShortenFQNames="true">
     <variable name="TYPE" expression="capitalize(FILE_IN_CAMELCASE)" defaultValue="" alwaysStopAt="true" />
     <variable name="FILE_IN_CAMELCASE" expression="camelCase(FILE_WITHOUT_INJECTABLE)" defaultValue="" alwaysStopAt="true" />
     <variable name="FILE" expression="camelCase(fileNameWithoutExtension)" defaultValue="" alwaysStopAt="true" />
@@ -166,7 +168,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="tok" value="import { getInjectionToken } from &quot;@ogre-tools/injectable&quot;;&#10;&#10;export type $TYPE$ = {};&#10;&#10;export const $FILE_IN_CAMELCASE$InjectionToken = getInjectionToken&lt;$TYPE$&gt;({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$-injection-token&quot;,&#10;});&#10;" description="New injection token" toReformat="false" toShortenFQNames="true">
+  <template name="tok" value="import { getInjectionToken } from &quot;@lensapp/injectable&quot;;&#10;&#10;export type $TYPE$ = {};&#10;&#10;export const $FILE_IN_CAMELCASE$InjectionToken = getInjectionToken&lt;$TYPE$&gt;({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$-injection-token&quot;,&#10;});&#10;" description="New injection token" toReformat="false" toShortenFQNames="true">
     <variable name="TYPE" expression="capitalize(FILE_IN_CAMELCASE)" defaultValue="" alwaysStopAt="true" />
     <variable name="FILE_IN_CAMELCASE" expression="camelCase(FILE_WITHOUT_INJECTABLE)" defaultValue="" alwaysStopAt="true" />
     <variable name="FILE_WITHOUT_INJECTABLE" expression="regularExpression(fileNameWithoutExtension, &quot;.injectable&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -181,7 +183,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="injty" value="import { getInjectable } from &quot;@ogre-tools/injectable&quot;;&#10;&#10;export type $TYPE$ = {};&#10;&#10;export const $FILE$ = getInjectable({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$&quot;,&#10;  instantiate: (di): $TYPE$ =&gt; ({$END$}),&#10;});" description="New injectable file with type" toReformat="false" toShortenFQNames="true">
+  <template name="injty" value="import { getInjectable } from &quot;@lensapp/injectable&quot;;&#10;&#10;export type $TYPE$ = {};&#10;&#10;export const $FILE$ = getInjectable({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$&quot;,&#10;  instantiate: (di): $TYPE$ =&gt; ({$END$}),&#10;});" description="New injectable file with type" toReformat="false" toShortenFQNames="true">
     <variable name="TYPE" expression="capitalize(camelCase(FILE_WITHOUT_INJECTABLE))" defaultValue="" alwaysStopAt="true" />
     <variable name="FILE" expression="camelCase(fileNameWithoutExtension)" defaultValue="" alwaysStopAt="true" />
     <variable name="FILE_WITHOUT_INJECTABLE" expression="regularExpression(fileNameWithoutExtension, &quot;.injectable&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -194,27 +196,6 @@
     <variable name="NAME" expression="regularExpression(INJECTABLE_NAME, &quot;Injectable&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-    </context>
-  </template>
-  <template name="juh" value="Co-authored-by: Juho Heikka &lt;juho.heikka@gmail.com&gt;" description="Co authored by Juho" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="CSS" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="HAML" value="false" />
-      <option name="HTML" value="false" />
-      <option name="HTTP_CLIENT_ENVIRONMENT" value="false" />
-      <option name="Handlebars" value="false" />
-      <option name="JADE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JSP" value="false" />
-      <option name="OTHER" value="true" />
-      <option name="REQUEST" value="false" />
-      <option name="SHELL_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="Vue" value="false" />
-      <option name="XML" value="false" />
     </context>
   </template>
 </templateSet>
