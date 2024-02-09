@@ -93,6 +93,7 @@
     <variable name="With" expression="" defaultValue="&quot;With&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="deswithin" value="describe('a$MAYBE_N$ $VARIABLE_IN_UPPERCASE$ to $PURPOSE_IN_UPPERCASE$ within', () =&gt; {&#10;  let $VARIABLE$;&#10;    &#10;  beforeEach(() =&gt; {&#10;    $VARIABLE$ = component.find('$VARIABLE_IN_UPPERCASE$[data-$PURPOSE$-test]');&#10;  });&#10;    &#10;  it('knows how to $PURPOSE_IN_UPPERCASE$', () =&gt; {&#10;    expect($VARIABLE$).toHaveProp('$PROP$', $PURPOSE_IN_CAMELCASE$Stub);&#10;  });&#10;});" description="A decribe for a component within" toReformat="false" toShortenFQNames="false">
@@ -149,6 +150,7 @@
     <variable name="FILE" expression="regularExpression(fileNameWithoutExtension(), &quot;\.test&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="snap" value="expect($COMPONENT$).toMatch$HTML$Snapshot();$END$" description="Expect to match snapshot" toReformat="false" toShortenFQNames="true">
