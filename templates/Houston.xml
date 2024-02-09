@@ -13,11 +13,13 @@
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="bef" value="beforeEach(() =&gt; {&#10;  $END$&#10;});" description="Mocha before each" toReformat="false" toShortenFQNames="false">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="des" value="describe('$NAME$', () =&gt; {&#10;  $END$&#10;});" description="Mocha describe" toReformat="true" toShortenFQNames="true">
@@ -37,6 +39,7 @@
     <variable name="NAME" expression="" defaultValue="firstWord(spaceSeparated(fileNameWithoutExtension()))" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="log" value="console.log(JSON.stringify($EXIT$, null, 2));" description="Pretty printed JSON log" toReformat="true" toShortenFQNames="true">
@@ -70,6 +73,7 @@
     <variable name="VARIABLE" expression="camelCase(fileNameWithoutExtension())" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="testComponent" value="import React from 'react';&#10;import { mount } from 'enzyme';&#10;&#10;import $FILE$ from './$FILE$';&#10;&#10;describe('$FILE$', () =&gt; {&#10;  let component;&#10;&#10;  beforeEach(() =&gt; {&#10;    component = mount(&lt;$FILE$$END$ /&gt;);&#10;  });&#10;&#10;  $END$&#10;});&#10;" description="Test for React component" toReformat="false" toShortenFQNames="false">
@@ -256,7 +260,7 @@
   <template name="file" value="$FILE$$END$" description="Name of current file" toReformat="false" toShortenFQNames="true">
     <variable name="FILE" expression="regularExpression(fileNameWithoutExtension(), &quot;\.test&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="true" />
     </context>
   </template>
   <template name="cll" value="import getAuthenticatedCall from 'shared-between-front-ends/src/doings/getAuthenticatedCall/getAuthenticatedCall';&#10;import $FILE$ from './$FILE$';&#10;import noop from 'lodash/fp/noop';&#10;&#10;export default getAuthenticatedCall({&#10;  apiCallConfig: {&#10;    path: '/api/$PATH$',&#10;    method: '$VERB$',&#10;  },&#10;  decoratorConfig: {&#10;    spinnerName: '$SPINNER_NAME$',&#10;    showSpinnerInstantly: $SHOW_SPINNER_INSTANTLY$,&#10;    stubificationFunction: noop,&#10;  },&#10;});&#10;&#10;import getAuthenticatedCall from 'shared-between-front-ends/src/doings/getAuthenticatedCall/getAuthenticatedCall';&#10;import $FILE$ from './$FILE$';&#10;import noop from 'lodash/fp/noop';&#10;&#10;describe('$FILE$', () =&gt; {&#10;  it('is a configured call', () =&gt; {&#10;    expect($FILE$).toEqualConfigured(getAuthenticatedCall, [{&#10;      apiCallConfig: {&#10;        path: '/api/$PATH$',&#10;        method: '$VERB$',&#10;      },&#10;      decoratorConfig: {&#10;        spinnerName: '$SPINNER_NAME$',&#10;        showSpinnerInstantly: $SHOW_SPINNER_INSTANTLY$,&#10;        stubificationFunction: noop,&#10;      },&#10;    }])&#10;  });&#10;});&#10;" description="Expect configured call" toReformat="false" toShortenFQNames="false">

@@ -3,6 +3,7 @@
     <variable name="actualPromise" expression="" defaultValue="&quot;actualPromise&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="impmom" value="import moment from 'moment-timezone';" description="Import moment" toReformat="false" toShortenFQNames="true">
@@ -45,6 +46,7 @@
     <variable name="FILE_WITHOUT_INJECTABLE_IN_KEBABCASE" expression="lowercaseAndDash(FILE_WITHOUT_INJECTABLE)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="impfu" value="import { $END$ } from 'shared-between-everything/src/functionalProgramming';" description="Import function from functional programming" toReformat="false" toShortenFQNames="false">
@@ -62,7 +64,6 @@
       <option name="CSS" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="CoffeeScript" value="false" />
-      <option name="ECMAScript6" value="false" />
       <option name="HAML" value="false" />
       <option name="HTML" value="false" />
       <option name="HTTP_CLIENT_ENVIRONMENT" value="false" />
@@ -102,7 +103,6 @@
       <option name="CSS" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="CoffeeScript" value="false" />
-      <option name="ECMAScript6" value="false" />
       <option name="HAML" value="false" />
       <option name="HTML" value="false" />
       <option name="HTTP_CLIENT_ENVIRONMENT" value="false" />
@@ -181,6 +181,7 @@
     <variable name="INJECTABLE_NAME_IN_KEBABCASE" expression="lowercaseAndDash(INJECTABLE_NAME)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="injty" value="import { getInjectable } from &quot;@lensapp/injectable&quot;;&#10;&#10;export type $TYPE$ = {};&#10;&#10;export const $FILE$ = getInjectable({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$&quot;,&#10;  instantiate: (di): $TYPE$ =&gt; ({$END$}),&#10;});" description="New injectable file with type" toReformat="false" toShortenFQNames="true">
@@ -196,6 +197,7 @@
     <variable name="NAME" expression="regularExpression(INJECTABLE_NAME, &quot;Injectable&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
 </templateSet>
