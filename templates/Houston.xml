@@ -189,6 +189,7 @@
     <variable name="PROPERTY_NAME_AS_STRING" expression="lowercaseAndDash(PROPERTY_NAME)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="pre" value="&lt;pre&gt;{JSON.stringify($TO_BE_DEBUGGED$, null, 2)}&lt;/pre&gt;" description="Pre-element for pretty-printed debugging" toReformat="false" toShortenFQNames="false">
