@@ -175,6 +175,7 @@
     <variable name="FILE_WITHOUT_INJECTABLE" expression="regularExpression(fileNameWithoutExtension, &quot;.injectable&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="injc" value="const $INJECTABLE_NAME$Injectable = getInjectable({&#10;  id: &quot;$INJECTABLE_NAME_IN_KEBABCASE$&quot;,&#10;  instantiate: (di) =&gt; $END$,&#10;});&#10;" description="New injectable as constant" toReformat="false" toShortenFQNames="true">
@@ -196,6 +197,15 @@
   <template name="ccdin" value="const $NAME$ = di.inject($INJECTABLE_NAME$);" description="Constant for injected but better" toReformat="false" toShortenFQNames="true" useStaticImport="true">
     <variable name="INJECTABLE_NAME" expression="jsSuggestImportedEntityName()" defaultValue="" alwaysStopAt="true" />
     <variable name="NAME" expression="regularExpression(INJECTABLE_NAME, &quot;Injectable&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="tokc" value="const $FILE_IN_CAMELCASE$InjectionToken = getInjectionToken&lt;$TYPE$&gt;({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$-injection-token&quot;,&#10;});&#10;" description="New injection token as constant" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="capitalize(FILE_IN_CAMELCASE)" defaultValue="" alwaysStopAt="true" />
+    <variable name="FILE_IN_CAMELCASE" expression="camelCase(FILE_WITHOUT_INJECTABLE)" defaultValue="" alwaysStopAt="true" />
+    <variable name="FILE_WITHOUT_INJECTABLE" expression="regularExpression(fileNameWithoutExtension, &quot;.injectable&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
