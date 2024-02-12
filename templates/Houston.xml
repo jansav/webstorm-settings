@@ -169,6 +169,7 @@
     <variable name="FUNCTION" expression="" defaultValue="&quot;map&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="settable" value="@observable $PROPERTY_NAME$ = $DEFAULT_VALUE$;&#10;@action&#10;set$PROPERTY_NAME_IN_UPPERCASE$ = $PROPERTY_NAME$ =&gt; {&#10;  this.$PROPERTY_NAME$ = $PROPERTY_NAME$;&#10;}&#10;" description="MobX settable observable property" toReformat="false" toShortenFQNames="false">
@@ -182,6 +183,7 @@
   <template name="impmobx" value="import { action, IComputedValue, computed, observable, runInAction, trace, autorun, observe, onBecomeObserved, onBecomeUnobserved, flow as mobxFlow } from 'mobx';&#10;import { observer } from 'mobx-react';" description="Common MobX imports" toReformat="false" toShortenFQNames="false">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="sprop" value="$PROPERTY_NAME$: 'some-$PROPERTY_NAME_AS_STRING$',$END$" description="Stubbed property" toReformat="false" toShortenFQNames="false">

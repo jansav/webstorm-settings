@@ -152,6 +152,7 @@
   <template name="runa" value="runInAction(() =&gt; { &#10;  $SELECTION$ &#10;});" description="Wrap with MobX runInAction" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="lolf" value="jannelolFor($ACTION_NAME$, $SELECTION$)" description="Performance lol decorator" toReformat="false" toShortenFQNames="true">
