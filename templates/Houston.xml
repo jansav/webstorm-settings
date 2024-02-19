@@ -2,6 +2,7 @@
   <template name="fun" value="() =&gt; {$END$}" description="Function as lambda" toReformat="false" toShortenFQNames="false">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="ctor" value="constructor() {&#10;  $END$&#10;}" description="Constructor" toReformat="true" toShortenFQNames="true">
