@@ -1,5 +1,5 @@
 <application>
-  <component name="FileTypeManager" version="19">
+  <component name="FileTypeManager" version="18">
     <extensionMap>
       <mapping pattern=".npmrc" type="PLAIN_TEXT" />
       <mapping ext="asar" type="PLAIN_TEXT" />
