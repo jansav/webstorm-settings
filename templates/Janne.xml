@@ -57,6 +57,7 @@
   <template name="impasyncfn" value="import type { AsyncFnMock } from &quot;@async-fn/jest&quot;;&#10;import asyncFn from &quot;@async-fn/jest&quot;;" description="Import asyncFn" toReformat="false" toShortenFQNames="false">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="mik" value="Co-authored-by: Mikko Aspiala &lt;mikko.aspiala@gmail.com&gt;" description="Co authored by Mikko" toReformat="false" toShortenFQNames="true">
