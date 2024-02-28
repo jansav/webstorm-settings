@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="19">
     <extensionMap>
+      <mapping pattern="lens-package-build" type="AUTO_DETECTED" />
       <mapping pattern=".npmrc" type="PLAIN_TEXT" />
       <mapping ext="asar" type="PLAIN_TEXT" />
       <mapping ext="ttf" type="PLAIN_TEXT" />
