@@ -153,7 +153,7 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="snap" value="expect(appFake.getRendered().baseElement).toMatchSnapshot();" description="Expect to match snapshot" toReformat="false" toShortenFQNames="true">
+  <template name="snap" value="expect(appFake.getRendered().baseElement).toMatchSnapshot();$END$" description="Expect to match snapshot" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
