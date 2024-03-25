@@ -113,6 +113,7 @@
   <template name="fn" value="jest.fn()" description="Jest mock function" toReformat="false" toShortenFQNames="false">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="jestRequire" value="const $FILE$$END$ = require('./$FILE$').default;" description="Require instead of import so that &quot;jestRewire&quot; works" toReformat="false" toShortenFQNames="false">
