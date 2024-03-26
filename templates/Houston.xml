@@ -64,6 +64,7 @@
   <template name="impreact" value="import React from 'react';" description="Import react" toReformat="false" toShortenFQNames="false">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="enzymeDebug" value="console.log(component.debug());" description="Log enzyme debug for enzyme component wrapper" toReformat="false" toShortenFQNames="false">
