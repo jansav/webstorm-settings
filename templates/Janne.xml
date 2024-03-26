@@ -213,4 +213,11 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name="winbutnotawful" value="type Dependencies = {};&#10;type Props = {};&#10;&#10;export const $FILE$ = withInje$END$ctables&lt;Dependencies, Props&gt;(&#10;  NonInjected$FILE$,&#10;&#10;  {&#10;    getProps: (di, props) =&gt; ({&#10;      $DEPENDENCY$: di.inject($DEPENDENCY$Injectable),&#10;      ...props,&#10;    }),&#10;  },&#10;);&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="FILE" expression="capitalize(camelCase(fileNameWithoutExtension))" defaultValue="" alwaysStopAt="true" />
+    <variable name="DEPENDENCY" expression="" defaultValue="&quot;dependency&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
 </templateSet>
