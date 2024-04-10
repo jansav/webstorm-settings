@@ -10,6 +10,11 @@
     <option name="REFORMAT_ON_PASTE" value="1" />
   </component>
   <component name="DeclarativeInlayHintsSettings">
+    <option name="disabledOptions">
+      <set>
+        <option value="ts.type.hints#function.returns" />
+      </set>
+    </option>
     <option name="providerIdToEnabled">
       <map>
         <entry key="js.chain.hints" value="true" />
