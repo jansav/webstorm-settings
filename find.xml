@@ -28,6 +28,7 @@
     <mask>*.js,*.ts,*.tsx,*.json,*.jsx,!package-lock.json,*.yml,!*.d.ts</mask>
     <mask>*.js,*.ts,*.tsx,*.json,*.jsx,!package-lock.json,*.yml,!*.d.ts,!/node_modules/*</mask>
     <mask>*.js,*.ts,*.tsx,*.json,*.jsx,!package-lock.json,*.yml,!*.d.ts,!node_modules/*</mask>
+    <mask>*.test.tsx</mask>
     <mask>*.js,*.ts,*.tsx,*.json,*.jsx,*.mjs,!package-lock.json,*.yml,!*.d.ts,!node_modules/*</mask>
   </component>
 </application>
