@@ -5,7 +5,7 @@
     <option name="defaultScopeName" value="Project Files" />
     <option name="CASE_SENSITIVE_SEARCH" value="true" />
     <option name="SEARCH_SCOPE" value="Project Files" />
-    <option name="FILE_MASK" value="*.js,*.ts,*.tsx,*.json,*.jsx,*.mjs,!package-lock.json,*.yml,!*.d.ts,!node_modules/*" />
+    <option name="FILE_MASK" value="*.scss" />
     <mask>*.xml</mask>
     <mask>*.css</mask>
     <mask>*.htm</mask>
@@ -30,5 +30,6 @@
     <mask>*.js,*.ts,*.tsx,*.json,*.jsx,!package-lock.json,*.yml,!*.d.ts,!node_modules/*</mask>
     <mask>*.test.tsx</mask>
     <mask>*.js,*.ts,*.tsx,*.json,*.jsx,*.mjs,!package-lock.json,*.yml,!*.d.ts,!node_modules/*</mask>
+    <mask>*.scss</mask>
   </component>
 </application>
