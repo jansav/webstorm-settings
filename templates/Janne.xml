@@ -169,6 +169,7 @@
     <variable name="FILE_WITHOUT_INJECTABLE" expression="regularExpression(fileNameWithoutExtension, &quot;.injectable&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="tok" value="import { getInjectionToken } from &quot;@lensapp/injectable&quot;;&#10;&#10;export type $TYPE$ = {};&#10;&#10;export const $FILE_IN_CAMELCASE$InjectionToken = getInjectionToken&lt;$TYPE$&gt;({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$-injection-token&quot;,&#10;});&#10;" description="New injection token" toReformat="false" toShortenFQNames="true">
@@ -194,6 +195,7 @@
     <variable name="FILE_WITHOUT_INJECTABLE" expression="regularExpression(fileNameWithoutExtension, &quot;.injectable&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="ccdin" value="const $NAME$ = di.inject($INJECTABLE_NAME$);" description="Constant for injected but better" toReformat="false" toShortenFQNames="true" useStaticImport="true">
