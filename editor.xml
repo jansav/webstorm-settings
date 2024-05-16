@@ -9,6 +9,9 @@
     <option name="REFORMAT_BLOCK_ON_RBRACE" value="false" />
     <option name="REFORMAT_ON_PASTE" value="1" />
   </component>
+  <component name="CodeVisionSettings">
+    <option name="enabled" value="false" />
+  </component>
   <component name="DeclarativeInlayHintsSettings">
     <option name="disabledOptions">
       <set>
