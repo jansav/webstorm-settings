@@ -9,5 +9,16 @@
         <option name="textWithMnemonic" value="Switch case" />
       </UniversalActionModel>
     </option>
+    <option name="sortSettingsMap">
+      <map>
+        <entry key="SortAction">
+          <value>
+            <SortSettings>
+              <option name="ignoreLeadingCharacters" value="//" />
+            </SortSettings>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </application>

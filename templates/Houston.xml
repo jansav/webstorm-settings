@@ -2,6 +2,7 @@
   <template name="fun" value="() =&gt; {$END$}" description="Function as lambda" toReformat="false" toShortenFQNames="false">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="ctor" value="constructor() {&#10;  $END$&#10;}" description="Constructor" toReformat="true" toShortenFQNames="true">
@@ -26,6 +27,7 @@
     <variable name="NAME" expression="" defaultValue="firstWord(spaceSeparated(fileNameWithoutExtension()))" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="req" value="require('./$FILE$')$DEFAULT$" description="Require module in same folder" toReformat="false" toShortenFQNames="true">
@@ -62,6 +64,7 @@
   <template name="impreact" value="import React from 'react';" description="Import react" toReformat="false" toShortenFQNames="false">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="enzymeDebug" value="console.log(component.debug());" description="Log enzyme debug for enzyme component wrapper" toReformat="false" toShortenFQNames="false">
@@ -111,6 +114,7 @@
   <template name="fn" value="jest.fn()" description="Jest mock function" toReformat="false" toShortenFQNames="false">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="jestRequire" value="const $FILE$$END$ = require('./$FILE$').default;" description="Require instead of import so that &quot;jestRewire&quot; works" toReformat="false" toShortenFQNames="false">
@@ -156,6 +160,7 @@
   <template name="snap" value="expect(appFake.getRendered().baseElement).toMatchSnapshot();$END$" description="Expect to match snapshot" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="fv" value="{() =&gt; (&#10;  $SELECTION$&#10;)}" description="Wrap children with function" toReformat="true" toShortenFQNames="true">

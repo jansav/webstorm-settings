@@ -1,9 +1,9 @@
 <application>
   <component name="FindSettings">
-    <option name="caseSensitive" value="true" />
     <option name="customScope" value="Project Files" />
     <option name="defaultScopeName" value="Project Files" />
-    <option name="CASE_SENSITIVE_SEARCH" value="true" />
+    <option name="localRegularExpressions" value="true" />
+    <option name="LOCAL_REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="Project Files" />
     <mask>*.xml</mask>
     <mask>*.css</mask>
@@ -27,8 +27,5 @@
     <mask>*.js,*.ts,*.tsx,*.json,*.jsx,!package-lock.json,*.yml,!*.d.ts</mask>
     <mask>*.js,*.ts,*.tsx,*.json,*.jsx,!package-lock.json,*.yml,!*.d.ts,!/node_modules/*</mask>
     <mask>*.js,*.ts,*.tsx,*.json,*.jsx,!package-lock.json,*.yml,!*.d.ts,!node_modules/*</mask>
-    <mask>*.test.tsx</mask>
-    <mask>*.js,*.ts,*.tsx,*.json,*.jsx,*.mjs,!package-lock.json,*.yml,!*.d.ts,!node_modules/*</mask>
-    <mask>*.scss</mask>
   </component>
 </application>
