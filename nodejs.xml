@@ -3,9 +3,7 @@
     <local-interpreter path="$USER_HOME$/Library/pnpm/node">
       <version-cache last-modified="0" />
     </local-interpreter>
-    <local-interpreter path="$USER_HOME$/dev/lens-workspace/lens-desktop-monorepo/node_modules/.bin/electron">
-      <version-cache last-modified="0" />
-    </local-interpreter>
+    <local-interpreter path="$USER_HOME$/dev/lens-workspace/lens-desktop-monorepo/node_modules/.bin/electron" />
     <local-interpreter path="/opt/homebrew/bin/node">
       <version-cache last-modified="0" />
     </local-interpreter>
