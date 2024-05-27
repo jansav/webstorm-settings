@@ -3,6 +3,9 @@
     <local-interpreter path="$USER_HOME$/Library/pnpm/node">
       <version-cache last-modified="0" />
     </local-interpreter>
+    <local-interpreter path="$USER_HOME$/dev/lens-workspace/lens-desktop-monorepo/node_modules/.bin/electron">
+      <version-cache last-modified="0" />
+    </local-interpreter>
     <local-interpreter path="/opt/homebrew/bin/node">
       <version-cache last-modified="0" />
     </local-interpreter>
@@ -50,9 +53,6 @@
     </local-interpreter>
     <local-interpreter path="$USER_HOME$/.nvm/versions/node/v8.17.0/bin/node">
       <version-cache version="8.17.0" last-modified="1576566327000" />
-    </local-interpreter>
-    <local-interpreter path="$USER_HOME$/dev/lens-workspace/lens-desktop-monorepo/node_modules/.bin/electron">
-      <version-cache version="27.3.3" last-modified="1716791836272" />
     </local-interpreter>
   </component>
 </application>
