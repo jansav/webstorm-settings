@@ -1,7 +1,4 @@
 <application>
-  <component name="UsageFilteringRuleState">
-    <option value="com.intellij.usages.impl.rules.ImportUsageFilteringRule" />
-  </component>
   <component name="UsageViewSettings">
     <option name="GROUP_BY_SCOPE" value="true" />
     <option name="PREVIEW_USAGES_SPLITTER_PROPORTIONS" value="0.6821632" />
