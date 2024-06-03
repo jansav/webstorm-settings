@@ -2,9 +2,11 @@
   <component name="StringManipulationState">
     <option name="lastActionModel">
       <UniversalActionModel>
-        <option name="actionClassName" value="osmedile.intellij.stringmanip.align.AlignSelectionsAction" />
-        <option name="description" value="Align selections from both sides by inserting spaces" />
-        <option name="textWithMnemonic" value="Align Selections" />
+        <option name="actionClassName" value="osmedile.intellij.stringmanip.swap.SwapAction" />
+        <option name="description" value="Depending on what is selected or how many carets there are" />
+        <option name="modelClass" value="osmedile.intellij.stringmanip.swap.SwapActionExecutor" />
+        <option name="modelData" value="&lt;SwapActionExecutor /&gt;" />
+        <option name="textWithMnemonic" value="Swap Characters/Selections/Lines/Tokens" />
       </UniversalActionModel>
     </option>
     <option name="sortSettingsMap">
