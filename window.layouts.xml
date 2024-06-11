@@ -1,0 +1,268 @@
+<application>
+  <component name="ToolWindowLayout"><![CDATA[{
+  "layouts": {
+    "Custom": {
+      "v1": [
+        {
+          "id": "Space Code Reviews"
+        },
+        {
+          "id": "Project",
+          "order": 0,
+          "contentUiType": "COMBO",
+          "isVisible": true,
+          "weight": 0.3637153,
+          "sideWeight": 0.519368
+        },
+        {
+          "id": "Commit",
+          "order": 1,
+          "weight": 0.25
+        },
+        {
+          "id": "Structure",
+          "order": 2,
+          "weight": 0.25
+        },
+        {
+          "id": "Bookmarks",
+          "order": 3,
+          "weight": 0.41110107,
+          "sideWeight": 0.49923548,
+          "isSplit": true
+        },
+        {
+          "id": "Learn",
+          "order": 4
+        },
+        {
+          "id": "Pull Requests",
+          "order": 5,
+          "weight": 0.29033613,
+          "sideWeight": 0.79331046
+        },
+        {
+          "id": "VcsChanges",
+          "order": 6,
+          "floatingBounds": [
+            378,
+            104,
+            982,
+            821
+          ],
+          "type": "WINDOWED",
+          "internalType": "WINDOWED",
+          "isActiveOnStart": true,
+          "weight": 0.33010083,
+          "sideWeight": 0.5007082
+        },
+        {
+          "id": "npm",
+          "order": 7,
+          "isVisible": true,
+          "weight": 0.3637153,
+          "sideWeight": 0.480632,
+          "isSplit": true
+        },
+        {
+          "id": "Version Control",
+          "order": 0,
+          "anchor": "BOTTOM",
+          "weight": 0.26805556
+        },
+        {
+          "id": "Problems View",
+          "order": 1,
+          "anchor": "BOTTOM",
+          "weight": 0.13472222
+        },
+        {
+          "id": "Terminal",
+          "order": 2,
+          "anchor": "BOTTOM",
+          "weight": 0.2412037
+        },
+        {
+          "id": "Find",
+          "order": 3,
+          "anchor": "BOTTOM",
+          "weight": 0.24305555
+        },
+        {
+          "id": "TODO",
+          "order": 4,
+          "anchor": "BOTTOM",
+          "weight": 0.3300926
+        },
+        {
+          "id": "Run",
+          "order": 5,
+          "anchor": "BOTTOM",
+          "isVisible": true,
+          "weight": 0.33194447
+        },
+        {
+          "id": "Internal Method Tracing",
+          "order": 6,
+          "anchor": "BOTTOM"
+        },
+        {
+          "id": "File Transfer",
+          "order": 7,
+          "anchor": "BOTTOM"
+        },
+        {
+          "id": "Debug",
+          "order": 8,
+          "anchor": "BOTTOM",
+          "weight": 0.4
+        },
+        {
+          "id": "Inspection",
+          "order": 9,
+          "anchor": "BOTTOM",
+          "weight": 0.4
+        },
+        {
+          "id": "TypeScript",
+          "order": 10,
+          "anchor": "BOTTOM"
+        },
+        {
+          "id": "Messages",
+          "order": 11,
+          "anchor": "BOTTOM",
+          "weight": 0.3300926
+        },
+        {
+          "id": "Services",
+          "order": 12,
+          "anchor": "BOTTOM",
+          "weight": 0.3300926
+        },
+        {
+          "id": "documentation.v2",
+          "anchor": "RIGHT",
+          "weight": 0.33007812,
+          "isSplit": true
+        },
+        {
+          "id": "Notifications",
+          "order": 0,
+          "anchor": "RIGHT",
+          "contentUiType": "COMBO",
+          "weight": 0.2502021
+        },
+        {
+          "id": "Database",
+          "order": 1,
+          "anchor": "RIGHT",
+          "weight": 0.25
+        },
+        {
+          "id": "Gradle",
+          "order": 2,
+          "anchor": "RIGHT",
+          "weight": 0.25
+        },
+        {
+          "id": "Maven",
+          "order": 3,
+          "anchor": "RIGHT",
+          "weight": 0.25
+        },
+        {
+          "id": "String Manipulation",
+          "order": 4,
+          "anchor": "RIGHT"
+        },
+        {
+          "id": "PlantUML",
+          "order": 5,
+          "anchor": "RIGHT"
+        },
+        {
+          "id": "github.copilotToolWindow",
+          "order": 6,
+          "anchor": "RIGHT"
+        }
+      ],
+      "v2": [
+        {
+          "id": "Project",
+          "order": 0,
+          "contentUiType": "COMBO",
+          "weight": 0.25
+        },
+        {
+          "id": "Commit",
+          "order": 1,
+          "weight": 0.25
+        },
+        {
+          "id": "Structure",
+          "order": 2,
+          "weight": 0.25,
+          "isSplit": true
+        },
+        {
+          "id": "Version Control",
+          "order": 0,
+          "anchor": "BOTTOM"
+        },
+        {
+          "id": "Problems",
+          "order": 1,
+          "anchor": "BOTTOM"
+        },
+        {
+          "id": "Problems View",
+          "order": 2,
+          "anchor": "BOTTOM"
+        },
+        {
+          "id": "Terminal",
+          "order": 3,
+          "anchor": "BOTTOM"
+        },
+        {
+          "id": "Services",
+          "order": 4,
+          "anchor": "BOTTOM"
+        },
+        {
+          "id": "Notifications",
+          "order": 0,
+          "anchor": "RIGHT",
+          "contentUiType": "COMBO",
+          "weight": 0.25
+        },
+        {
+          "id": "AIAssistant",
+          "order": 1,
+          "anchor": "RIGHT",
+          "weight": 0.25
+        },
+        {
+          "id": "Database",
+          "order": 2,
+          "anchor": "RIGHT",
+          "weight": 0.25
+        },
+        {
+          "id": "Gradle",
+          "order": 3,
+          "anchor": "RIGHT",
+          "weight": 0.25
+        },
+        {
+          "id": "Maven",
+          "order": 4,
+          "anchor": "RIGHT",
+          "weight": 0.25
+        }
+      ]
+    }
+  }
+}]]></component>
+</application>
