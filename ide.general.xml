@@ -14,5 +14,6 @@
     <entry key="dumb.aware.run.configurations" value="true" />
     <entry key="suppress.focus.stealing" value="false" />
     <entry key="debugger.new.tool.window.layout" value="true" />
+    <entry key="terminal.new.ui" value="true" />
   </component>
 </application>
