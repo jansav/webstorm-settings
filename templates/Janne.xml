@@ -9,6 +9,7 @@
   <template name="impmom" value="import moment from 'moment-timezone';" description="Import moment" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="testaction" value="import itHasDependencies from 'shared-between-everything/src/test-utils/itHasDependencies';&#10;import getRepository from 'shared-between-lambdas/src/getRepository/getRepository';&#10;import itIsBusinessAction from 'shared-between-lambdas/src/test-utils/itIsBusinessAction';&#10;import jsonSchemaValidator from 'shared-between-lambdas/src/validators/jsonSchemaValidator/jsonSchemaValidator';&#10;import * as handler from './$ACTION_NAME$.$ACTION_TYPE$-handler';&#10;import $ACTION_TYPE$Configuration from './$ACTION_TYPE$-configuration.json';&#10;&#10;import {&#10;  handle as $ACTION_NAME$,&#10;  dependencies,&#10;} from './$ACTION_NAME$.$ACTION_TYPE$-handler';&#10;&#10;describe('$ACTION_NAME$.$ACTION_TYPE$-handler', () =&gt; {&#10;  itIsBusinessAction({&#10;    handler,&#10;    validators: [&#10;      expect.configured(jsonSchemaValidator, [$ACTION_TYPE$Configuration.schema]),&#10;    ],&#10;    configuration: $ACTION_TYPE$Configuration,&#10;  });&#10;  &#10;  itHasDependencies({&#10;    requireFunctionWithDependencies: require('./$ACTION_NAME$.$ACTION_TYPE$-handler'),&#10;    expectedDependencies: [&#10;      {&#10;        name: '$DEPENDENCY_NAME$',&#10;        getDependency: () =&gt; $DEPENDENCY_NAME$&#10;      }&#10;    ]&#10;  });&#10;&#10;&#10;  describe('given stubbed dependencies', () =&gt; {&#10;    beforeEach(() =&gt; {&#10;      dependencies.$DEPENDENCY_NAME$ = $DEPENDENCY_STUB$ &#10;    });&#10;&#10;    describe('when called', () =&gt; {&#10;      let actualPromise;&#10;      &#10;      beforeEach(() =&gt; {&#10;        actualPromise = $ACTION_NAME$($END$);&#10;      });&#10;    });&#10;  });&#10;});&#10;" description="Test business action" toReformat="false" toShortenFQNames="true">
@@ -18,6 +19,7 @@
     <variable name="DEPENDENCY_STUB" expression="" defaultValue="&quot;repositoryName =&gt; ({}[repositoryName])&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="busact" value="import getRepository from 'shared-between-lambdas/src/getRepository/getRepository';&#10;import jsonSchemaValidator from 'shared-between-lambdas/src/validators/jsonSchemaValidator/jsonSchemaValidator';&#10;import configuration from './$ACTION_TYPE$-configuration.json';&#10;&#10;const validators = [&#10;  jsonSchemaValidator(configuration.schema),&#10;];&#10;&#10;const dependencies = {&#10;  $DEPENDENCY_NAME$&#10;};&#10;&#10;const handle = ($END$) =&gt; {};&#10;&#10;export { configuration, validators, handle, dependencies };&#10;" description="New business action" toReformat="false" toShortenFQNames="true">
@@ -25,6 +27,7 @@
     <variable name="DEPENDENCY_NAME" expression="" defaultValue="&quot;getRepository&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="intact" value="import configuration from './$ACTION_TYPE$-configuration.json';&#10;&#10;it('test', async () =&gt; {&#10;  const result = await call$ACTION_TYPE_IN_UPPER_FIRST$({&#10;    actionName: configuration.name,&#10;    actionParameters: {&#10;      $END$&#10;    }&#10;  });&#10;&#10;  console.log(result);&#10;});&#10;" description="Integration test for business action" toReformat="false" toShortenFQNames="true">
@@ -32,6 +35,7 @@
     <variable name="ACTION_TYPE_IN_UPPER_FIRST" expression="capitalize(ACTION_TYPE)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="testdep" value="itHasDependencies({&#10;  requireFunctionWithDependencies: require('./$FILE$'),&#10;  expectedDependencies: [&#10;    {&#10;      name: '$DEPENDENCY$',&#10;      getDependency: () =&gt; $DEPENDENCY$$END$&#10;    }&#10;  ]&#10;});&#10;" description="ItHasExportedDependencies test" toReformat="false" toShortenFQNames="false">
@@ -39,6 +43,7 @@
     <variable name="DEPENDENCY" expression="" defaultValue="&quot;dependency&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="inj" value="import { getInjectable } from &quot;@lensapp/injectable&quot;;&#10;&#10;export const $FILE_WITHOUT_INJECTABLE$Injectable = getInjectable({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE_IN_KEBABCASE$&quot;,&#10;  instantiate: (di) =&gt; $END$,&#10;});" description="New injectable file" toReformat="false" toShortenFQNames="true">
@@ -52,6 +57,7 @@
   <template name="impfu" value="import { $END$ } from 'shared-between-everything/src/functionalProgramming';" description="Import function from functional programming" toReformat="false" toShortenFQNames="false">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="impasyncfn" value="import type { AsyncFnMock } from &quot;@async-fn/jest&quot;;&#10;import asyncFn from &quot;@async-fn/jest&quot;;" description="Import asyncFn" toReformat="false" toShortenFQNames="false">
@@ -92,11 +98,13 @@
     <variable name="NAME" expression="" defaultValue="&quot;something&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="dep" value="interface Dependencies {&#10;  $END$&#10;}" description="Interface for Dependencies" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="jan" value="Co-authored-by: Janne Savolainen &lt;janne.savolainen@live.fi&gt;" description="Co authored by Janne" toReformat="false" toShortenFQNames="true">
@@ -148,6 +156,7 @@
     <variable name="RETURN" expression="" defaultValue="&quot;return &quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="runa" value="runInAction(() =&gt; { &#10;  $SELECTION$ &#10;});" description="Wrap with MobX runInAction" toReformat="false" toShortenFQNames="true">
@@ -160,6 +169,7 @@
     <variable name="ACTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="injt" value="import { getInjectable, getInjectionToken } from &quot;@lensapp/injectable&quot;;&#10;&#10;export type $TYPE$ = {};&#10;&#10;export const $FILE_IN_CAMELCASE$InjectionToken = getInjectionToken&lt;$TYPE$&gt;({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$-injection-token&quot;,&#10;});&#10;&#10;export const $FILE$ = getInjectable({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$&quot;,&#10;  instantiate: (di): $TYPE$ =&gt; ({$END$}),&#10;  injectionToken: $FILE_IN_CAMELCASE$InjectionToken&#10;});" description="New injectable file with injection token" toReformat="false" toShortenFQNames="true">
@@ -169,6 +179,7 @@
     <variable name="FILE_WITHOUT_INJECTABLE" expression="regularExpression(fileNameWithoutExtension, &quot;.injectable&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="tok" value="import { getInjectionToken } from &quot;@lensapp/injectable&quot;;&#10;&#10;export type $TYPE$ = {};&#10;&#10;export const $FILE_IN_CAMELCASE$InjectionToken = getInjectionToken&lt;$TYPE$&gt;({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$-injection-token&quot;,&#10;});&#10;" description="New injection token" toReformat="false" toShortenFQNames="true">
@@ -194,6 +205,7 @@
     <variable name="FILE_WITHOUT_INJECTABLE" expression="regularExpression(fileNameWithoutExtension, &quot;.injectable&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="ccdin" value="const $NAME$ = di.inject($INJECTABLE_NAME$);" description="Constant for injected but better" toReformat="false" toShortenFQNames="true" useStaticImport="true">

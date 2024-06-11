@@ -4,17 +4,16 @@
     <option name="COLLAPSE_FILE_HEADER" value="false" />
   </component>
   <component name="CodeInsightSettings">
+    <option name="AUTO_POPUP_JAVADOC_INFO" value="true" />
     <option name="SHOW_FULL_SIGNATURES_IN_PARAMETER_INFO" value="true" />
     <option name="INSERT_BRACE_ON_ENTER" value="false" />
     <option name="REFORMAT_BLOCK_ON_RBRACE" value="false" />
     <option name="REFORMAT_ON_PASTE" value="1" />
   </component>
+  <component name="CodeVisionSettings">
+    <option name="defaultPosition" value="Right" />
+  </component>
   <component name="DeclarativeInlayHintsSettings">
-    <option name="disabledOptions">
-      <set>
-        <option value="ts.type.hints#function.returns" />
-      </set>
-    </option>
     <option name="providerIdToEnabled">
       <map>
         <entry key="js.chain.hints" value="true" />
