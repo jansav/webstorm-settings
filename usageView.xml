@@ -1,7 +1,4 @@
 <application>
-  <component name="ShowUsagesSettings">
-    <option name="GROUP_BY_FILE_STRUCTURE" value="true" />
-  </component>
   <component name="UsageFilteringRuleState">
     <option value="com.intellij.usages.impl.rules.UsageInGeneratedCodeFilteringRule" />
     <option value="com.intellij.usages.impl.rules.ImportUsageFilteringRule" />
