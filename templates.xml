@@ -227,6 +227,10 @@
           <option name="key" value="mermaid_codeFence" />
         </TemplateKey>
         <TemplateKey>
+          <option name="groupName" value="Mermaid Hidden" />
+          <option name="key" value="mermaid_block" />
+        </TemplateKey>
+        <TemplateKey>
           <option name="groupName" value="JavaScript" />
           <option name="key" value="iter" />
         </TemplateKey>
