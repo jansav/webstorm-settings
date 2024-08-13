@@ -16,4 +16,17 @@
     <entry key="debugger.new.tool.window.layout" value="true" />
     <entry key="terminal.new.ui" value="true" />
   </component>
+  <component name="StatusBar">
+    <option name="widgets">
+      <map>
+        <entry key="CodeStyleStatusBarWidget" value="false" />
+        <entry key="CwmWireStatsWidgetFactory" value="false" />
+        <entry key="Encoding" value="false" />
+        <entry key="FlowJSInfo" value="false" />
+        <entry key="LineSeparator" value="false" />
+        <entry key="ReadOnlyAttribute" value="false" />
+        <entry key="webDeployment.default.server.widget" value="false" />
+      </map>
+    </option>
+  </component>
 </application>
