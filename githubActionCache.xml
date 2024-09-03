@@ -2,6 +2,24 @@
   <component name="GitHubActionCache">
     <option name="actions">
       <map>
+        <entry key="./.github/workflows/create-release-in-github.yaml">
+          <value>
+            <GitHubAction>
+              <option name="action" value="true" />
+              <option name="metaData">
+                <map>
+                  <entry key="downloadUrl" value="./.github/workflows/create-release-in-github.yaml" />
+                  <entry key="expiryTime" value="1726555883188" />
+                  <entry key="isAction" value="true" />
+                  <entry key="isLocal" value="true" />
+                  <entry key="isSuppressed" value="false" />
+                  <entry key="name" value="./.github/workflows/create-release-in-github.yaml" />
+                  <entry key="usesValue" value="./.github/workflows/create-release-in-github.yaml" />
+                </map>
+              </option>
+            </GitHubAction>
+          </value>
+        </entry>
         <entry key="$USER_HOME$/dev/lens-desktop-monorepo-for-master/.github/workflows/create-release-in-github.yaml">
           <value>
             <GitHubAction>
