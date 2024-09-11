@@ -11,5 +11,10 @@
       <shortuct text="DOWN" />
       <shortuct text="ENTER" />
     </macro>
+    <macro name="dev-runs">
+      <action id="PinToolwindowTab" />
+      <action id="PinToolwindowTab" />
+      <action id="GotoAction" />
+    </macro>
   </component>
 </application>
