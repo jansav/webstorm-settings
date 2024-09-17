@@ -9,7 +9,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="./.github/workflows/create-release-in-github.yaml" />
-                  <entry key="expiryTime" value="1727776756266" />
+                  <entry key="expiryTime" value="1727782156158" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
                   <entry key="isAction" value="true" />
