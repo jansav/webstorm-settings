@@ -49,7 +49,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/actions/cache/v3/action.yml" />
-                  <entry key="expiryTime" value="1727690065861" />
+                  <entry key="expiryTime" value="1728900889676" />
                   <entry key="githubUrl" value="https://github.com/actions/cache/tree/v3#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
@@ -67,40 +67,15 @@
           <value>
             <GitHubAction>
               <option name="action" value="true" />
-              <option name="inputs">
-                <map>
-                  <entry key="clean" value="r[false] def[true] Whether to execute `git clean -ffdx &amp;&amp; git reset --hard HEAD` before fetching" />
-                  <entry key="fetch-depth" value="r[false] def[1] Number of commits to fetch. 0 indicates all history for all branches and tags." />
-                  <entry key="fetch-tags" value="r[false] def[false] Whether to fetch tags, even if fetch-depth &gt; 0." />
-                  <entry key="filter" value="r[false] def[null]" />
-                  <entry key="github-server-url" value="r[false]  The base URL for the GitHub instance that you are trying to clone from, will use environment defaults to fetch from the same instance that the workflow is running from unless specified. Example URLs are https://github.com or https://my-ghes-server.example.com" />
-                  <entry key="lfs" value="r[false] def[false] Whether to download Git-LFS files" />
-                  <entry key="path" value="r[false]  Relative path under $GITHUB_WORKSPACE to place the repository" />
-                  <entry key="persist-credentials" value="r[false] def[true] Whether to configure the token or SSH key with the local git config" />
-                  <entry key="ref" value="r[false] " />
-                  <entry key="repository" value="r[false] def[${{ github.repository }}] Repository name with owner. For example, actions/checkout" />
-                  <entry key="set-safe-directory" value="r[false] def[true] Add repository path as safe.directory for Git global config by running `git config --global --add safe.directory &lt;path&gt;`" />
-                  <entry key="show-progress" value="r[false] def[true] Whether to show progress status output when fetching." />
-                  <entry key="sparse-checkout" value="r[false] def[null]" />
-                  <entry key="sparse-checkout-cone-mode" value="r[false] def[true]" />
-                  <entry key="ssh-key" value="r[false] " />
-                  <entry key="ssh-known-hosts" value="r[false] " />
-                  <entry key="ssh-strict" value="r[false] def[true]" />
-                  <entry key="ssh-user" value="r[false] def[git]" />
-                  <entry key="submodules" value="r[false] def[false]" />
-                  <entry key="token" value="r[false] def[${{ github.token }}]" />
-                </map>
-              </option>
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/actions/checkout/v4/action.yml" />
-                  <entry key="expiryTime" value="1727690065861" />
+                  <entry key="expiryTime" value="1728900889676" />
                   <entry key="githubUrl" value="https://github.com/actions/checkout/tree/v4#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
                   <entry key="isAction" value="true" />
                   <entry key="isLocal" value="false" />
-                  <entry key="isResolved" value="true" />
                   <entry key="isSuppressed" value="false" />
                   <entry key="name" value="actions/checkout" />
                   <entry key="usesValue" value="actions/checkout@v4" />
@@ -116,7 +91,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/actions/setup-go/v2/action.yml" />
-                  <entry key="expiryTime" value="1727690065861" />
+                  <entry key="expiryTime" value="1728900889676" />
                   <entry key="githubUrl" value="https://github.com/actions/setup-go/tree/v2#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
@@ -134,36 +109,18 @@
           <value>
             <GitHubAction>
               <option name="action" value="true" />
-              <option name="inputs">
-                <map>
-                  <entry key="architecture" value="r[false]  Target architecture for Go to use. Examples: x86, x64. Will use system architecture by default." />
-                  <entry key="cache" value="r[false] def[false] Used to specify whether caching is needed. Set to true, if you'd like to enable caching." />
-                  <entry key="cache-dependency-path" value="r[false]  Used to specify the path to a dependency file - go.sum" />
-                  <entry key="check-latest" value="r[false] def[false] Set this option to true if you want the action to always check for the latest available version that satisfies the version spec" />
-                  <entry key="go-version" value="r[false]  The Go version to download (if necessary) and use. Supports semver spec and ranges." />
-                  <entry key="go-version-file" value="r[false]  Path to the go.mod or go.work file." />
-                  <entry key="token" value="r[false] def[${{ github.server_url == 'https://github.com' &amp;&amp; github.token || '' }}] Used to pull node distributions from go-versions. Since there's a default, this is typically not supplied by the user. When running this action on github.com, the default value is sufficient. When running on GHES, you can pass a personal access token for github.com if you are experiencing rate limiting." />
-                </map>
-              </option>
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/actions/setup-go/v3/action.yml" />
-                  <entry key="expiryTime" value="1727690065860" />
+                  <entry key="expiryTime" value="1728900889676" />
                   <entry key="githubUrl" value="https://github.com/actions/setup-go/tree/v3#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
                   <entry key="isAction" value="true" />
                   <entry key="isLocal" value="false" />
-                  <entry key="isResolved" value="true" />
                   <entry key="isSuppressed" value="false" />
                   <entry key="name" value="actions/setup-go" />
                   <entry key="usesValue" value="actions/setup-go@v3" />
-                </map>
-              </option>
-              <option name="outputs">
-                <map>
-                  <entry key="cache-hit" value=" A boolean value to indicate if a cache was hit" />
-                  <entry key="go-version" value=" The installed Go version. Useful when given a version range as input." />
                 </map>
               </option>
             </GitHubAction>
@@ -173,39 +130,18 @@
           <value>
             <GitHubAction>
               <option name="action" value="true" />
-              <option name="inputs">
-                <map>
-                  <entry key="always-auth" value="r[false] def[false] Set always-auth in npmrc." />
-                  <entry key="architecture" value="r[false]  Target architecture for Node to use. Examples: x86, x64. Will use system architecture by default." />
-                  <entry key="cache" value="r[false]  Used to specify a package manager for caching in the default directory. Supported values: npm, yarn, pnpm." />
-                  <entry key="cache-dependency-path" value="r[false]  Used to specify the path to a dependency file: package-lock.json, yarn.lock, etc. Supports wildcards or a list of file names for caching multiple dependencies." />
-                  <entry key="check-latest" value="r[false] def[false] Set this option if you want the action to check for the latest available version that satisfies the version spec." />
-                  <entry key="node-version" value="r[false]  Version Spec of the version to use. Examples: 12.x, 10.15.1, &gt;=10.15.0." />
-                  <entry key="node-version-file" value="r[false]  File containing the version Spec of the version to use.  Examples: package.json, .nvmrc, .node-version, .tool-versions." />
-                  <entry key="registry-url" value="r[false]  Optional registry to set up for auth. Will set the registry in a project level .npmrc and .yarnrc file, and set up auth to read in from env.NODE_AUTH_TOKEN." />
-                  <entry key="scope" value="r[false]  Optional scope for authenticating against scoped registries. Will fall back to the repository owner when using the GitHub Packages registry (https://npm.pkg.github.com/)." />
-                  <entry key="token" value="r[false] def[${{ github.server_url == 'https://github.com' &amp;&amp; github.token || '' }}] Used to pull node distributions from node-versions. Since there's a default, this is typically not supplied by the user. When running this action on github.com, the default value is sufficient. When running on GHES, you can pass a personal access token for github.com if you are experiencing rate limiting." />
-                </map>
-              </option>
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/actions/setup-node/v4/action.yml" />
-                  <entry key="expiryTime" value="1727690065861" />
+                  <entry key="expiryTime" value="1728900889676" />
                   <entry key="githubUrl" value="https://github.com/actions/setup-node/tree/v4#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
                   <entry key="isAction" value="true" />
                   <entry key="isLocal" value="false" />
-                  <entry key="isResolved" value="true" />
                   <entry key="isSuppressed" value="false" />
                   <entry key="name" value="actions/setup-node" />
                   <entry key="usesValue" value="actions/setup-node@v4" />
-                </map>
-              </option>
-              <option name="outputs">
-                <map>
-                  <entry key="cache-hit" value=" A boolean value to indicate if a cache was hit." />
-                  <entry key="node-version" value=" The installed node version." />
                 </map>
               </option>
             </GitHubAction>
@@ -215,33 +151,18 @@
           <value>
             <GitHubAction>
               <option name="action" value="true" />
-              <option name="inputs">
-                <map>
-                  <entry key="architecture" value="r[false]  The target architecture (x86, x64) of the Python interpreter." />
-                  <entry key="cache" value="r[false]  Used to specify a package manager for caching in the default directory. Supported values: pip, pipenv." />
-                  <entry key="cache-dependency-path" value="r[false]  Used to specify the path to dependency files. Supports wildcards or a list of file names for caching multiple dependencies." />
-                  <entry key="python-version" value="r[false] def[3.x] Version range or exact version of a Python version to use, using SemVer's version range syntax." />
-                  <entry key="token" value="r[false] def[${{ github.token }}] Used to pull python distributions from actions/python-versions. Since there's a default, this is typically not supplied by the user." />
-                </map>
-              </option>
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/actions/setup-python/v2/action.yml" />
-                  <entry key="expiryTime" value="1727690065861" />
+                  <entry key="expiryTime" value="1728900889676" />
                   <entry key="githubUrl" value="https://github.com/actions/setup-python/tree/v2#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
                   <entry key="isAction" value="true" />
                   <entry key="isLocal" value="false" />
-                  <entry key="isResolved" value="true" />
                   <entry key="isSuppressed" value="false" />
                   <entry key="name" value="actions/setup-python" />
                   <entry key="usesValue" value="actions/setup-python@v2" />
-                </map>
-              </option>
-              <option name="outputs">
-                <map>
-                  <entry key="python-version" value=" The installed python version. Useful when given a version range as input." />
                 </map>
               </option>
             </GitHubAction>
@@ -254,7 +175,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/actions/stale/v4/action.yml" />
-                  <entry key="expiryTime" value="1727690065861" />
+                  <entry key="expiryTime" value="1728900889676" />
                   <entry key="githubUrl" value="https://github.com/actions/stale/tree/v4#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
@@ -275,7 +196,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/actions/upload-artifact/v4/action.yml" />
-                  <entry key="expiryTime" value="1727690065861" />
+                  <entry key="expiryTime" value="1728900889676" />
                   <entry key="githubUrl" value="https://github.com/actions/upload-artifact/tree/v4#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
@@ -296,7 +217,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/aws-actions/configure-aws-credentials/v4/action.yml" />
-                  <entry key="expiryTime" value="1727690065861" />
+                  <entry key="expiryTime" value="1728900889676" />
                   <entry key="githubUrl" value="https://github.com/aws-actions/configure-aws-credentials/tree/v4#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
@@ -314,35 +235,18 @@
           <value>
             <GitHubAction>
               <option name="action" value="true" />
-              <option name="inputs">
-                <map>
-                  <entry key="files" value="r[true]  Newline-delimited list of path globs for asset files to upload for analysis" />
-                  <entry key="github_token" value="r[false] def[${{ github.token }}] The GitHub token used to create an authenticated client for GitHub API" />
-                  <entry key="monitor_path" value="r[false] def[/] A path relative to current monitor user root folder to upload files" />
-                  <entry key="request_rate" value="r[true] def[0] API request-rate in requests/minute" />
-                  <entry key="update_release_body" value="r[true] def[false] If enabled, analysis link(s) will be appended to the release body" />
-                  <entry key="vt_api_key" value="r[true]  The GitHub token used to create an authenticated client for GitHub API" />
-                  <entry key="vt_monitor" value="r[false] def[false] If enabled, files will be uploaded to VirusTotal Monitor endpoint" />
-                </map>
-              </option>
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/crazy-max/ghaction-virustotal/v3/action.yml" />
-                  <entry key="expiryTime" value="1727690065861" />
+                  <entry key="expiryTime" value="1728900889676" />
                   <entry key="githubUrl" value="https://github.com/crazy-max/ghaction-virustotal/tree/v3#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
                   <entry key="isAction" value="true" />
                   <entry key="isLocal" value="false" />
-                  <entry key="isResolved" value="true" />
                   <entry key="isSuppressed" value="false" />
                   <entry key="name" value="crazy-max/ghaction-virustotal" />
                   <entry key="usesValue" value="crazy-max/ghaction-virustotal@v3" />
-                </map>
-              </option>
-              <option name="outputs">
-                <map>
-                  <entry key="analysis" value=" Analysis results formatted as asset=analysisURL (comma separated)" />
                 </map>
               </option>
             </GitHubAction>
@@ -355,7 +259,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/medyagh/setup-minikube/master/action.yml" />
-                  <entry key="expiryTime" value="1727690065861" />
+                  <entry key="expiryTime" value="1728900889676" />
                   <entry key="githubUrl" value="https://github.com/medyagh/setup-minikube/tree/master#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
@@ -373,58 +277,18 @@
           <value>
             <GitHubAction>
               <option name="action" value="true" />
-              <option name="inputs">
-                <map>
-                  <entry key="allowUpdates" value="r[false]  An optional flag which indicates if we should update a release if it already exists. Defaults to false." />
-                  <entry key="artifact" value="r[false]  An optional set of paths representing artifacts to upload to the release. This may be a single path or a comma delimited list of paths (or globs)" />
-                  <entry key="artifactContentType" value="r[false]  The content type of the artifact. Defaults to raw" />
-                  <entry key="artifactErrorsFailBuild" value="r[false]  An optional flag which indicates if artifact read or upload errors should fail the build." />
-                  <entry key="artifacts" value="r[false]  An optional set of paths representing artifacts to upload to the release. This may be a single path or a comma delimited list of paths (or globs)" />
-                  <entry key="body" value="r[false]  An optional body for the release." />
-                  <entry key="bodyFile" value="r[false]  An optional body file for the release. This should be the path to the file" />
-                  <entry key="commit" value="r[false]  An optional commit reference. This will be used to create the tag if it does not exist." />
-                  <entry key="discussionCategory" value="r[false]  When provided this will generate a discussion of the specified category. The category must exist otherwise this will cause the action to fail. This isn't used with draft releases" />
-                  <entry key="draft" value="r[false]  Optionally marks this release as a draft release. Set to true to enable." />
-                  <entry key="generateReleaseNotes" value="r[false] def[false] Indicates if release notes should be automatically generated." />
-                  <entry key="makeLatest" value="r[false] def[legacy] Indicates if the release should be the &quot;latest&quot; release or not." />
-                  <entry key="name" value="r[false]  An optional name for the release. If this is omitted the tag will be used." />
-                  <entry key="omitBody" value="r[false] def[false] Indicates if the release body should be omitted." />
-                  <entry key="omitBodyDuringUpdate" value="r[false] def[false] Indicates if the release body should be omitted during updates. The body will still be applied for newly created releases. This will preserve the existing body during updates." />
-                  <entry key="omitDraftDuringUpdate" value="r[false] def[false] Indicates if the draft flag should be omitted during updates. The draft flag will still be applied for newly created releases. This will preserve the existing draft state during updates." />
-                  <entry key="omitName" value="r[false] def[false] Indicates if the release name should be omitted." />
-                  <entry key="omitNameDuringUpdate" value="r[false] def[false] Indicates if the release name should be omitted during updates. The name will still be applied for newly created releases. This will preserve the existing name during updates." />
-                  <entry key="omitPrereleaseDuringUpdate" value="r[false] def[false] Indicates if the prerelease flag should be omitted during updates. The prerelease flag will still be applied for newly created releases. This will preserve the existing prerelease state during updates." />
-                  <entry key="owner" value="r[false]  Optionally specify the owner of the repo where the release should be generated. Defaults to current repo's owner." />
-                  <entry key="prerelease" value="r[false]  Optionally marks this release as prerelease. Set to true to enable." />
-                  <entry key="removeArtifacts" value="r[false] def[false] Indicates if existing release artifacts should be removed, Defaults to false." />
-                  <entry key="replacesArtifacts" value="r[false] def[true] Indicates if existing release artifacts should be replaced. Defaults to true." />
-                  <entry key="repo" value="r[false]  Optionally specify the repo where the release should be generated. Defaults to current repo" />
-                  <entry key="skipIfReleaseExists" value="r[false] def[false] When skipIfReleaseExists is enabled the action will be skipped if a non-draft release already exists for the provided tag." />
-                  <entry key="tag" value="r[false]  An optional tag for the release. If this is omitted the git ref will be used (if it is a tag)." />
-                  <entry key="token" value="r[false] def[${{ github.token }}] The Github token." />
-                  <entry key="updateOnlyUnreleased" value="r[false] def[false] When allowUpdates is enabled, this will fail the action if the release it is updating is not a draft or a prerelease." />
-                </map>
-              </option>
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/ncipollo/release-action/v1/action.yml" />
-                  <entry key="expiryTime" value="1727690065861" />
+                  <entry key="expiryTime" value="1728900889676" />
                   <entry key="githubUrl" value="https://github.com/ncipollo/release-action/tree/v1#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
                   <entry key="isAction" value="true" />
                   <entry key="isLocal" value="false" />
-                  <entry key="isResolved" value="true" />
                   <entry key="isSuppressed" value="false" />
                   <entry key="name" value="ncipollo/release-action" />
                   <entry key="usesValue" value="ncipollo/release-action@v1" />
-                </map>
-              </option>
-              <option name="outputs">
-                <map>
-                  <entry key="html_url" value=" The HTML URL of the release." />
-                  <entry key="id" value=" The identifier of the created release." />
-                  <entry key="upload_url" value=" The URL for uploading assets to the release." />
                 </map>
               </option>
             </GitHubAction>
@@ -434,43 +298,18 @@
           <value>
             <GitHubAction>
               <option name="action" value="true" />
-              <option name="inputs">
-                <map>
-                  <entry key="command" value="r[true]  The command to run" />
-                  <entry key="continue_on_error" value="r[false] def[false] Exits successfully even if an error occurs.  Same as native continue-on-error behavior, but for use in composite actions. Default is false" />
-                  <entry key="max_attempts" value="r[true] def[3] Number of attempts to make before failing the step" />
-                  <entry key="new_command_on_retry" value="r[false]  Command to run if the first attempt fails. This command will be called on all subsequent attempts." />
-                  <entry key="on_retry_command" value="r[false]  Command to run before a retry (such as a cleanup script).  Any error thrown from retry command is caught and surfaced as a warning." />
-                  <entry key="polling_interval_seconds" value="r[false] def[1] Number of seconds to wait for each check that command has completed running" />
-                  <entry key="retry_on" value="r[false]  Event to retry on.  Currently supported [any, timeout, error]" />
-                  <entry key="retry_on_exit_code" value="r[false]  Specific exit code to retry on. This will only retry for the given error code and fail immediately other error codes." />
-                  <entry key="retry_wait_seconds" value="r[false] def[10] Number of seconds to wait before attempting the next retry" />
-                  <entry key="shell" value="r[false]  Alternate shell to use (defaults to powershell on windows, bash otherwise).  Supports bash, python, pwsh, sh, cmd, and powershell" />
-                  <entry key="timeout_minutes" value="r[false]  Minutes to wait before attempt times out.  Must only specify either minutes or seconds" />
-                  <entry key="timeout_seconds" value="r[false]  Seconds to wait before attempt times out.  Must only specify either minutes or seconds" />
-                  <entry key="warning_on_retry" value="r[false] def[true] Whether to output a warning on retry, or just output to info. Defaults to true" />
-                </map>
-              </option>
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/nick-fields/retry/v3/action.yml" />
-                  <entry key="expiryTime" value="1727690065861" />
+                  <entry key="expiryTime" value="1728900889676" />
                   <entry key="githubUrl" value="https://github.com/nick-fields/retry/tree/v3#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
                   <entry key="isAction" value="true" />
                   <entry key="isLocal" value="false" />
-                  <entry key="isResolved" value="true" />
                   <entry key="isSuppressed" value="false" />
                   <entry key="name" value="nick-fields/retry" />
                   <entry key="usesValue" value="nick-fields/retry@v3" />
-                </map>
-              </option>
-              <option name="outputs">
-                <map>
-                  <entry key="exit_code" value=" The final exit code returned by the command" />
-                  <entry key="exit_error" value=" The final error returned by the command" />
-                  <entry key="total_attempts" value=" The final number of attempts made" />
                 </map>
               </option>
             </GitHubAction>
@@ -480,37 +319,18 @@
           <value>
             <GitHubAction>
               <option name="action" value="true" />
-              <option name="inputs">
-                <map>
-                  <entry key="fileName" value="r[false] def[*] Name of the file to download (use '*' to download all assets other than tarball or zipball)" />
-                  <entry key="github-api-url" value="r[false] def[https://api.github.com] The URL of the Github API, only use this input if you are using Github Enterprise" />
-                  <entry key="latest" value="r[false] def[false] A flag to choose between latest release and remaining releases" />
-                  <entry key="out-file-path" value="r[true] def[.] Relative path under $GITHUB_WORKSPACE to place the downloaded files" />
-                  <entry key="repository" value="r[false] def[${{ github.repository }}] The source repository path. Expected format {owner}/{repo}" />
-                  <entry key="tag" value="r[false]  The github tag to download the release from" />
-                  <entry key="tarBall" value="r[false] def[false] Download tarball from assets" />
-                  <entry key="token" value="r[false] def[${{ github.token }}] Github token to access private repos" />
-                  <entry key="zipBall" value="r[false] def[false] Download zipball from assets" />
-                </map>
-              </option>
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/robinraju/release-downloader/v1.5/action.yml" />
-                  <entry key="expiryTime" value="1727690065861" />
+                  <entry key="expiryTime" value="1728900889676" />
                   <entry key="githubUrl" value="https://github.com/robinraju/release-downloader/tree/v1.5#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
                   <entry key="isAction" value="true" />
                   <entry key="isLocal" value="false" />
-                  <entry key="isResolved" value="true" />
                   <entry key="isSuppressed" value="false" />
                   <entry key="name" value="robinraju/release-downloader" />
                   <entry key="usesValue" value="robinraju/release-downloader@v1.5" />
-                </map>
-              </option>
-              <option name="outputs">
-                <map>
-                  <entry key="tag_name" value=" The github tag used to download the release" />
                 </map>
               </option>
             </GitHubAction>
