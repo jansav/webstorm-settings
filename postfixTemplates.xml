@@ -10,11 +10,11 @@
     </template>
     <template id="lg@userDefined" key=".lg" provider="builtin.js" language-level="ES6" topmost="false">
       <conditions />
-      <template name="fakeKey" value="console.log(&quot;$EXPR$&quot;, $EXPR$$END$);" toReformat="true" toShortenFQNames="true" />
+      <template name="fakeKey" value="console.log(&quot;$EXPR$&quot;, $EXPR$$END$);" description="" toReformat="true" toShortenFQNames="true" />
     </template>
     <template id="str@userDefined" key=".stringify" provider="builtin.js" language-level="ES6" topmost="false">
       <conditions />
-      <template name="fakeKey" value="JSON.stringify($EXPR$, null, 2)" toReformat="true" toShortenFQNames="true" />
+      <template name="fakeKey" value="JSON.stringify($EXPR$, null, 2)" description="" toReformat="true" toShortenFQNames="true" />
     </template>
     <template id="imp@userDefined" key=".imp" provider="builtin.js" language-level="ES5" topmost="false">
       <conditions />
