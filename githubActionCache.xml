@@ -9,7 +9,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="./.github/workflows/create-release-in-github.yaml" />
-                  <entry key="expiryTime" value="1729680823984" />
+                  <entry key="expiryTime" value="1729775605390" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
                   <entry key="isAction" value="true" />
@@ -67,6 +67,30 @@
           <value>
             <GitHubAction>
               <option name="action" value="true" />
+              <option name="inputs">
+                <map>
+                  <entry key="clean" value="r[false] def[true] Whether to execute `git clean -ffdx &amp;&amp; git reset --hard HEAD` before fetching" />
+                  <entry key="fetch-depth" value="r[false] def[1] Number of commits to fetch. 0 indicates all history for all branches and tags." />
+                  <entry key="fetch-tags" value="r[false] def[false] Whether to fetch tags, even if fetch-depth &gt; 0." />
+                  <entry key="filter" value="r[false] def[null]" />
+                  <entry key="github-server-url" value="r[false]  The base URL for the GitHub instance that you are trying to clone from, will use environment defaults to fetch from the same instance that the workflow is running from unless specified. Example URLs are https://github.com or https://my-ghes-server.example.com" />
+                  <entry key="lfs" value="r[false] def[false] Whether to download Git-LFS files" />
+                  <entry key="path" value="r[false]  Relative path under $GITHUB_WORKSPACE to place the repository" />
+                  <entry key="persist-credentials" value="r[false] def[true] Whether to configure the token or SSH key with the local git config" />
+                  <entry key="ref" value="r[false] " />
+                  <entry key="repository" value="r[false] def[${{ github.repository }}] Repository name with owner. For example, actions/checkout" />
+                  <entry key="set-safe-directory" value="r[false] def[true] Add repository path as safe.directory for Git global config by running `git config --global --add safe.directory &lt;path&gt;`" />
+                  <entry key="show-progress" value="r[false] def[true] Whether to show progress status output when fetching." />
+                  <entry key="sparse-checkout" value="r[false] def[null]" />
+                  <entry key="sparse-checkout-cone-mode" value="r[false] def[true]" />
+                  <entry key="ssh-key" value="r[false] " />
+                  <entry key="ssh-known-hosts" value="r[false] " />
+                  <entry key="ssh-strict" value="r[false] def[true]" />
+                  <entry key="ssh-user" value="r[false] def[git]" />
+                  <entry key="submodules" value="r[false] def[false]" />
+                  <entry key="token" value="r[false] def[${{ github.token }}]" />
+                </map>
+              </option>
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/actions/checkout/v4/action.yml" />
@@ -76,9 +100,16 @@
                   <entry key="ignoredOutputs" value="" />
                   <entry key="isAction" value="true" />
                   <entry key="isLocal" value="false" />
+                  <entry key="isResolved" value="true" />
                   <entry key="isSuppressed" value="false" />
                   <entry key="name" value="actions/checkout" />
                   <entry key="usesValue" value="actions/checkout@v4" />
+                </map>
+              </option>
+              <option name="outputs">
+                <map>
+                  <entry key="commit" value=" The commit SHA that was checked out" />
+                  <entry key="ref" value=" The branch, tag or SHA that was checked out" />
                 </map>
               </option>
             </GitHubAction>
@@ -130,6 +161,20 @@
           <value>
             <GitHubAction>
               <option name="action" value="true" />
+              <option name="inputs">
+                <map>
+                  <entry key="always-auth" value="r[false] def[false] Set always-auth in npmrc." />
+                  <entry key="architecture" value="r[false]  Target architecture for Node to use. Examples: x86, x64. Will use system architecture by default." />
+                  <entry key="cache" value="r[false]  Used to specify a package manager for caching in the default directory. Supported values: npm, yarn, pnpm." />
+                  <entry key="cache-dependency-path" value="r[false]  Used to specify the path to a dependency file: package-lock.json, yarn.lock, etc. Supports wildcards or a list of file names for caching multiple dependencies." />
+                  <entry key="check-latest" value="r[false] def[false] Set this option if you want the action to check for the latest available version that satisfies the version spec." />
+                  <entry key="node-version" value="r[false]  Version Spec of the version to use. Examples: 12.x, 10.15.1, &gt;=10.15.0." />
+                  <entry key="node-version-file" value="r[false]  File containing the version Spec of the version to use.  Examples: package.json, .nvmrc, .node-version, .tool-versions." />
+                  <entry key="registry-url" value="r[false]  Optional registry to set up for auth. Will set the registry in a project level .npmrc and .yarnrc file, and set up auth to read in from env.NODE_AUTH_TOKEN." />
+                  <entry key="scope" value="r[false]  Optional scope for authenticating against scoped registries. Will fall back to the repository owner when using the GitHub Packages registry (https://npm.pkg.github.com/)." />
+                  <entry key="token" value="r[false] def[${{ github.server_url == 'https://github.com' &amp;&amp; github.token || '' }}] Used to pull node distributions from node-versions. Since there's a default, this is typically not supplied by the user. When running this action on github.com, the default value is sufficient. When running on GHES, you can pass a personal access token for github.com if you are experiencing rate limiting." />
+                </map>
+              </option>
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/actions/setup-node/v4/action.yml" />
@@ -139,9 +184,16 @@
                   <entry key="ignoredOutputs" value="" />
                   <entry key="isAction" value="true" />
                   <entry key="isLocal" value="false" />
+                  <entry key="isResolved" value="true" />
                   <entry key="isSuppressed" value="false" />
                   <entry key="name" value="actions/setup-node" />
                   <entry key="usesValue" value="actions/setup-node@v4" />
+                </map>
+              </option>
+              <option name="outputs">
+                <map>
+                  <entry key="cache-hit" value=" A boolean value to indicate if a cache was hit." />
+                  <entry key="node-version" value=" The installed node version." />
                 </map>
               </option>
             </GitHubAction>
@@ -252,6 +304,77 @@
             </GitHubAction>
           </value>
         </entry>
+        <entry key="doyensec/electronegativity-action@v1.1">
+          <value>
+            <GitHubAction>
+              <option name="action" value="true" />
+              <option name="inputs">
+                <map>
+                  <entry key="checks" value="r[false]  --checks argument. See https://github.com/doyensec/electronegativity/blob/master/README.md#cli" />
+                  <entry key="confidence" value="r[false]  --confidence argument. See https://github.com/doyensec/electronegativity/blob/master/README.md#cli" />
+                  <entry key="electron-version" value="r[false]  --electron-version argument. See https://github.com/doyensec/electronegativity/blob/master/README.md#cli" />
+                  <entry key="exclude-checks" value="r[false]  --exclude-checks argument. See https://github.com/doyensec/electronegativity/blob/master/README.md#cli" />
+                  <entry key="input" value="r[false] def[.] --input argument. See https://github.com/doyensec/electronegativity/blob/master/README.md#cli" />
+                  <entry key="node-args" value="r[false]  If you're running into the &quot;Fatal Error JavaScript heap out of memory&quot;, you can pass additional arguments to node like --max-old-space-size=4096" />
+                  <entry key="parser-plugins" value="r[false]  --parser-plugins argument. See https://github.com/doyensec/electronegativity/blob/master/README.md#cli" />
+                  <entry key="severity" value="r[false]  --severity argument. See https://github.com/doyensec/electronegativity/blob/master/README.md#cli" />
+                  <entry key="upgrade" value="r[false]  --upgrade argument. See https://github.com/doyensec/electronegativity/blob/master/README.md#cli" />
+                  <entry key="version" value="r[false] def[latest] NPM version of Electronegativity" />
+                </map>
+              </option>
+              <option name="metaData">
+                <map>
+                  <entry key="downloadUrl" value="https://raw.githubusercontent.com/doyensec/electronegativity-action/v1.1/action.yml" />
+                  <entry key="expiryTime" value="1729750975488" />
+                  <entry key="githubUrl" value="https://github.com/doyensec/electronegativity-action/tree/v1.1#readme" />
+                  <entry key="isAction" value="true" />
+                  <entry key="isLocal" value="false" />
+                  <entry key="isResolved" value="true" />
+                  <entry key="isSuppressed" value="false" />
+                  <entry key="name" value="doyensec/electronegativity-action" />
+                  <entry key="usesValue" value="doyensec/electronegativity-action@v1.1" />
+                </map>
+              </option>
+            </GitHubAction>
+          </value>
+        </entry>
+        <entry key="github/codeql-action/upload-sarif@v1">
+          <value>
+            <GitHubAction>
+              <option name="action" value="true" />
+              <option name="inputs">
+                <map>
+                  <entry key="category" value="r[false]  String used by Code Scanning for matching the analyses" />
+                  <entry key="checkout_path" value="r[false] def[${{ github.workspace }}] The path at which the analyzed repository was checked out. Used to relativize any absolute paths in the uploaded SARIF file." />
+                  <entry key="matrix" value="r[false] def[${{ toJson(matrix) }}]" />
+                  <entry key="ref" value="r[false]  The ref where results will be uploaded. If not provided, the Action will use the GITHUB_REF environment variable. If provided, the sha input must be provided as well. This input is not available in pull requests from forks." />
+                  <entry key="sarif_file" value="r[false] def[../results]" />
+                  <entry key="sha" value="r[false]  The sha of the HEAD of the ref where results will be uploaded. If not provided, the Action will use the GITHUB_SHA environment variable. If provided, the ref input must be provided as well. This input is not available in pull requests from forks." />
+                  <entry key="token" value="r[false] def[${{ github.token }}]" />
+                  <entry key="wait-for-processing" value="r[true] def[true] If true, the Action will wait for the uploaded SARIF to be processed before completing." />
+                </map>
+              </option>
+              <option name="metaData">
+                <map>
+                  <entry key="downloadUrl" value="https://raw.githubusercontent.com/github/codeql-action/v1/upload-sarif/action.yml" />
+                  <entry key="expiryTime" value="1729750975488" />
+                  <entry key="githubUrl" value="https://github.com/github/codeql-action/tree/v1/upload-sarif#readme" />
+                  <entry key="isAction" value="true" />
+                  <entry key="isLocal" value="false" />
+                  <entry key="isResolved" value="true" />
+                  <entry key="isSuppressed" value="false" />
+                  <entry key="name" value="github/codeql-action" />
+                  <entry key="usesValue" value="github/codeql-action/upload-sarif@v1" />
+                </map>
+              </option>
+              <option name="outputs">
+                <map>
+                  <entry key="sarif-id" value=" The ID of the uploaded SARIF file." />
+                </map>
+              </option>
+            </GitHubAction>
+          </value>
+        </entry>
         <entry key="medyagh/setup-minikube@master">
           <value>
             <GitHubAction>
@@ -298,6 +421,23 @@
           <value>
             <GitHubAction>
               <option name="action" value="true" />
+              <option name="inputs">
+                <map>
+                  <entry key="command" value="r[true]  The command to run" />
+                  <entry key="continue_on_error" value="r[false] def[false] Exits successfully even if an error occurs.  Same as native continue-on-error behavior, but for use in composite actions. Default is false" />
+                  <entry key="max_attempts" value="r[true] def[3] Number of attempts to make before failing the step" />
+                  <entry key="new_command_on_retry" value="r[false]  Command to run if the first attempt fails. This command will be called on all subsequent attempts." />
+                  <entry key="on_retry_command" value="r[false]  Command to run before a retry (such as a cleanup script).  Any error thrown from retry command is caught and surfaced as a warning." />
+                  <entry key="polling_interval_seconds" value="r[false] def[1] Number of seconds to wait for each check that command has completed running" />
+                  <entry key="retry_on" value="r[false]  Event to retry on.  Currently supported [any, timeout, error]" />
+                  <entry key="retry_on_exit_code" value="r[false]  Specific exit code to retry on. This will only retry for the given error code and fail immediately other error codes." />
+                  <entry key="retry_wait_seconds" value="r[false] def[10] Number of seconds to wait before attempting the next retry" />
+                  <entry key="shell" value="r[false]  Alternate shell to use (defaults to powershell on windows, bash otherwise).  Supports bash, python, pwsh, sh, cmd, and powershell" />
+                  <entry key="timeout_minutes" value="r[false]  Minutes to wait before attempt times out.  Must only specify either minutes or seconds" />
+                  <entry key="timeout_seconds" value="r[false]  Seconds to wait before attempt times out.  Must only specify either minutes or seconds" />
+                  <entry key="warning_on_retry" value="r[false] def[true] Whether to output a warning on retry, or just output to info. Defaults to true" />
+                </map>
+              </option>
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/nick-fields/retry/v3/action.yml" />
@@ -307,9 +447,17 @@
                   <entry key="ignoredOutputs" value="" />
                   <entry key="isAction" value="true" />
                   <entry key="isLocal" value="false" />
+                  <entry key="isResolved" value="true" />
                   <entry key="isSuppressed" value="false" />
                   <entry key="name" value="nick-fields/retry" />
                   <entry key="usesValue" value="nick-fields/retry@v3" />
+                </map>
+              </option>
+              <option name="outputs">
+                <map>
+                  <entry key="exit_code" value=" The final exit code returned by the command" />
+                  <entry key="exit_error" value=" The final error returned by the command" />
+                  <entry key="total_attempts" value=" The final number of attempts made" />
                 </map>
               </option>
             </GitHubAction>
