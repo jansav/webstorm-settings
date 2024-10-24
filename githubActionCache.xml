@@ -9,7 +9,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="./.github/workflows/create-release-in-github.yaml" />
-                  <entry key="expiryTime" value="1730951814115" />
+                  <entry key="expiryTime" value="1730962592447" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
                   <entry key="isAction" value="true" />
@@ -256,28 +256,15 @@
           <value>
             <GitHubAction>
               <option name="action" value="true" />
-              <option name="inputs">
-                <map>
-                  <entry key="checks" value="r[false]  --checks argument. See https://github.com/doyensec/electronegativity/blob/master/README.md#cli" />
-                  <entry key="confidence" value="r[false]  --confidence argument. See https://github.com/doyensec/electronegativity/blob/master/README.md#cli" />
-                  <entry key="electron-version" value="r[false]  --electron-version argument. See https://github.com/doyensec/electronegativity/blob/master/README.md#cli" />
-                  <entry key="exclude-checks" value="r[false]  --exclude-checks argument. See https://github.com/doyensec/electronegativity/blob/master/README.md#cli" />
-                  <entry key="input" value="r[false] def[.] --input argument. See https://github.com/doyensec/electronegativity/blob/master/README.md#cli" />
-                  <entry key="node-args" value="r[false]  If you're running into the &quot;Fatal Error JavaScript heap out of memory&quot;, you can pass additional arguments to node like --max-old-space-size=4096" />
-                  <entry key="parser-plugins" value="r[false]  --parser-plugins argument. See https://github.com/doyensec/electronegativity/blob/master/README.md#cli" />
-                  <entry key="severity" value="r[false]  --severity argument. See https://github.com/doyensec/electronegativity/blob/master/README.md#cli" />
-                  <entry key="upgrade" value="r[false]  --upgrade argument. See https://github.com/doyensec/electronegativity/blob/master/README.md#cli" />
-                  <entry key="version" value="r[false] def[latest] NPM version of Electronegativity" />
-                </map>
-              </option>
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/doyensec/electronegativity-action/v1.1/action.yml" />
-                  <entry key="expiryTime" value="1729750975488" />
+                  <entry key="expiryTime" value="1730960783651" />
                   <entry key="githubUrl" value="https://github.com/doyensec/electronegativity-action/tree/v1.1#readme" />
+                  <entry key="ignoredInputs" value="" />
+                  <entry key="ignoredOutputs" value="" />
                   <entry key="isAction" value="true" />
                   <entry key="isLocal" value="false" />
-                  <entry key="isResolved" value="true" />
                   <entry key="isSuppressed" value="false" />
                   <entry key="name" value="doyensec/electronegativity-action" />
                   <entry key="usesValue" value="doyensec/electronegativity-action@v1.1" />
@@ -290,34 +277,18 @@
           <value>
             <GitHubAction>
               <option name="action" value="true" />
-              <option name="inputs">
-                <map>
-                  <entry key="category" value="r[false]  String used by Code Scanning for matching the analyses" />
-                  <entry key="checkout_path" value="r[false] def[${{ github.workspace }}] The path at which the analyzed repository was checked out. Used to relativize any absolute paths in the uploaded SARIF file." />
-                  <entry key="matrix" value="r[false] def[${{ toJson(matrix) }}]" />
-                  <entry key="ref" value="r[false]  The ref where results will be uploaded. If not provided, the Action will use the GITHUB_REF environment variable. If provided, the sha input must be provided as well. This input is not available in pull requests from forks." />
-                  <entry key="sarif_file" value="r[false] def[../results]" />
-                  <entry key="sha" value="r[false]  The sha of the HEAD of the ref where results will be uploaded. If not provided, the Action will use the GITHUB_SHA environment variable. If provided, the ref input must be provided as well. This input is not available in pull requests from forks." />
-                  <entry key="token" value="r[false] def[${{ github.token }}]" />
-                  <entry key="wait-for-processing" value="r[true] def[true] If true, the Action will wait for the uploaded SARIF to be processed before completing." />
-                </map>
-              </option>
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/github/codeql-action/v1/upload-sarif/action.yml" />
-                  <entry key="expiryTime" value="1729750975488" />
+                  <entry key="expiryTime" value="1730960783650" />
                   <entry key="githubUrl" value="https://github.com/github/codeql-action/tree/v1/upload-sarif#readme" />
+                  <entry key="ignoredInputs" value="" />
+                  <entry key="ignoredOutputs" value="" />
                   <entry key="isAction" value="true" />
                   <entry key="isLocal" value="false" />
-                  <entry key="isResolved" value="true" />
                   <entry key="isSuppressed" value="false" />
                   <entry key="name" value="github/codeql-action" />
                   <entry key="usesValue" value="github/codeql-action/upload-sarif@v1" />
-                </map>
-              </option>
-              <option name="outputs">
-                <map>
-                  <entry key="sarif-id" value=" The ID of the uploaded SARIF file." />
                 </map>
               </option>
             </GitHubAction>
