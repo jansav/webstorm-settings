@@ -9,7 +9,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="./.github/workflows/create-release-in-github.yaml" />
-                  <entry key="expiryTime" value="1731327983366" />
+                  <entry key="expiryTime" value="1731329512189" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
                   <entry key="isAction" value="true" />
@@ -346,25 +346,6 @@
                   <entry key="isSuppressed" value="false" />
                   <entry key="name" value="github/codeql-action" />
                   <entry key="usesValue" value="github/codeql-action/upload-sarif@v1" />
-                </map>
-              </option>
-            </GitHubAction>
-          </value>
-        </entry>
-        <entry key="martinbeentjes/npm-get-version-action@main">
-          <value>
-            <GitHubAction>
-              <option name="action" value="true" />
-              <option name="metaData">
-                <map>
-                  <entry key="downloadUrl" value="https://raw.githubusercontent.com/martinbeentjes/npm-get-version-action/main/action.yml" />
-                  <entry key="expiryTime" value="1730119257733" />
-                  <entry key="githubUrl" value="https://github.com/martinbeentjes/npm-get-version-action/tree/main#readme" />
-                  <entry key="isAction" value="true" />
-                  <entry key="isLocal" value="false" />
-                  <entry key="isSuppressed" value="false" />
-                  <entry key="name" value="martinbeentjes/npm-get-version-action" />
-                  <entry key="usesValue" value="martinbeentjes/npm-get-version-action@main" />
                 </map>
               </option>
             </GitHubAction>
