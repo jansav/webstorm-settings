@@ -9,7 +9,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="./.github/workflows/create-release-in-github.yaml" />
-                  <entry key="expiryTime" value="1731305209660" />
+                  <entry key="expiryTime" value="1731900005734" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
                   <entry key="isAction" value="true" />
@@ -49,7 +49,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/actions/cache/v3/action.yml" />
-                  <entry key="expiryTime" value="1730111801069" />
+                  <entry key="expiryTime" value="1731322303314" />
                   <entry key="githubUrl" value="https://github.com/actions/cache/tree/v3#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
@@ -70,7 +70,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/actions/checkout/v4/action.yml" />
-                  <entry key="expiryTime" value="1730111801069" />
+                  <entry key="expiryTime" value="1731322303314" />
                   <entry key="githubUrl" value="https://github.com/actions/checkout/tree/v4#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
@@ -91,7 +91,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/actions/setup-go/v2/action.yml" />
-                  <entry key="expiryTime" value="1730111801069" />
+                  <entry key="expiryTime" value="1731322303314" />
                   <entry key="githubUrl" value="https://github.com/actions/setup-go/tree/v2#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
@@ -112,7 +112,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/actions/setup-go/v3/action.yml" />
-                  <entry key="expiryTime" value="1730111801069" />
+                  <entry key="expiryTime" value="1731322303314" />
                   <entry key="githubUrl" value="https://github.com/actions/setup-go/tree/v3#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
@@ -133,7 +133,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/actions/setup-node/v4/action.yml" />
-                  <entry key="expiryTime" value="1730111801069" />
+                  <entry key="expiryTime" value="1731322303314" />
                   <entry key="githubUrl" value="https://github.com/actions/setup-node/tree/v4#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
@@ -154,7 +154,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/actions/setup-python/v2/action.yml" />
-                  <entry key="expiryTime" value="1730111801069" />
+                  <entry key="expiryTime" value="1731322303314" />
                   <entry key="githubUrl" value="https://github.com/actions/setup-python/tree/v2#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
@@ -175,7 +175,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/actions/stale/v4/action.yml" />
-                  <entry key="expiryTime" value="1730111801069" />
+                  <entry key="expiryTime" value="1731322303314" />
                   <entry key="githubUrl" value="https://github.com/actions/stale/tree/v4#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
@@ -196,7 +196,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/actions/upload-artifact/v4/action.yml" />
-                  <entry key="expiryTime" value="1730111801069" />
+                  <entry key="expiryTime" value="1731322303314" />
                   <entry key="githubUrl" value="https://github.com/actions/upload-artifact/tree/v4#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
@@ -217,7 +217,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/aws-actions/configure-aws-credentials/v4/action.yml" />
-                  <entry key="expiryTime" value="1730111801069" />
+                  <entry key="expiryTime" value="1731322303314" />
                   <entry key="githubUrl" value="https://github.com/aws-actions/configure-aws-credentials/tree/v4#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
@@ -238,7 +238,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/crazy-max/ghaction-virustotal/v3/action.yml" />
-                  <entry key="expiryTime" value="1730111801069" />
+                  <entry key="expiryTime" value="1731322303314" />
                   <entry key="githubUrl" value="https://github.com/crazy-max/ghaction-virustotal/tree/v3#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
@@ -273,6 +273,63 @@
             </GitHubAction>
           </value>
         </entry>
+        <entry key="github/codeql-action/analyze@v2">
+          <value>
+            <GitHubAction>
+              <option name="action" value="true" />
+              <option name="metaData">
+                <map>
+                  <entry key="downloadUrl" value="https://raw.githubusercontent.com/github/codeql-action/v2/analyze/action.yml" />
+                  <entry key="expiryTime" value="1731309439364" />
+                  <entry key="githubUrl" value="https://github.com/github/codeql-action/tree/v2/analyze#readme" />
+                  <entry key="isAction" value="true" />
+                  <entry key="isLocal" value="false" />
+                  <entry key="isSuppressed" value="false" />
+                  <entry key="name" value="github/codeql-action" />
+                  <entry key="usesValue" value="github/codeql-action/analyze@v2" />
+                </map>
+              </option>
+            </GitHubAction>
+          </value>
+        </entry>
+        <entry key="github/codeql-action/autobuild@v2">
+          <value>
+            <GitHubAction>
+              <option name="action" value="true" />
+              <option name="metaData">
+                <map>
+                  <entry key="downloadUrl" value="https://raw.githubusercontent.com/github/codeql-action/v2/autobuild/action.yml" />
+                  <entry key="expiryTime" value="1731309439362" />
+                  <entry key="githubUrl" value="https://github.com/github/codeql-action/tree/v2/autobuild#readme" />
+                  <entry key="isAction" value="true" />
+                  <entry key="isLocal" value="false" />
+                  <entry key="isSuppressed" value="false" />
+                  <entry key="name" value="github/codeql-action" />
+                  <entry key="usesValue" value="github/codeql-action/autobuild@v2" />
+                </map>
+              </option>
+            </GitHubAction>
+          </value>
+        </entry>
+        <entry key="github/codeql-action/init@v2">
+          <value>
+            <GitHubAction>
+              <option name="action" value="true" />
+              <option name="metaData">
+                <map>
+                  <entry key="downloadUrl" value="https://raw.githubusercontent.com/github/codeql-action/v2/init/action.yml" />
+                  <entry key="expiryTime" value="1731309439361" />
+                  <entry key="githubUrl" value="https://github.com/github/codeql-action/tree/v2/init#readme" />
+                  <entry key="isAction" value="true" />
+                  <entry key="isLocal" value="false" />
+                  <entry key="isSuppressed" value="false" />
+                  <entry key="name" value="github/codeql-action" />
+                  <entry key="usesValue" value="github/codeql-action/init@v2" />
+                </map>
+              </option>
+            </GitHubAction>
+          </value>
+        </entry>
         <entry key="github/codeql-action/upload-sarif@v1">
           <value>
             <GitHubAction>
@@ -294,25 +351,6 @@
             </GitHubAction>
           </value>
         </entry>
-        <entry key="martinbeentjes/npm-get-version-action@main">
-          <value>
-            <GitHubAction>
-              <option name="action" value="true" />
-              <option name="metaData">
-                <map>
-                  <entry key="downloadUrl" value="https://raw.githubusercontent.com/martinbeentjes/npm-get-version-action/main/action.yml" />
-                  <entry key="expiryTime" value="1730119257733" />
-                  <entry key="githubUrl" value="https://github.com/martinbeentjes/npm-get-version-action/tree/main#readme" />
-                  <entry key="isAction" value="true" />
-                  <entry key="isLocal" value="false" />
-                  <entry key="isSuppressed" value="false" />
-                  <entry key="name" value="martinbeentjes/npm-get-version-action" />
-                  <entry key="usesValue" value="martinbeentjes/npm-get-version-action@main" />
-                </map>
-              </option>
-            </GitHubAction>
-          </value>
-        </entry>
         <entry key="medyagh/setup-minikube@master">
           <value>
             <GitHubAction>
@@ -320,7 +358,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/medyagh/setup-minikube/master/action.yml" />
-                  <entry key="expiryTime" value="1730111801069" />
+                  <entry key="expiryTime" value="1731322303314" />
                   <entry key="githubUrl" value="https://github.com/medyagh/setup-minikube/tree/master#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
@@ -341,7 +379,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/ncipollo/release-action/v1/action.yml" />
-                  <entry key="expiryTime" value="1730111801069" />
+                  <entry key="expiryTime" value="1731322303314" />
                   <entry key="githubUrl" value="https://github.com/ncipollo/release-action/tree/v1#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
@@ -362,7 +400,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/nick-fields/retry/v3/action.yml" />
-                  <entry key="expiryTime" value="1730111801069" />
+                  <entry key="expiryTime" value="1731322303314" />
                   <entry key="githubUrl" value="https://github.com/nick-fields/retry/tree/v3#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
@@ -383,7 +421,7 @@
               <option name="metaData">
                 <map>
                   <entry key="downloadUrl" value="https://raw.githubusercontent.com/robinraju/release-downloader/v1.5/action.yml" />
-                  <entry key="expiryTime" value="1730111801069" />
+                  <entry key="expiryTime" value="1731322303314" />
                   <entry key="githubUrl" value="https://github.com/robinraju/release-downloader/tree/v1.5#readme" />
                   <entry key="ignoredInputs" value="" />
                   <entry key="ignoredOutputs" value="" />
