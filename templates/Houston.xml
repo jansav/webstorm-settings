@@ -413,7 +413,19 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="act" value="import { act } from &quot;@testing-library/react&quot;;&#10;&#10;act(() =&gt; {&#10;  $SELECTION$&#10;});" description="Wrap children with react act" toReformat="true" toShortenFQNames="true">
+  <template name="act" value="act(() =&gt; {&#10;  $SELECTION$&#10;});" description="Wrap children with react act" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="bct" value="await act(async () =&gt; {&#10;  $SELECTION$&#10;});" description="Wrap children with react async act" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="impact" value="import { act } from &quot;@testing-library/react&quot;;" description="Import react act" toReformat="false" toShortenFQNames="false">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
