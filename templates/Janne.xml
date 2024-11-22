@@ -232,7 +232,7 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="act" value="act(() =&gt; { &#10;  $SELECTION$ &#10;});" description="Wrap with act" toReformat="false" toShortenFQNames="true">
+  <template name="act" value="await act(async () =&gt; { &#10;  $SELECTION$ &#10;});" description="Wrap with act" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
