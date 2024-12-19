@@ -238,4 +238,11 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name="renderProp" value="&lt;$ASD$&gt;&#10;  {() =&gt; (&#10;    $SELECTION$&#10;  )}&#10;&lt;/$ASD$&gt;&#10;" description="Wrap with render prop" toReformat="false" toShortenFQNames="true">
+    <variable name="ASD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
 </templateSet>
