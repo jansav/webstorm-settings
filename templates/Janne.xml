@@ -87,7 +87,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="win" value="export const $COMPONENT_NAME$ = getInjectableComponent({&#10;  id: &quot;$INJECTABLE_ID$&quot;,&#10;&#10;  Component: $END$&#10;});&#10;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="win" value="export const $COMPONENT_NAME$ = getInjectableComponent({&#10;  id: &quot;$INJECTABLE_ID$&quot;,&#10;&#10;  Component: $END$&#10;});&#10;" description="" toReformat="false" toShortenFQNames="true" useStaticImport="true">
     <variable name="COMPONENT_NAME" expression="capitalize(camelCase(regularExpression(fileNameWithoutExtension, &quot;.injectable&quot;, &quot;&quot;)))" defaultValue="" alwaysStopAt="true" />
     <variable name="INJECTABLE_ID" expression="lowercaseAndDash(COMPONENT_NAME)" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -245,9 +245,10 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="wrapinjc" value="export const $COMPONENT_NAME$ = getInjectableComponent({&#10;  id: &quot;$INJECTABLE_ID$&quot;,&#10;&#10;  Component: $SELECTION$&#10;});&#10;" description="Wrap with injectable component" toReformat="false" toShortenFQNames="true">
+  <template name="wrapinjc" value="export const $COMPONENT_NAME$ = getInjectableComponent({&#10;  id: &quot;$INJECTABLE_ID$&quot;,&#10;&#10;  Component: $ASD$&#10;});&#10;" description="Wrap with injectable component" toReformat="false" toShortenFQNames="true">
     <variable name="COMPONENT_NAME" expression="capitalize(camelCase(regularExpression(fileNameWithoutExtension, &quot;.injectable&quot;, &quot;&quot;)))" defaultValue="" alwaysStopAt="true" />
     <variable name="INJECTABLE_ID" expression="lowercaseAndDash(COMPONENT_NAME)" defaultValue="" alwaysStopAt="true" />
+    <variable name="ASD" expression="egularExpression(SELECTION, &quot;/[']/&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="TypeScript" value="true" />
     </context>
