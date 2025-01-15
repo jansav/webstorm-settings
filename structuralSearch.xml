@@ -41,12 +41,13 @@
         <mySelectedPaths>
           <array>
             <item name="" type="" />
-            <item name="com.intellij.structuralsearch.plugin.replace.ui.ReplaceConfiguration@5b41a9bf" type="f8f1b8f0:ReplaceConfiguration" />
+            <item name="Draft Template" type="cbb8eebc:String" />
           </array>
         </mySelectedPaths>
       </TreeState>
     </option>
     <option name="scopeType" value="PROJECT" />
     <option name="scopeDescriptor" value="" />
+    <option name="searchInjectedCode" value="false" />
   </component>
 </application>
