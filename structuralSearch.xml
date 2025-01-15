@@ -1,5 +1,6 @@
 <application>
   <component name="ui-state">
+    <option name="migrated" value="true" />
     <option name="templatesTreeState">
       <TreeState>
         <myExpandedPaths>
@@ -40,7 +41,7 @@
         <mySelectedPaths>
           <array>
             <item name="" type="" />
-            <item name="com.intellij.structuralsearch.plugin.replace.ui.ReplaceConfiguration@ade75166" type="f8f1b8f0:ReplaceConfiguration" />
+            <item name="com.intellij.structuralsearch.plugin.replace.ui.ReplaceConfiguration@5b41a9bf" type="f8f1b8f0:ReplaceConfiguration" />
           </array>
         </mySelectedPaths>
       </TreeState>
