@@ -1,0 +1,53 @@
+<application>
+  <component name="ui-state">
+    <option name="templatesTreeState">
+      <TreeState>
+        <myExpandedPaths>
+          <array>
+            <item name="" type="" />
+            <item name="JavaScript" type="cbb8eebc:String" />
+          </array>
+          <array>
+            <item name="" type="" />
+            <item name="JavaScript" type="cbb8eebc:String" />
+            <item name="General" type="cbb8eebc:String" />
+          </array>
+          <array>
+            <item name="" type="" />
+            <item name="JavaScript" type="cbb8eebc:String" />
+            <item name="Suspicious" type="cbb8eebc:String" />
+          </array>
+          <array>
+            <item name="" type="" />
+            <item name="SQL" type="cbb8eebc:String" />
+          </array>
+          <array>
+            <item name="" type="" />
+            <item name="SQL" type="cbb8eebc:String" />
+            <item name="Common" type="cbb8eebc:String" />
+          </array>
+          <array>
+            <item name="" type="" />
+            <item name="SQL" type="cbb8eebc:String" />
+            <item name="Common" type="cbb8eebc:String" />
+            <item name="Contexts" type="cbb8eebc:String" />
+          </array>
+          <array>
+            <item name="" type="" />
+            <item name="XML/HTML" type="cbb8eebc:String" />
+          </array>
+        </myExpandedPaths>
+        <mySelectedPaths>
+          <array>
+            <item name="" type="" />
+            <item name="JavaScript" type="cbb8eebc:String" />
+            <item name="General" type="cbb8eebc:String" />
+            <item name="com.intellij.structuralsearch.plugin.ui.SearchConfiguration@738b2bc5" type="3c4764e4:SearchConfiguration" />
+          </array>
+        </mySelectedPaths>
+      </TreeState>
+    </option>
+    <option name="scopeType" value="DIRECTORY" />
+    <option name="scopeDescriptor" value="*/Users/maspiala/dev/webstorm-root/lens-desktop-monorepo-2" />
+  </component>
+</application>
