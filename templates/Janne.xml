@@ -87,9 +87,9 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="win" value="export const $FILE$ = withInje$END$ctables&lt;Dependencies, Props&gt;(&#10;  NonInjected$FILE$,&#10;&#10;  {&#10;    getProps: (di, props) =&gt; ({&#10;      $DEPENDENCY$: di.inject($DEPENDENCY$Injectable),&#10;      ...props,&#10;    }),&#10;  },&#10;);&#10;" description="" toReformat="false" toShortenFQNames="true">
-    <variable name="FILE" expression="capitalize(camelCase(fileNameWithoutExtension))" defaultValue="" alwaysStopAt="true" />
-    <variable name="DEPENDENCY" expression="" defaultValue="&quot;dependency&quot;" alwaysStopAt="true" />
+  <template name="win" value="export const $COMPONENT_NAME$ = getInjectableComponent({&#10;  id: &quot;$INJECTABLE_ID$&quot;,&#10;&#10;  Component: $END$&#10;});&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="COMPONENT_NAME" expression="capitalize(camelCase(regularExpression(fileNameWithoutExtension, &quot;.injectable&quot;, &quot;&quot;)))" defaultValue="" alwaysStopAt="true" />
+    <variable name="INJECTABLE_ID" expression="lowercaseAndDash(COMPONENT_NAME)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="TypeScript" value="true" />
     </context>
@@ -240,6 +240,21 @@
   </template>
   <template name="renderProp" value="&lt;$ASD$&gt;&#10;  {() =&gt; (&#10;    $SELECTION$&#10;  )}&#10;&lt;/$ASD$&gt;&#10;" description="Wrap with render prop" toReformat="false" toShortenFQNames="true">
     <variable name="ASD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="wrapinjc" value="export const $COMPONENT_NAME$ = getInjectableComponent({&#10;  id: &quot;$INJECTABLE_ID$&quot;,&#10;&#10;  Component: $SELECTION$&#10;});&#10;" description="Wrap with injectable component" toReformat="false" toShortenFQNames="true">
+    <variable name="COMPONENT_NAME" expression="capitalize(camelCase(regularExpression(fileNameWithoutExtension, &quot;.injectable&quot;, &quot;&quot;)))" defaultValue="" alwaysStopAt="true" />
+    <variable name="INJECTABLE_ID" expression="lowercaseAndDash(COMPONENT_NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="usei" value="const $NAME$ = useInject($INJECTABLE_NAME$);" description="useInject" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+    <variable name="INJECTABLE_NAME" expression="jsSuggestImportedEntityName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="regularExpression(INJECTABLE_NAME, &quot;(Injectable|InjectionToken)&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
