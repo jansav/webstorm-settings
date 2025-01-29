@@ -11,7 +11,23 @@
     <option name="REFORMAT_ON_PASTE" value="1" />
   </component>
   <component name="CodeVisionSettings">
+    <option name="codeVisionGroupToPosition">
+      <map>
+        <entry key="component.usage" value="Default" />
+        <entry key="inheritors" value="Default" />
+        <entry key="references" value="Default" />
+        <entry key="vcs.code.vision" value="Default" />
+      </map>
+    </option>
     <option name="defaultPosition" value="Right" />
+    <option name="disabledCodeVisionProviderIds">
+      <set>
+        <option value="component.usage" />
+        <option value="inheritors" />
+        <option value="references" />
+        <option value="vcs.code.vision" />
+      </set>
+    </option>
     <option name="enabled" value="false" />
   </component>
   <component name="DaemonCodeAnalyzerSettings">
@@ -20,7 +36,22 @@
   <component name="DeclarativeInlayHintsSettings">
     <option name="enabledOptions">
       <map>
-        <entry key="ts.type.hints#function.returns" value="true" />
+        <entry key="js.type.hints#function.returns" value="true" />
+        <entry key="js.type.hints#non.paren.single.param" value="true" />
+        <entry key="js.type.hints#parameters.in.parens" value="true" />
+        <entry key="js.type.hints#variables.and.fields" value="true" />
+        <entry key="sql.column.names.inlay.hints#sql.show.column.names.for.asterisk" value="true" />
+        <entry key="sql.column.names.inlay.hints#sql.show.column.names.for.set.operations" value="true" />
+        <entry key="sql.column.names.inlay.hints#sql.show.column.names.in.insert.values" value="true" />
+        <entry key="sql.column.names.inlay.hints#sql.show.column.names.in.select" value="true" />
+        <entry key="sql.join.cardinality.hints#full.join" value="true" />
+        <entry key="sql.join.cardinality.hints#inner.join" value="true" />
+        <entry key="sql.join.cardinality.hints#left.join" value="true" />
+        <entry key="sql.join.cardinality.hints#right.join" value="true" />
+        <entry key="ts.type.hints#function.returns" value="false" />
+        <entry key="ts.type.hints#non.paren.single.param" value="false" />
+        <entry key="ts.type.hints#parameters.in.parens" value="false" />
+        <entry key="ts.type.hints#variables.and.fields" value="false" />
       </map>
     </option>
     <option name="providerIdToEnabled">
@@ -28,9 +59,11 @@
         <entry key="js.chain.hints" value="true" />
         <entry key="js.type.hints" value="true" />
         <entry key="qodana.yaml.inspection.descriptions" value="true" />
+        <entry key="sql.column.names.inlay.hints" value="true" />
+        <entry key="sql.join.cardinality.hints" value="true" />
         <entry key="ts.chain.hints" value="true" />
         <entry key="ts.enum.hints" value="true" />
-        <entry key="ts.type.hints" value="true" />
+        <entry key="ts.type.hints" value="false" />
       </map>
     </option>
   </component>
@@ -45,7 +78,7 @@
     <option name="IS_MOUSE_CLICK_SELECTION_HONORS_CAMEL_WORDS" value="false" />
   </component>
   <component name="InlayHintsSettings">
-    <option name="lastViewedProviderKeyId" value="TypeScript.parameter.hints.old" />
+    <option name="lastViewedProviderKeyId" value="TypeScript.ts.type.hints" />
   </component>
   <component name="InlineCompletionOnboarding">
     <option name="onboardingFinished" value="true" />
