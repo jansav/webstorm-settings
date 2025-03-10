@@ -7,5 +7,6 @@
         <entry key="*" value="true" />
       </map>
     </languageAllowList>
+    <option name="checkForUpdate" value="false" />
   </component>
 </application>
