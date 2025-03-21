@@ -1,5 +1,5 @@
 <templateSet group="Janne">
-  <template name="resnot" value="it('does not resolve yet', async () =&gt; {&#10;  const promiseStatus = await getPromiseStatus($actualPromise$);&#10;  &#10;  expect(promiseStatus.fulfilled).toBe(false);&#10;});" description="Does not resolve yet" toReformat="false" toShortenFQNames="true">
+  <template name="resnot" value="it('does not resolve yet', () =&gt; {&#10;  return expect($actualPromise$).not.toHaveResolved();&#10;});" description="Does not resolve yet" toReformat="false" toShortenFQNames="true">
     <variable name="actualPromise" expression="" defaultValue="&quot;actualPromise&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
