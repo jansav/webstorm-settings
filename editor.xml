@@ -48,7 +48,7 @@
         <entry key="sql.join.cardinality.hints#inner.join" value="true" />
         <entry key="sql.join.cardinality.hints#left.join" value="true" />
         <entry key="sql.join.cardinality.hints#right.join" value="true" />
-        <entry key="ts.type.hints#function.returns" value="false" />
+        <entry key="ts.type.hints#function.returns" value="true" />
         <entry key="ts.type.hints#non.paren.single.param" value="false" />
         <entry key="ts.type.hints#parameters.in.parens" value="false" />
         <entry key="ts.type.hints#variables.and.fields" value="false" />
@@ -63,7 +63,7 @@
         <entry key="sql.join.cardinality.hints" value="true" />
         <entry key="ts.chain.hints" value="true" />
         <entry key="ts.enum.hints" value="true" />
-        <entry key="ts.type.hints" value="false" />
+        <entry key="ts.type.hints" value="true" />
       </map>
     </option>
   </component>
