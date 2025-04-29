@@ -174,10 +174,10 @@
     </context>
   </template>
   <template name="injt" value="import { getInjectable, getInjectionToken } from &quot;@lensapp/injectable&quot;;&#10;&#10;export type $TYPE$ = {};&#10;&#10;export const $FILE_IN_CAMELCASE$InjectionToken = getInjectionToken&lt;$TYPE$&gt;({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$-injection-token&quot;,&#10;});&#10;&#10;export const $FILE$ = getInjectable({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$&quot;,&#10;  instantiate: (di): $TYPE$ =&gt; ({$END$}),&#10;  injectionToken: $FILE_IN_CAMELCASE$InjectionToken&#10;});" description="New injectable file with injection token" toReformat="false" toShortenFQNames="true">
-    <variable name="TYPE" expression="capitalize(FILE_IN_CAMELCASE)" defaultValue="" alwaysStopAt="true" />
-    <variable name="FILE_IN_CAMELCASE" expression="camelCase(FILE_WITHOUT_INJECTABLE)" defaultValue="" alwaysStopAt="true" />
-    <variable name="FILE" expression="camelCase(fileNameWithoutExtension)" defaultValue="" alwaysStopAt="true" />
     <variable name="FILE_WITHOUT_INJECTABLE" expression="regularExpression(fileNameWithoutExtension, &quot;.injectable&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="FILE" expression="camelCase(FILE_WITHOUT_INJECTABLE)Injectable" defaultValue="" alwaysStopAt="false" />
+    <variable name="TYPE" expression="capitalize(FILE_IN_CAMELCASE)" defaultValue="" alwaysStopAt="false" />
+    <variable name="FILE_IN_CAMELCASE" expression="camelCase(FILE_WITHOUT_INJECTABLE)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
