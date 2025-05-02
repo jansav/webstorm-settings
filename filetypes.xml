@@ -3,7 +3,9 @@
     <extensionMap>
       <mapping pattern="lens-package-build" type="AUTO_DETECTED" />
       <mapping pattern="pre-push" type="AUTO_DETECTED" />
+      <mapping pattern="lens-k8s-proxy" type="AUTO_DETECTED" />
       <mapping pattern=".npmrc" type="PLAIN_TEXT" />
+      <mapping pattern="kubectl" type="PLAIN_TEXT" />
       <mapping ext="asar" type="PLAIN_TEXT" />
       <mapping ext="ttf" type="PLAIN_TEXT" />
       <removed_mapping ext="pdf" approved="true" type="Native" />
