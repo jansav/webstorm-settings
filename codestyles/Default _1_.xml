@@ -21,11 +21,6 @@
   <MarkdownNavigatorCodeStyleSettings>
     <option name="RIGHT_MARGIN" value="72" />
   </MarkdownNavigatorCodeStyleSettings>
-  <TypeScriptCodeStyleSettings version="0">
-    <option name="PREFER_EXPLICIT_TYPES_VARS_FIELDS" value="true" />
-    <option name="PREFER_EXPLICIT_TYPES_FUNCTION_RETURNS" value="true" />
-    <option name="PREFER_EXPLICIT_TYPES_FUNCTION_EXPRESSION_RETURNS" value="true" />
-  </TypeScriptCodeStyleSettings>
   <codeStyleSettings language="HTML">
     <indentOptions>
       <option name="INDENT_SIZE" value="2" />
