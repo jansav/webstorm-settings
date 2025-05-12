@@ -233,6 +233,9 @@
     <keyboard-shortcut first-keystroke="ctrl meta alt u" />
   </action>
   <action id="context.clear" />
+  <action id="copilot.applyInlays">
+    <keyboard-shortcut first-keystroke="ctrl alt enter" />
+  </action>
   <action id="copilot.chat.show" />
   <action id="org.intellij.plugins.markdown.ui.actions.editorLayout.EditorAndPreviewLayoutChangeAction">
     <keyboard-shortcut first-keystroke="shift meta p" />
