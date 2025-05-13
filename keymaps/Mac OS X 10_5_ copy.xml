@@ -11,6 +11,9 @@
   <action id="Annotate">
     <keyboard-shortcut first-keystroke="shift ctrl a" />
   </action>
+  <action id="BiomeApplySafeFixesAction">
+    <keyboard-shortcut first-keystroke="shift meta alt p" />
+  </action>
   <action id="ChangesView.SetDefault" />
   <action id="CollapseAll">
     <keyboard-shortcut first-keystroke="meta subtract" />
@@ -105,6 +108,7 @@
   <action id="PublishGroup.UploadTo" />
   <action id="RecentChanges" />
   <action id="ReformatCode" />
+  <action id="ReformatWithPrettierAction" />
   <action id="RenameElement">
     <keyboard-shortcut first-keystroke="shift f6" />
     <keyboard-shortcut first-keystroke="f3" />
