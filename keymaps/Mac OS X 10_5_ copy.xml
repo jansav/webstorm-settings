@@ -59,6 +59,7 @@
   <action id="Git.Branches">
     <keyboard-shortcut first-keystroke="shift ctrl b" />
   </action>
+  <action id="Git.Commit.And.Push.Executor" />
   <action id="Git.Fetch">
     <keyboard-shortcut first-keystroke="shift ctrl f" />
   </action>
@@ -86,11 +87,11 @@
   <action id="Images.Editor.ZoomOut">
     <keyboard-shortcut first-keystroke="meta subtract" />
   </action>
+  <action id="IntentionActionAsAction_com.intellij.xml.util.CollapseTagIntention">
+    <keyboard-shortcut first-keystroke="meta alt k" />
+  </action>
   <action id="IntentionActionAsAction_org.intellij.idea.lang.javascript.intention.initialization.JSSplitDeclarationAndInitializationIntention">
     <keyboard-shortcut first-keystroke="meta alt l" />
-  </action>
-  <action id="Javascript.Linters.EsLint.Fix">
-    <keyboard-shortcut first-keystroke="meta alt k" />
   </action>
   <action id="LocalHistory.ShowHistory">
     <keyboard-shortcut first-keystroke="shift ctrl alt h" />
