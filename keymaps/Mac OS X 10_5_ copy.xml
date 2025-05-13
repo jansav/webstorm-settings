@@ -90,6 +90,9 @@
   <action id="IntentionActionAsAction_com.intellij.xml.util.CollapseTagIntention">
     <keyboard-shortcut first-keystroke="meta alt k" />
   </action>
+  <action id="IntentionActionAsAction_com.sixrr.xrp.expandemptytag.ExpandEmptyTagIntention">
+    <keyboard-shortcut first-keystroke="meta alt k" />
+  </action>
   <action id="IntentionActionAsAction_org.intellij.idea.lang.javascript.intention.initialization.JSSplitDeclarationAndInitializationIntention">
     <keyboard-shortcut first-keystroke="meta alt l" />
   </action>
