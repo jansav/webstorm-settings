@@ -13,7 +13,7 @@
       <option name="WORKING_DIRECTORY" value="$Projectpath$" />
     </exec>
   </tool>
-  <tool name="Biome" description="Biome lol" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+  <tool name="Biome" description="Biome lol" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="./node_modules/.bin/biome" />
       <option name="PARAMETERS" value="format $FileDirRelativeToSourcepath$" />
