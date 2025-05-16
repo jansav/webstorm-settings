@@ -5,6 +5,7 @@
       <mapping pattern="pre-push" type="AUTO_DETECTED" />
       <mapping pattern=".env.example" type="PLAIN_TEXT" />
       <mapping pattern=".npmrc" type="PLAIN_TEXT" />
+      <mapping ext="node" type="PLAIN_TEXT" />
       <mapping ext="asar" type="PLAIN_TEXT" />
       <mapping ext="ttf" type="PLAIN_TEXT" />
       <removed_mapping ext="pdf" approved="true" type="Native" />
