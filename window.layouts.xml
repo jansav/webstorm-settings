@@ -1,5 +1,6 @@
 <application>
   <component name="ToolWindowLayout"><![CDATA[{
+  "activeLayoutName": "janne",
   "layouts": {
     "Custom": {
       "v1": [
@@ -262,6 +263,289 @@
           "weight": 0.25
         }
       ]
+    },
+    "janne": {
+      "v2": [
+        {
+          "id": "Space Code Reviews",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Commit",
+          "order": 0,
+          "weight": 0.3314799,
+          "sideWeight": 0.75102884
+        },
+        {
+          "id": "Repositories",
+          "order": 1,
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.27059308,
+          "sideWeight": 0.5006983
+        },
+        {
+          "id": "VcsChanges",
+          "order": 2,
+          "isShowStripeButton": false,
+          "weight": 0.3935457,
+          "sideWeight": 0.7305424
+        },
+        {
+          "id": "Structure",
+          "order": 3,
+          "weight": 0.22627479,
+          "sideWeight": 0.45050618,
+          "isSplit": true
+        },
+        {
+          "id": "npm",
+          "order": 4,
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.20635453,
+          "sideWeight": 0.45132127,
+          "isSplit": true
+        },
+        {
+          "id": "Welcome to GitHub Copilot",
+          "order": 5,
+          "weight": 0.26735127,
+          "sideWeight": 0.945145
+        },
+        {
+          "id": "Pull Requests",
+          "order": 6,
+          "weight": 0.26735127,
+          "sideWeight": 0.6387137
+        },
+        {
+          "id": "Project",
+          "order": 7,
+          "contentUiType": "COMBO",
+          "isVisible": true,
+          "weight": 0.20635453,
+          "sideWeight": 0.5486787
+        },
+        {
+          "id": "Database Changes",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "TypeScript",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "TODO",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "File Transfer",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Version Control",
+          "order": 0,
+          "anchor": "BOTTOM",
+          "floatingBounds": [
+            33,
+            309,
+            1245,
+            536
+          ],
+          "weight": 0.39774495,
+          "sideWeight": 0.38504755
+        },
+        {
+          "id": "Problems",
+          "order": 1,
+          "anchor": "BOTTOM"
+        },
+        {
+          "id": "Problems View",
+          "order": 2,
+          "anchor": "BOTTOM",
+          "weight": 0.4669518
+        },
+        {
+          "id": "Services",
+          "order": 3,
+          "anchor": "BOTTOM",
+          "weight": 0.35046297
+        },
+        {
+          "id": "Duplicates",
+          "order": 4,
+          "anchor": "BOTTOM",
+          "weight": 0.3300926
+        },
+        {
+          "id": "Debug",
+          "order": 5,
+          "anchor": "BOTTOM",
+          "weight": 0.4863919
+        },
+        {
+          "id": "Messages",
+          "order": 6,
+          "anchor": "BOTTOM",
+          "weight": 0.36157405
+        },
+        {
+          "id": "Run",
+          "order": 7,
+          "anchor": "BOTTOM",
+          "floatingBounds": [
+            342,
+            321,
+            1115,
+            739
+          ],
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.39774495,
+          "sideWeight": 0.61495245
+        },
+        {
+          "id": "Terminal",
+          "order": 8,
+          "anchor": "BOTTOM",
+          "weight": 0.32542768
+        },
+        {
+          "id": "Preview.js logs",
+          "order": 9,
+          "anchor": "BOTTOM",
+          "weight": 0.2694401
+        },
+        {
+          "id": "Find",
+          "order": 10,
+          "anchor": "BOTTOM",
+          "weight": 0.32542768
+        },
+        {
+          "id": "String Manipulation",
+          "anchor": "RIGHT",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Endpoints",
+          "anchor": "RIGHT",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Code With Me",
+          "anchor": "RIGHT",
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.3498264
+        },
+        {
+          "id": "Notifications",
+          "order": 0,
+          "anchor": "RIGHT",
+          "weight": 0.2781155
+        },
+        {
+          "id": "AIAssistant",
+          "order": 1,
+          "anchor": "RIGHT",
+          "weight": 0.33040935
+        },
+        {
+          "id": "Database",
+          "order": 2,
+          "anchor": "RIGHT",
+          "weight": 0.25
+        },
+        {
+          "id": "Gradle",
+          "order": 3,
+          "anchor": "RIGHT",
+          "weight": 0.25
+        },
+        {
+          "id": "Maven",
+          "order": 4,
+          "anchor": "RIGHT",
+          "weight": 0.25
+        },
+        {
+          "id": "Hierarchy",
+          "order": 5,
+          "anchor": "RIGHT",
+          "weight": 0.33040935
+        },
+        {
+          "id": "documentation.v2",
+          "order": 6,
+          "anchor": "RIGHT",
+          "weight": 0.32964602,
+          "isSplit": true
+        },
+        {
+          "id": "github.copilotToolWindow",
+          "order": 7,
+          "anchor": "RIGHT",
+          "weight": 0.2850163,
+          "sideWeight": 0.5007374
+        },
+        {
+          "id": "Coverage",
+          "order": 8,
+          "anchor": "RIGHT",
+          "weight": 0.2850163,
+          "sideWeight": 0.49926254,
+          "isSplit": true
+        },
+        {
+          "id": "com.intellij.reactbuddy.storybook",
+          "order": 9,
+          "anchor": "RIGHT",
+          "isSplit": true
+        },
+        {
+          "id": "com.intellij.reactbuddy.reactInspector",
+          "order": 10,
+          "anchor": "RIGHT",
+          "weight": 0.1639151,
+          "isSplit": true
+        },
+        {
+          "id": "GitHub Copilot Chat",
+          "order": 11,
+          "anchor": "RIGHT",
+          "isAutoHide": true,
+          "weight": 0.2850163,
+          "sideWeight": 0.4993113,
+          "isSplit": true
+        },
+        {
+          "id": "com.intellij.reactbuddy.reactComponents",
+          "order": 12,
+          "anchor": "RIGHT",
+          "weight": 0.1639151
+        },
+        {
+          "id": "Bookmarks",
+          "order": 13,
+          "anchor": "RIGHT",
+          "weight": 0.1639151,
+          "sideWeight": 0.45140517,
+          "isSplit": true
+        }
+      ],
+      "unifiedWeights": {
+        "top": 0.33,
+        "left": 0.20635453,
+        "bottom": 0.39774495,
+        "right": 0.1639151
+      }
     }
   }
 }]]></component>
