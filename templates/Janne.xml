@@ -87,9 +87,8 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="win" value="export const $COMPONENT_NAME$ = getInjectableComponent({&#10;  id: &quot;$INJECTABLE_ID$&quot;,&#10;&#10;  Component: $END$&#10;});&#10;" description="" toReformat="false" toShortenFQNames="true" useStaticImport="true">
-    <variable name="COMPONENT_NAME" expression="capitalize(camelCase(regularExpression(fileNameWithoutExtension, &quot;.injectable&quot;, &quot;&quot;)))" defaultValue="" alwaysStopAt="true" />
-    <variable name="INJECTABLE_ID" expression="lowercaseAndDash(COMPONENT_NAME)" defaultValue="" alwaysStopAt="true" />
+  <template name="win" value="getInjectableComponent({&#10;  id: &quot;$ID$&quot;,&#10;&#10;  Component: $SELECTION$&#10;});&#10;&#10;import { getInjectableComponent } from &quot;@lensapp/injectable-react&quot;;&#10;" description="Make a component injectable component" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+    <variable name="ID" expression="jsSuggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="TypeScript" value="true" />
     </context>
