@@ -87,9 +87,9 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="win" value="export const $FILE$ = withInje$END$ctables&lt;Dependencies, Props&gt;(&#10;  NonInjected$FILE$,&#10;&#10;  {&#10;    getProps: (di, props) =&gt; ({&#10;      $DEPENDENCY$: di.inject($DEPENDENCY$Injectable),&#10;      ...props,&#10;    }),&#10;  },&#10;);&#10;" description="" toReformat="false" toShortenFQNames="true">
-    <variable name="FILE" expression="capitalize(camelCase(fileNameWithoutExtension))" defaultValue="" alwaysStopAt="true" />
-    <variable name="DEPENDENCY" expression="" defaultValue="&quot;dependency&quot;" alwaysStopAt="true" />
+  <template name="win" value="$getInjectableComponent$({&#10;  id: &quot;$ID$&quot;,&#10;&#10;  Component: $SELECTION$&#10;})" description="Convert component to injectable component" toReformat="false" toShortenFQNames="true">
+    <variable name="getInjectableComponent" expression="resolveImport('getInjectableComponent')" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="TypeScript" value="true" />
     </context>
@@ -222,13 +222,6 @@
     <variable name="FILE_WITHOUT_INJECTABLE" expression="regularExpression(fileNameWithoutExtension, &quot;.injectable&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
-  <template name="winbutnotawful" value="import React from &quot;react&quot;;&#10;import { observer } from &quot;mobx-react&quot;;&#10;import { withInjectables } from &quot;@lensapp/injectable-react&quot;;&#10;&#10;export type $FILE$Props = {};&#10;type Dependencies = {};&#10;&#10;const NonInjected$FILE$ = observer((props: $FILE$Props &amp; Dependencies) =&gt; &lt;div&gt;&lt;/div&gt;);&#10;&#10;export const $FILE$ = withInje$END$ctables&lt;Dependencies, $FILE$Props&gt;(&#10;  NonInjected$FILE$,&#10;&#10;  {&#10;    getProps: (di, props) =&gt; ({&#10;      ...props,&#10;      $DEPENDENCY$: di.inject($DEPENDENCY$Injectable),&#10;    }),&#10;  },&#10;);&#10;" description="" toReformat="false" toShortenFQNames="true">
-    <variable name="FILE" expression="capitalize(camelCase(fileNameWithoutExtension))" defaultValue="" alwaysStopAt="true" />
-    <variable name="DEPENDENCY" expression="" defaultValue="&quot;dependency&quot;" alwaysStopAt="true" />
-    <context>
       <option name="TypeScript" value="true" />
     </context>
   </template>
