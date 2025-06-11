@@ -5,6 +5,8 @@
     <option name="EDITOR_TAB_LIMIT" value="100" />
     <option name="MARK_MODIFIED_TABS_WITH_ASTERISK" value="true" />
     <option name="MAX_LOOKUP_WIDTH2" value="792" />
+    <option name="RECENT_FILES_LIMIT" value="100" />
+    <option name="RECENT_LOCATIONS_LIMIT" value="100" />
     <option name="UI_DENSITY" value="COMPACT" />
   </component>
 </application>
