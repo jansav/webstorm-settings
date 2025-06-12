@@ -87,9 +87,8 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="win" value="$getInjectableComponent$({&#10;  id: &quot;$ID$&quot;,&#10;&#10;  Component: $SELECTION$&#10;})" description="Convert component to injectable component" toReformat="false" toShortenFQNames="true">
-    <variable name="getInjectableComponent" expression="resolveImport('getInjectableComponent')" defaultValue="" alwaysStopAt="true" />
-    <variable name="ID" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+  <template name="win" value="getInjectableComponent({&#10;  id: &quot;$ID$&quot;,&#10;&#10;  Component: $SELECTION$&#10;});&#10;&#10;import { getInjectableComponent } from &quot;@lensapp/injectable-react&quot;" description="Convert component to injectable component" toReformat="false" toShortenFQNames="true">
+    <variable name="ID" expression="regularExpression(fileNameWithoutExtension(), &quot;\.injectable&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="TypeScript" value="true" />
     </context>
