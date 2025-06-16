@@ -181,7 +181,7 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="tok" value="import { getInjectionToken } from &quot;@lensapp/injectable&quot;;&#10;&#10;export type $TYPE$ = {};&#10;&#10;export const $FILE_IN_CAMELCASE$InjectionToken = getInjectionToken&lt;$TYPE$&gt;({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$-injection-token&quot;,&#10;});&#10;" description="New injection token" toReformat="false" toShortenFQNames="true">
+  <template name="tok" value="import { getInjectionToken } from &quot;@lensapp/injectable&quot;;&#10;&#10;export type $TYPE$ = {};&#10;&#10;export const $FILE_IN_CAMELCASE$InjectionToken = getInjectionToken&lt;$TYPE$&gt;({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$&quot;,&#10;});&#10;" description="New injection token" toReformat="false" toShortenFQNames="true">
     <variable name="TYPE" expression="capitalize(FILE_IN_CAMELCASE)" defaultValue="" alwaysStopAt="true" />
     <variable name="FILE_IN_CAMELCASE" expression="camelCase(FILE_WITHOUT_INJECTABLE)" defaultValue="" alwaysStopAt="true" />
     <variable name="FILE_WITHOUT_INJECTABLE" expression="regularExpression(fileNameWithoutExtension, &quot;.injectable&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
