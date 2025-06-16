@@ -75,6 +75,9 @@
   <action id="Git.Unstash">
     <keyboard-shortcut first-keystroke="shift ctrl u" />
   </action>
+  <action id="GotoImplementation">
+    <mouse-shortcut keystroke="meta alt button1" />
+  </action>
   <action id="GotoRelated" />
   <action id="GotoTypeDeclaration">
     <keyboard-shortcut first-keystroke="shift meta b" />
@@ -89,6 +92,9 @@
   </action>
   <action id="IntentionActionAsAction_com.sixrr.xrp.expandemptytag.ExpandEmptyTagIntention">
     <keyboard-shortcut first-keystroke="meta alt k" />
+  </action>
+  <action id="IntentionActionAsAction_org.intellij.idea.lang.javascript.intention.braces.JSAddBracesIntention">
+    <keyboard-shortcut first-keystroke="meta alt b" />
   </action>
   <action id="IntentionActionAsAction_org.intellij.idea.lang.javascript.intention.initialization.JSSplitDeclarationAndInitializationIntention">
     <keyboard-shortcut first-keystroke="meta alt l" />
