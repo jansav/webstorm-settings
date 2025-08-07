@@ -6,18 +6,11 @@
       <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
     </exec>
   </tool>
-  <tool name="Create Lens Package" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
-    <exec>
-      <option name="COMMAND" value="npm run create-new-package" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$Projectpath$" />
-    </exec>
-  </tool>
-  <tool name="Biome" description="Biome lol" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+  <tool name="Biome" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
     <exec>
       <option name="COMMAND" value="./node_modules/.bin/biome" />
-      <option name="PARAMETERS" value="format $FileDirRelativeToSourcepath$" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+      <option name="PARAMETERS" value="format $FileDirRelativeToSourcepath$ --fix" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/lens-desktop-monorepo" />
     </exec>
   </tool>
 </toolSet>

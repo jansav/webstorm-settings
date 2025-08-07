@@ -1,5 +1,6 @@
 <application>
   <component name="ui-state">
+    <option name="migrated" value="true" />
     <option name="templatesTreeState">
       <TreeState>
         <myExpandedPaths>
@@ -40,14 +41,13 @@
         <mySelectedPaths>
           <array>
             <item name="" type="" />
-            <item name="JavaScript" type="cbb8eebc:String" />
-            <item name="General" type="cbb8eebc:String" />
-            <item name="com.intellij.structuralsearch.plugin.ui.SearchConfiguration@f2bfe15" type="3c4764e4:SearchConfiguration" />
+            <item name="Draft Template" type="cbb8eebc:String" />
           </array>
         </mySelectedPaths>
       </TreeState>
     </option>
-    <option name="scopeType" value="DIRECTORY" />
-    <option name="scopeDescriptor" value="*/Users/maspiala/dev/webstorm-root/lens-desktop-monorepo-2" />
+    <option name="scopeType" value="PROJECT" />
+    <option name="scopeDescriptor" value="" />
+    <option name="searchInjectedCode" value="false" />
   </component>
 </application>

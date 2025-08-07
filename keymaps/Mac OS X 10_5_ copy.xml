@@ -56,7 +56,6 @@
   <action id="Git.Branches">
     <keyboard-shortcut first-keystroke="shift ctrl b" />
   </action>
-  <action id="Git.Commit.And.Push.Executor" />
   <action id="Git.Fetch">
     <keyboard-shortcut first-keystroke="shift ctrl f" />
   </action>
@@ -75,9 +74,6 @@
   <action id="Git.Unstash">
     <keyboard-shortcut first-keystroke="shift ctrl u" />
   </action>
-  <action id="GotoImplementation">
-    <mouse-shortcut keystroke="meta alt button1" />
-  </action>
   <action id="GotoRelated" />
   <action id="GotoTypeDeclaration">
     <keyboard-shortcut first-keystroke="shift meta b" />
@@ -87,17 +83,8 @@
   <action id="Images.Editor.ZoomOut">
     <keyboard-shortcut first-keystroke="meta subtract" />
   </action>
-  <action id="IntentionActionAsAction_com.intellij.xml.util.CollapseTagIntention">
+  <action id="Javascript.Linters.EsLint.Fix">
     <keyboard-shortcut first-keystroke="meta alt k" />
-  </action>
-  <action id="IntentionActionAsAction_com.sixrr.xrp.expandemptytag.ExpandEmptyTagIntention">
-    <keyboard-shortcut first-keystroke="meta alt k" />
-  </action>
-  <action id="IntentionActionAsAction_org.intellij.idea.lang.javascript.intention.braces.JSAddBracesIntention">
-    <keyboard-shortcut first-keystroke="meta alt b" />
-  </action>
-  <action id="IntentionActionAsAction_org.intellij.idea.lang.javascript.intention.initialization.JSSplitDeclarationAndInitializationIntention">
-    <keyboard-shortcut first-keystroke="meta alt l" />
   </action>
   <action id="LocalHistory.ShowHistory">
     <keyboard-shortcut first-keystroke="shift ctrl alt h" />
@@ -247,9 +234,6 @@
     <keyboard-shortcut first-keystroke="ctrl meta alt u" />
   </action>
   <action id="context.clear" />
-  <action id="copilot.applyInlays">
-    <keyboard-shortcut first-keystroke="ctrl alt enter" />
-  </action>
   <action id="copilot.chat.show" />
   <action id="org.intellij.plugins.markdown.ui.actions.editorLayout.EditorAndPreviewLayoutChangeAction">
     <keyboard-shortcut first-keystroke="shift meta p" />

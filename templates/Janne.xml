@@ -87,8 +87,8 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="win" value="getInjectableComponent({&#10;  id: &quot;$ID$&quot;,&#10;&#10;  Component: $SELECTION$&#10;});&#10;&#10;import { getInjectableComponent } from &quot;@lensapp/injectable-react&quot;" description="Convert component to injectable component" toReformat="false" toShortenFQNames="true">
-    <variable name="ID" expression="regularExpression(fileNameWithoutExtension(), &quot;\.injectable&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
+  <template name="win" value="getInjectableComponent({&#10;  id: &quot;$ID$&quot;,&#10;&#10;  Component: $SELECTION$&#10;});&#10;&#10;import { getInjectableComponent } from &quot;@lensapp/injectable-react&quot;;&#10;" description="Make a component injectable component" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+    <variable name="ID" expression="jsSuggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="TypeScript" value="true" />
     </context>
@@ -127,8 +127,9 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="cdin" value="const $NAME$ = di.inject($NAME$I$END$njectable);" description="constant for injected" toReformat="false" toShortenFQNames="true" useStaticImport="true">
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="cdin" value="const $NAME$ = di.inject($INJECTABLE_NAME$);" description="constant for injected" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+    <variable name="INJECTABLE_NAME" expression="jsSuggestImportedEntityName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="regularExpression(INJECTABLE_NAME, &quot;(Injectable|InjectionToken)&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
@@ -171,20 +172,20 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="injt" value="import { getInjectable, getInjectionToken } from &quot;@lensapp/injectable&quot;;&#10;&#10;export type $TYPE$ = {};&#10;&#10;export const $FILE_IN_CAMELCASE$InjectionToken = getInjectionToken&lt;$TYPE$&gt;({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$-injection-token&quot;,&#10;});&#10;&#10;export const $FILE$ = getInjectable({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$&quot;,&#10;  instantiate: (di): $TYPE$ =&gt; ({$END$}),&#10;  injectionToken: $FILE_IN_CAMELCASE$InjectionToken&#10;});" description="New injectable file with injection token" toReformat="false" toShortenFQNames="true">
-    <variable name="TYPE" expression="capitalize(FILE_IN_CAMELCASE)" defaultValue="" alwaysStopAt="true" />
-    <variable name="FILE_IN_CAMELCASE" expression="camelCase(FILE_WITHOUT_INJECTABLE)" defaultValue="" alwaysStopAt="true" />
-    <variable name="FILE" expression="camelCase(fileNameWithoutExtension)" defaultValue="" alwaysStopAt="true" />
+  <template name="injt" value="import { getInjectable, getInjectionToken } from &quot;@lensapp/injectable&quot;;&#10;&#10;export type $TYPE$ = {};&#10;&#10;export const $FILE_IN_CAMELCASE$InjectionToken = getInjectionToken&lt;$TYPE$&gt;({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$&quot;,&#10;});&#10;&#10;export const $FILE$ = getInjectable({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$&quot;,&#10;  instantiate: (di): $TYPE$ =&gt; ({$END$}),&#10;  injectionToken: $FILE_IN_CAMELCASE$InjectionToken&#10;});" description="New injectable file with injection token" toReformat="false" toShortenFQNames="true">
     <variable name="FILE_WITHOUT_INJECTABLE" expression="regularExpression(fileNameWithoutExtension, &quot;.injectable&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="FILE" expression="camelCase(FILE_WITHOUT_INJECTABLE)Injectable" defaultValue="" alwaysStopAt="false" />
+    <variable name="TYPE" expression="capitalize(FILE_IN_CAMELCASE)" defaultValue="" alwaysStopAt="false" />
+    <variable name="FILE_IN_CAMELCASE" expression="camelCase(FILE_WITHOUT_INJECTABLE)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="tok" value="import { getInjectionToken } from &quot;@lensapp/injectable&quot;;&#10;&#10;export type $TYPE$ = {};&#10;&#10;export const $FILE_IN_CAMELCASE$InjectionToken = getInjectionToken&lt;$TYPE$&gt;({&#10;  id: &quot;$FILE_WITHOUT_INJECTABLE$&quot;,&#10;});&#10;" description="New injection token" toReformat="false" toShortenFQNames="true">
-    <variable name="TYPE" expression="capitalize(FILE_IN_CAMELCASE)" defaultValue="" alwaysStopAt="true" />
-    <variable name="FILE_IN_CAMELCASE" expression="camelCase(FILE_WITHOUT_INJECTABLE)" defaultValue="" alwaysStopAt="true" />
     <variable name="FILE_WITHOUT_INJECTABLE" expression="regularExpression(fileNameWithoutExtension, &quot;.injectable&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="FILE_IN_CAMELCASE" expression="camelCase(FILE_WITHOUT_INJECTABLE)" defaultValue="" alwaysStopAt="false" />
+    <variable name="TYPE" expression="capitalize(FILE_IN_CAMELCASE)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
@@ -219,6 +220,42 @@
     <variable name="TYPE" expression="capitalize(FILE_IN_CAMELCASE)" defaultValue="" alwaysStopAt="true" />
     <variable name="FILE_IN_CAMELCASE" expression="camelCase(FILE_WITHOUT_INJECTABLE)" defaultValue="" alwaysStopAt="true" />
     <variable name="FILE_WITHOUT_INJECTABLE" expression="regularExpression(fileNameWithoutExtension, &quot;.injectable&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="winbutnotawful" value="import React from &quot;react&quot;;&#10;import { observer } from &quot;mobx-react&quot;;&#10;import { withInjectables } from &quot;@lensapp/injectable-react&quot;;&#10;&#10;export type $FILE$Props = {};&#10;type Dependencies = {};&#10;&#10;const NonInjected$FILE$ = observer((props: $FILE$Props &amp; Dependencies) =&gt; &lt;div&gt;&lt;/div&gt;);&#10;&#10;export const $FILE$ = withInje$END$ctables&lt;Dependencies, $FILE$Props&gt;(&#10;  NonInjected$FILE$,&#10;&#10;  {&#10;    getProps: (di, props) =&gt; ({&#10;      ...props,&#10;      $DEPENDENCY$: di.inject($DEPENDENCY$Injectable),&#10;    }),&#10;  },&#10;);&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="FILE" expression="capitalize(camelCase(fileNameWithoutExtension))" defaultValue="" alwaysStopAt="true" />
+    <variable name="DEPENDENCY" expression="" defaultValue="&quot;dependency&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="act" value="await act(async () =&gt; { &#10;  $SELECTION$ &#10;});" description="Wrap with act" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="renderProp" value="&lt;$ASD$&gt;&#10;  {() =&gt; (&#10;    $SELECTION$&#10;  )}&#10;&lt;/$ASD$&gt;&#10;" description="Wrap with render prop" toReformat="false" toShortenFQNames="true">
+    <variable name="ASD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="wrapinjc" value="export const $COMPONENT_NAME$ = getInjectableComponent({&#10;  id: &quot;$INJECTABLE_ID$&quot;,&#10;&#10;  Component: $ASD$&#10;});&#10;" description="Wrap with injectable component" toReformat="false" toShortenFQNames="true">
+    <variable name="COMPONENT_NAME" expression="capitalize(camelCase(regularExpression(fileNameWithoutExtension, &quot;.injectable&quot;, &quot;&quot;)))" defaultValue="" alwaysStopAt="true" />
+    <variable name="INJECTABLE_ID" expression="lowercaseAndDash(COMPONENT_NAME)" defaultValue="" alwaysStopAt="true" />
+    <variable name="ASD" expression="egularExpression(SELECTION, &quot;/[']/&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="usei" value="const $NAME$ = useInject($INJECTABLE_NAME$);" description="useInject" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+    <variable name="INJECTABLE_NAME" expression="jsSuggestImportedEntityName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="regularExpression(INJECTABLE_NAME, &quot;(Injectable|InjectionToken)&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />

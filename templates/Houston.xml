@@ -24,8 +24,8 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="des" value="describe(&quot;$NAME$&quot;, () =&gt; {&#10;  $END$&#10;});" description="Mocha describe" toReformat="true" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="des" value="describe('$NAME$', () =&gt; {&#10;  $END$&#10;});" description="Mocha describe" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="firstWord(spaceSeparated(fileNameWithoutExtension()))" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
@@ -39,8 +39,8 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="dess" value="describe('$NAME$', () =&gt; {&#10;  $END$&#10;  $SELECTION$&#10;});" description="Surround template for mocha describe" toReformat="true" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="dess" value="describe('$NAME$', () =&gt; {&#10;    $END$&#10;    $SELECTION$&#10;});" description="Surround template for mocha describe" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="firstWord(spaceSeparated(fileNameWithoutExtension()))" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
@@ -163,15 +163,15 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="test" value="import { createContainer, type DiContainer } from &quot;@lensapp/injectable&quot;;&#10;import { registerFeature } from &quot;@lensapp/feature-core&quot;;&#10;import { runAllTestUtilityRunnables } from &quot;@lensapp/test-utils-for-production&quot;;&#10;&#10;describe(&quot;$FILE$&quot;, () =&gt; {&#10;  let di: DiContainer;&#10;&#10;  beforeEach(async () =&gt; {&#10;    di = createContainer(&quot;irrelevant&quot;);&#10;&#10;    registerFeature(di, $FEATURE$);&#10;&#10;    runAllTestUtilityRunnables(di);&#10;  });&#10;&#10;  $END$&#10;});&#10;" description="Test for module" toReformat="false" toShortenFQNames="false">
+  <template name="test" value="import $FILE_IN_CAMELCASE$ from './$FILE$';&#10;&#10;describe('$FILE$', () =&gt; {&#10;  $END$&#10;});&#10;" description="Test for module" toReformat="false" toShortenFQNames="false">
+    <variable name="FILE_IN_CAMELCASE" expression="camelCase(FILE)" defaultValue="" alwaysStopAt="true" />
     <variable name="FILE" expression="regularExpression(fileNameWithoutExtension(), &quot;\.test&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
-    <variable name="FEATURE" expression="jsSuggestImportedEntityName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="snap" value="expect(rendered.baseElement).toMatchSnapshot();$END$" description="Expect to match snapshot" toReformat="false" toShortenFQNames="true">
+  <template name="snap" value="expect(appFake.getRendered().baseElement).toMatchSnapshot();$END$" description="Expect to match snapshot" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
@@ -307,13 +307,6 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="renderProp" value="&lt;$ASD$&gt;&#10;  {() =&gt; (&#10;    $SELECTION$&#10;  )}&#10;&lt;/$ASD$&gt;&#10;" description="Wrap with render prop" toReformat="false" toShortenFQNames="true">
-    <variable name="ASD" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
   <template name="depr" value="/** &#10; * @deprecated $END$&#10; */" description="Deprecated" toReformat="false" toShortenFQNames="false">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -408,33 +401,6 @@
   </template>
   <template name="cdi" value="let di: DiContainer;&#10;di = createContainer(&quot;$CONTAINER_NAME$&quot;);" description="Create injectable container" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="CONTAINER_NAME" expression="enum(&quot;some-container&quot;, &quot;irrelevant&quot;)" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
-  <template name="act" value="act(() =&gt; {&#10;  $SELECTION$&#10;});" description="Wrap children with react act" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
-  <template name="bct" value="await act(async () =&gt; {&#10;  $SELECTION$&#10;});" description="Wrap children with react async act" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
-  <template name="impact" value="import { act } from &quot;@testing-library/react&quot;;" description="Import react act" toReformat="false" toShortenFQNames="false">
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
-  <template name="testr" value="import { createContainer, type DiContainer } from &quot;@lensapp/injectable&quot;;&#10;import { registerFeature } from &quot;@lensapp/feature-core&quot;;&#10;import { runAllTestUtilityRunnables } from &quot;@lensapp/test-utils-for-production&quot;;&#10;import type { RenderResult } from &quot;@testing-library/react&quot;;&#10;import { renderFor } from &quot;@lensapp/rendering-test-utils&quot;;&#10;import { discoverFor, type Discover } from &quot;@lensapp/react-testing-library-discovery&quot;;&#10;import { registerInjectableReact } from &quot;@lensapp/injectable-react&quot;;&#10;&#10;describe(&quot;$FILE$&quot;, () =&gt; {&#10;  let di: DiContainer;&#10;  let rendered: RenderResult;&#10;  let discover: Discover;&#10;&#10;  beforeEach(async () =&gt; {&#10;    di = createContainer(&quot;irrelevant&quot;);&#10;&#10;    registerFeature(di, $FEATURE$);&#10;&#10;    registerInjectableReact(di);&#10;    &#10;    runAllTestUtilityRunnables(di);&#10;    &#10;    const render = renderFor(di);&#10;    &#10;    rendered = await render(&lt;$COMPONENT$ /&gt;);&#10;&#10;    discover = discoverFor(() =&gt; rendered);&#10;  });&#10;&#10;  it(&quot;renders&quot;, () =&gt; {&#10;    expect(rendered.baseElement).toMatchSnapshot();&#10;  });&#10;&#10;  $END$&#10;});&#10;" description="Test for rendering" toReformat="false" toShortenFQNames="false">
-    <variable name="FILE" expression="regularExpression(fileNameWithoutExtension(), &quot;\.test&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
-    <variable name="FEATURE" expression="jsSuggestImportedEntityName()" defaultValue="&quot;someFeature&quot;" alwaysStopAt="true" />
-    <variable name="COMPONENT" expression="jsSuggestImportedEntityName()" defaultValue="&quot;div&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />

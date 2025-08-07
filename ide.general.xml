@@ -1,14 +1,33 @@
 <application>
   <component name="GeneralSettings">
+    <option name="showTipsOnStartup" value="false" />
     <option name="autoSaveFiles" value="false" />
-    <option name="autoSaveIfInactive" value="true" />
     <option name="confirmExit" value="false" />
+    <option name="confirmOpenNewProject2" value="0" />
     <option name="processCloseConfirmation" value="TERMINATE" />
-    <option name="inactiveTimeout" value="299" />
   </component>
   <component name="Registry">
+    <entry key="suppress.focus.stealing.linux" value="false" source="SYSTEM" />
     <entry key="ide.experimental.ui" value="true" source="SYSTEM" />
+    <entry key="ide.firstStartup" value="false" source="SYSTEM" />
+    <entry key="suppress.focus.stealing.auto.request.focus" value="false" source="SYSTEM" />
+    <entry key="dumb.aware.run.configurations" value="true" source="SYSTEM" />
+    <entry key="suppress.focus.stealing" value="false" source="SYSTEM" />
+    <entry key="debugger.new.tool.window.layout" value="true" source="SYSTEM" />
     <entry key="terminal.new.ui" value="true" source="SYSTEM" />
-    <entry key="search.everywhere.recents.limit" value="100" source="USER" />
+  </component>
+  <component name="StatusBar">
+    <option name="widgets">
+      <map>
+        <entry key="CodeStyleStatusBarWidget" value="false" />
+        <entry key="CwmWireStatsWidgetFactory" value="false" />
+        <entry key="Encoding" value="false" />
+        <entry key="FlowJSInfo" value="false" />
+        <entry key="LineSeparator" value="false" />
+        <entry key="Memory" value="true" />
+        <entry key="ReadOnlyAttribute" value="false" />
+        <entry key="webDeployment.default.server.widget" value="false" />
+      </map>
+    </option>
   </component>
 </application>
