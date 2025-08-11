@@ -68,6 +68,9 @@
   <action id="Git.Rebase.Abort">
     <keyboard-shortcut first-keystroke="ctrl meta alt a" />
   </action>
+  <action id="Git.Stage.Show.Local">
+    <keyboard-shortcut first-keystroke="shift ctrl g" />
+  </action>
   <action id="Git.Stash">
     <keyboard-shortcut first-keystroke="shift ctrl s" />
   </action>
@@ -95,9 +98,6 @@
   <action id="MethodDown" />
   <action id="MethodUp" />
   <action id="NextEditorTab" />
-  <action id="OpenInlineChatAction">
-    <keyboard-shortcut first-keystroke="shift ctrl g" />
-  </action>
   <action id="PreviousEditorTab" />
   <action id="PublishGroup.UploadTo" />
   <action id="RecentChanges" />
@@ -162,6 +162,7 @@
   <action id="SynchronizeCurrentFile">
     <keyboard-shortcut first-keystroke="alt r" />
   </action>
+  <action id="TableResult.UnselectPreviousOccurrence" />
   <action id="Terminal.OpenInTerminal">
     <keyboard-shortcut first-keystroke="shift ctrl t" />
   </action>
@@ -170,6 +171,7 @@
     <keyboard-shortcut first-keystroke="shift meta alt p" />
   </action>
   <action id="Uml.ShowDiff" />
+  <action id="UnselectPreviousOccurrence" />
   <action id="Unwrap">
     <keyboard-shortcut first-keystroke="shift meta delete" />
     <keyboard-shortcut first-keystroke="meta alt back_space" />
