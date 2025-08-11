@@ -72,21 +72,8 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="enzymeDebug" value="console.log(component.debug());" description="Log enzyme debug for enzyme component wrapper" toReformat="false" toShortenFQNames="false">
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
   <template name="beflet" value="let $VARIABLE$;&#10;&#10;beforeEach(() =&gt; {&#10;  $VARIABLE$ = $END$&#10;});&#10;&#10;" description="Mocha before each with variable initialization" toReformat="false" toShortenFQNames="false">
     <variable name="VARIABLE" expression="camelCase(fileNameWithoutExtension())" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
-  <template name="testComponent" value="import React from 'react';&#10;import { mount } from 'enzyme';&#10;&#10;import $FILE$ from './$FILE$';&#10;&#10;describe('$FILE$', () =&gt; {&#10;  let component;&#10;&#10;  beforeEach(() =&gt; {&#10;    component = mount(&lt;$FILE$$END$ /&gt;);&#10;  });&#10;&#10;  $END$&#10;});&#10;" description="Test for React component" toReformat="false" toShortenFQNames="false">
-    <variable name="FILE" expression="regularExpression(fileNameWithoutExtension(), &quot;\.test&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
@@ -141,21 +128,6 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="domo" value=".doMock('./$NAME$', () =&gt; $NAME$Mock);" description="A jest's version of rewire using doMock" toReformat="false" toShortenFQNames="false">
-    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
-  <template name="befmock" value="let $FILE$;&#10;let $NAME$Mock;&#10;&#10;beforeEach(() =&gt; {&#10;  $NAME$Mock = jest.fn();&#10;  jest.resetModules().doMock('./$NAME$', () =&gt; $NAME$Mock);&#10;  &#10;  $FILE$ = require('./$FILE$').default;&#10;});" description="A jest's version of rewire using doMock in a beforeEach" toReformat="false" toShortenFQNames="false">
-    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
-    <variable name="FILE" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
   <template name="impStyles" value="import styles from './$FILE$.module.scss';" description="Import CSS-module for current file" toReformat="false" toShortenFQNames="true">
     <variable name="FILE" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -171,7 +143,8 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="snap" value="expect(appFake.getRendered().baseElement).toMatchSnapshot();$END$" description="Expect to match snapshot" toReformat="false" toShortenFQNames="true">
+  <template name="snap" value="expect($WHAT$.baseElement).toMatchSnapshot();$END$" description="Expect to match snapshot" toReformat="false" toShortenFQNames="true">
+    <variable name="WHAT" expression="enum(&quot;rendered&quot;, &quot;appFake.getRendered()&quot;)" defaultValue="&quot;rendered&quot;" alwaysStopAt="false" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
@@ -185,15 +158,6 @@
   </template>
   <template name="implod" value="import { $FUNCTION$ } from 'lodash/fp';$END$" description="Import lodash fp stuff" toReformat="false" toShortenFQNames="false">
     <variable name="FUNCTION" expression="" defaultValue="&quot;map&quot;" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
-  <template name="settable" value="@observable $PROPERTY_NAME$ = $DEFAULT_VALUE$;&#10;@action&#10;set$PROPERTY_NAME_IN_UPPERCASE$ = $PROPERTY_NAME$ =&gt; {&#10;  this.$PROPERTY_NAME$ = $PROPERTY_NAME$;&#10;}&#10;" description="MobX settable observable property" toReformat="false" toShortenFQNames="false">
-    <variable name="PROPERTY_NAME" expression="" defaultValue="&quot;property&quot;" alwaysStopAt="true" />
-    <variable name="PROPERTY_NAME_IN_UPPERCASE" expression="capitalize(PROPERTY_NAME)" defaultValue="" alwaysStopAt="false" />
-    <variable name="DEFAULT_VALUE" expression="" defaultValue="&quot;''&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
@@ -228,22 +192,6 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="testDeco" value="itHasDecorators({&#10;  getDecorated: () =&gt; $FILE$,&#10;  decorators: [&#10;    expect.configured(withModel, [            &#10;      {&#10;        Model: $FILE$Model,&#10;        props: [&#10;          {&#10;            name: '$PROP$',&#10;            modelPath: '$PROP$'&#10;          },           &#10;        ]&#10;      }&#10;    ])&#10;  ]&#10;});&#10;" description="ItHasDecorators test" toReformat="false" toShortenFQNames="false">
-    <variable name="FILE" expression="regularExpression(fileNameWithoutExtension(), &quot;\.test&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="false" />
-    <variable name="PROP" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
-  <template name="deco" value="export default decorate(&#10;  withModel(&#10;    {&#10;      Model: $FILE$Model,&#10;      props: [&#10;        { name: '$PROP$', modelPath: '$PROP$' }        &#10;      ]&#10;    }&#10;  )&#10;)($FILE$);&#10;" description="Add decorators" toReformat="false" toShortenFQNames="false">
-    <variable name="FILE" expression="regularExpression(fileNameWithoutExtension(), &quot;\.test&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
-    <variable name="PROP" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
   <template name="knows" value="it('$KNOWS$ $PROP$', () =&gt; {&#10;  let $PROP$Stub;&#10;  &#10;  $PROP$Stub = $STUB_VALUE$;&#10;  &#10;  expect($INPUT$).toHaveProp('$EVENT$', $PROP$Stub);&#10;});&#10;" description="A deswithin knows" toReformat="false" toShortenFQNames="false">
     <variable name="KNOWS" expression="enum(&quot;knows&quot;,&quot;knows how to&quot;, &quot;knows when to&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="PROP" expression="" defaultValue="&quot;prop&quot;" alwaysStopAt="true" />
@@ -255,29 +203,9 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="itwithin" value="it('$VARIABLE_IN_UPPERCASE$ for $PURPOSE_IN_UPPERCASE$ within, knows how to $PURPOSE_IN_UPPERCASE$', () =&gt; {&#10;  const $VARIABLE$ = component.find('$VARIABLE_IN_UPPERCASE$[data-$PURPOSE$-test]');&#10;&#10;  expect($VARIABLE$).toHaveProp('$PROP$', $PURPOSE_IN_CAMELCASE$Stub);&#10;});&#10;" description="An it for a component within" toReformat="false" toShortenFQNames="false">
-    <variable name="VARIABLE" expression="" defaultValue="&quot;componentName&quot;" alwaysStopAt="true" />
-    <variable name="VARIABLE_IN_UPPERCASE" expression="capitalize(VARIABLE)" defaultValue="" alwaysStopAt="false" />
-    <variable name="PURPOSE" expression="" defaultValue="&quot;some-purpose&quot;" alwaysStopAt="true" />
-    <variable name="PURPOSE_IN_UPPERCASE" expression="spaceSeparated(PURPOSE)" defaultValue="" alwaysStopAt="false" />
-    <variable name="PURPOSE_IN_CAMELCASE" expression="camelCase(PURPOSE)" defaultValue="" alwaysStopAt="true" />
-    <variable name="PROP" expression="" defaultValue="&quot;onClick&quot;" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
   <template name="con" value="expect.configured($CONFIGURED$, $PARAMETERS$)" description="Asymmetric matcher for a configured function" toReformat="false" toShortenFQNames="false">
     <variable name="CONFIGURED" expression="" defaultValue="&quot;withModel&quot;" alwaysStopAt="true" />
     <variable name="PARAMETERS" expression="" defaultValue="&quot;[]&quot;" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
-  <template name="gen" value="get$PROPERTY_NAME$s = mobxFlow(function*() {&#10;  const {&#10;    response: $PROPERTY_NAME_LOWERCASE$s,&#10;  } = yield this.dependencies.get$PROPERTY_NAME$s();&#10;  &#10;  this.$PROPERTY_NAME_LOWERCASE$s = $PROPERTY_NAME_LOWERCASE$s;&#10;});" description="MobX generator flow" toReformat="false" toShortenFQNames="false">
-    <variable name="PROPERTY_NAME" expression="" defaultValue="&quot;Property&quot;" alwaysStopAt="true" />
-    <variable name="PROPERTY_NAME_LOWERCASE" expression="camelCase(PROPERTY_NAME)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
@@ -296,24 +224,7 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name="cll" value="import getAuthenticatedCall from 'shared-between-front-ends/src/doings/getAuthenticatedCall/getAuthenticatedCall';&#10;import $FILE$ from './$FILE$';&#10;import noop from 'lodash/fp/noop';&#10;&#10;export default getAuthenticatedCall({&#10;  apiCallConfig: {&#10;    path: '/api/$PATH$',&#10;    method: '$VERB$',&#10;  },&#10;  decoratorConfig: {&#10;    spinnerName: '$SPINNER_NAME$',&#10;    showSpinnerInstantly: $SHOW_SPINNER_INSTANTLY$,&#10;    stubificationFunction: noop,&#10;  },&#10;});&#10;&#10;import getAuthenticatedCall from 'shared-between-front-ends/src/doings/getAuthenticatedCall/getAuthenticatedCall';&#10;import $FILE$ from './$FILE$';&#10;import noop from 'lodash/fp/noop';&#10;&#10;describe('$FILE$', () =&gt; {&#10;  it('is a configured call', () =&gt; {&#10;    expect($FILE$).toEqualConfigured(getAuthenticatedCall, [{&#10;      apiCallConfig: {&#10;        path: '/api/$PATH$',&#10;        method: '$VERB$',&#10;      },&#10;      decoratorConfig: {&#10;        spinnerName: '$SPINNER_NAME$',&#10;        showSpinnerInstantly: $SHOW_SPINNER_INSTANTLY$,&#10;        stubificationFunction: noop,&#10;      },&#10;    }])&#10;  });&#10;});&#10;" description="Expect configured call" toReformat="false" toShortenFQNames="false">
-    <variable name="FILE" expression="regularExpression(fileNameWithoutExtension(), &quot;\.test&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="false" />
-    <variable name="PATH" expression="" defaultValue="&quot;path/:pathParameter&quot;" alwaysStopAt="true" />
-    <variable name="VERB" expression="enum(&quot;GET&quot;, &quot;POST&quot;, &quot;PUT&quot;)" defaultValue="" alwaysStopAt="true" />
-    <variable name="SPINNER_NAME" expression="" defaultValue="&quot;doing-something&quot;" alwaysStopAt="true" />
-    <variable name="SHOW_SPINNER_INSTANTLY" expression="enum(&quot;false&quot;, &quot;true&quot;)" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
   <template name="depr" value="/** &#10; * @deprecated $END$&#10; */" description="Deprecated" toReformat="false" toShortenFQNames="false">
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="true" />
-    </context>
-  </template>
-  <template name="gra" value="import {&#10;  registerDependencyGraphing,&#10;  plantUmlDependencyGraphInjectable,&#10;} from '@lensapp/injectable-extension-for-dependency-graphing';&#10;&#10;import fs from 'fs';&#10;&#10;const graph = di.inject(plantUmlDependencyGraphInjectable);&#10;fs.writeFileSync('./graph.puml', graph, 'utf-8');&#10;$END$" description="Injectable graph" toReformat="false" toShortenFQNames="false">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
