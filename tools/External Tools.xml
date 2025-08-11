@@ -8,7 +8,7 @@
   </tool>
   <tool name="Biome" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
     <exec>
-      <option name="COMMAND" value="./node_modules/.bin/biome" />
+      <option name="COMMAND" value="$USER_HOME$/dev/webstorm-root/lens-desktop-monorepo-2/node_modules/@biomejs/cli-darwin-arm64/biome" />
       <option name="PARAMETERS" value="format $FileDirRelativeToSourcepath$ --fix" />
       <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/lens-desktop-monorepo" />
     </exec>
