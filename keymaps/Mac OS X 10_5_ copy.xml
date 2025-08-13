@@ -170,6 +170,12 @@
   <action id="Tool_External Tools_Biome">
     <keyboard-shortcut first-keystroke="shift meta alt p" />
   </action>
+  <action id="Tool_External Tools_Open closest index.ts">
+    <keyboard-shortcut first-keystroke="shift meta 9" />
+  </action>
+  <action id="Tool_External Tools_Open closest package.json">
+    <keyboard-shortcut first-keystroke="shift meta 8" />
+  </action>
   <action id="Uml.ShowDiff" />
   <action id="UnselectPreviousOccurrence" />
   <action id="Unwrap">
