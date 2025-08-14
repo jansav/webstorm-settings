@@ -167,6 +167,9 @@
     <keyboard-shortcut first-keystroke="shift ctrl t" />
   </action>
   <action id="ToggleBookmark" />
+  <action id="Tool_External Tools_Add missing dependencies">
+    <keyboard-shortcut first-keystroke="meta alt 6" />
+  </action>
   <action id="Tool_External Tools_Biome">
     <keyboard-shortcut first-keystroke="shift meta alt p" />
   </action>
