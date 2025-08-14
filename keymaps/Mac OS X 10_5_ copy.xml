@@ -26,6 +26,9 @@
   <action id="Compare.SameVersion">
     <keyboard-shortcut first-keystroke="shift ctrl d" />
   </action>
+  <action id="Console.History.Browse" />
+  <action id="Console.Jdbc.BrowseHistory" />
+  <action id="Console.TableResult.SetDefault" />
   <action id="DebugClass" />
   <action id="Diff.ApplyLeftSide" />
   <action id="Diff.ApplyRightSide" />
@@ -168,10 +171,13 @@
   </action>
   <action id="ToggleBookmark" />
   <action id="Tool_External Tools_Add missing dependencies">
-    <keyboard-shortcut first-keystroke="meta alt 6" />
+    <keyboard-shortcut first-keystroke="meta alt d" />
   </action>
   <action id="Tool_External Tools_Biome">
     <keyboard-shortcut first-keystroke="shift meta alt p" />
+  </action>
+  <action id="Tool_External Tools_Export selected from index">
+    <keyboard-shortcut first-keystroke="meta alt e" />
   </action>
   <action id="Tool_External Tools_Open closest index.ts">
     <keyboard-shortcut first-keystroke="meta alt 9" />
