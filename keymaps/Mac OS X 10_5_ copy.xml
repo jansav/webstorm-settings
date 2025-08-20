@@ -179,6 +179,9 @@
   <action id="Tool_External Tools_Export selected from index">
     <keyboard-shortcut first-keystroke="meta alt e" />
   </action>
+  <action id="Tool_External Tools_Open closest feature.ts">
+    <keyboard-shortcut first-keystroke="meta alt 7" />
+  </action>
   <action id="Tool_External Tools_Open closest index.ts">
     <keyboard-shortcut first-keystroke="meta alt 9" />
   </action>
