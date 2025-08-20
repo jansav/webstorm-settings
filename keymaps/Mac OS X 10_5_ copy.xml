@@ -89,6 +89,7 @@
   <action id="Images.Editor.ZoomOut">
     <keyboard-shortcut first-keystroke="meta subtract" />
   </action>
+  <action id="IntroduceField" />
   <action id="Javascript.Linters.EsLint.Fix">
     <keyboard-shortcut first-keystroke="meta alt k" />
   </action>
@@ -187,6 +188,9 @@
   </action>
   <action id="Tool_External Tools_Open closest package.json">
     <keyboard-shortcut first-keystroke="meta alt 8" />
+  </action>
+  <action id="Tool_External Tools_lint:fix">
+    <keyboard-shortcut first-keystroke="meta alt f" />
   </action>
   <action id="Uml.ShowDiff" />
   <action id="UnselectPreviousOccurrence" />
