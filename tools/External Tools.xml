@@ -55,4 +55,11 @@
       <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/lens-desktop-monorepo" />
     </exec>
   </tool>
+  <tool name="Build types and open first failure" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="node" />
+      <option name="PARAMETERS" value="$ProjectFileDir$/webstorm-tools/run-build-types-and-open-first-failure $FilePath$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
 </toolSet>
