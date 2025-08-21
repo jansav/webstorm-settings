@@ -148,6 +148,7 @@
   <action id="StringManipulation.SwitchStyleAction">
     <keyboard-shortcut first-keystroke="shift ctrl c" />
   </action>
+  <action id="SurroundWith" />
   <action id="SwitchApply">
     <keyboard-shortcut first-keystroke="ctrl alt enter" />
   </action>
@@ -176,6 +177,9 @@
   </action>
   <action id="Tool_External Tools_Biome">
     <keyboard-shortcut first-keystroke="shift meta alt p" />
+  </action>
+  <action id="Tool_External Tools_Build types and open first failure">
+    <keyboard-shortcut first-keystroke="meta alt t" />
   </action>
   <action id="Tool_External Tools_Export selected from index">
     <keyboard-shortcut first-keystroke="meta alt e" />
