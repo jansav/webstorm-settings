@@ -5,6 +5,7 @@
       <mapping pattern="pre-push" type="AUTO_DETECTED" />
       <mapping pattern="lens-k8s-proxy" type="AUTO_DETECTED" />
       <mapping pattern="build-closest-types-and-navigate-to-first-failure" type="AUTO_DETECTED" />
+      <mapping pattern="mcp.json" type="JSON5" />
       <mapping pattern="lint" type="JavaScript" />
       <mapping pattern=".npmrc" type="PLAIN_TEXT" />
       <mapping pattern="kubectl" type="PLAIN_TEXT" />
