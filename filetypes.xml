@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="19">
     <extensionMap>
+      <mapping pattern="app-builder_arm64" type="AUTO_DETECTED" />
       <mapping pattern="lens-package-build" type="AUTO_DETECTED" />
       <mapping pattern="pre-push" type="AUTO_DETECTED" />
       <mapping pattern="lens-k8s-proxy" type="AUTO_DETECTED" />
