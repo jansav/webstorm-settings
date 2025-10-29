@@ -10,7 +10,7 @@
     <exec>
       <option name="COMMAND" value="$USER_HOME$/dev/lens-workspace/lens-desktop-monorepo/node_modules/@biomejs/cli-darwin-arm64/biome" />
       <option name="PARAMETERS" value="format $FileDirRelativeToSourcepath$ --fix" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/lens-desktop-monorepo" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
     </exec>
   </tool>
   <tool name="Open closest package.json" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
