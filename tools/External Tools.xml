@@ -16,57 +16,57 @@
   <tool name="Open closest package.json" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
     <exec>
       <option name="COMMAND" value="node" />
-      <option name="PARAMETERS" value="$ProjectFileDir$/webstorm-tools/open-closest package.json $FilePath$" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+      <option name="PARAMETERS" value="./webstorm-tools/open-closest package.json $FilePath$" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/dev/lens-workspace" />
     </exec>
   </tool>
   <tool name="Open closest index.ts" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
     <exec>
       <option name="COMMAND" value="node" />
-      <option name="PARAMETERS" value="$ProjectFileDir$/webstorm-tools/open-closest index.ts $FilePath$" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+      <option name="PARAMETERS" value="./webstorm-tools/open-closest index.ts $FilePath$" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/dev/lens-workspace" />
     </exec>
   </tool>
   <tool name="Add missing dependencies" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
     <exec>
       <option name="COMMAND" value="node" />
-      <option name="PARAMETERS" value="$ProjectFileDir$/webstorm-tools/fix-missing-deps $FilePath$" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+      <option name="PARAMETERS" value="./webstorm-tools/fix-missing-deps $FilePath$" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/dev/lens-workspace" />
     </exec>
   </tool>
   <tool name="Export selected from index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
     <exec>
       <option name="COMMAND" value="node" />
-      <option name="PARAMETERS" value="$ProjectFileDir$/webstorm-tools/export-selected-from-index $FilePath$ &quot;$SelectedText$&quot; --combine" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+      <option name="PARAMETERS" value="./webstorm-tools/export-selected-from-index $FilePath$ &quot;$SelectedText$&quot; --combine" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/dev/lens-workspace" />
     </exec>
   </tool>
   <tool name="Open closest feature.ts" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
     <exec>
       <option name="COMMAND" value="node" />
-      <option name="PARAMETERS" value="$ProjectFileDir$/webstorm-tools/open-closest feature.ts $FilePath$" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+      <option name="PARAMETERS" value="./webstorm-tools/open-closest feature.ts $FilePath$" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/dev/lens-workspace" />
     </exec>
   </tool>
   <tool name="lint:fix" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
     <exec>
       <option name="COMMAND" value="npm" />
       <option name="PARAMETERS" value="run lint:fix" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/lens-desktop-monorepo" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/dev/lens-workspace/lens-desktop-monorepo" />
     </exec>
   </tool>
   <tool name="Build types and open first failure" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
     <exec>
       <option name="COMMAND" value="node" />
-      <option name="PARAMETERS" value="$ProjectFileDir$/webstorm-tools/run-build-types-and-open-first-failure $FilePath$" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+      <option name="PARAMETERS" value="./webstorm-tools/run-build-types-and-open-first-failure $FilePath$" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/dev/lens-workspace" />
     </exec>
   </tool>
   <tool name="Test and open coverage" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
     <exec>
       <option name="COMMAND" value="node" />
-      <option name="PARAMETERS" value="$ProjectFileDir$/webstorm-tools/test-and-open-coverage $FilePath$" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+      <option name="PARAMETERS" value="./webstorm-tools/test-and-open-coverage $FilePath$" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/dev/lens-workspace" />
     </exec>
   </tool>
 </toolSet>
