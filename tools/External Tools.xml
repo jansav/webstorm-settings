@@ -48,7 +48,7 @@
       <option name="WORKING_DIRECTORY" value="$USER_HOME$/dev/lens-workspace" />
     </exec>
   </tool>
-  <tool name="lint:fix" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+  <tool name="lint:fix2" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
     <exec>
       <option name="COMMAND" value="npm" />
       <option name="PARAMETERS" value="run lint:fix" />
@@ -66,6 +66,13 @@
     <exec>
       <option name="COMMAND" value="node" />
       <option name="PARAMETERS" value="./webstorm-tools/test-and-open-coverage $FilePath$" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/dev/lens-workspace" />
+    </exec>
+  </tool>
+  <tool name="Lint fix" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="node" />
+      <option name="PARAMETERS" value="./webstorm-tools/run-in-monorepo-root $FilePath$ lint:fix" />
       <option name="WORKING_DIRECTORY" value="$USER_HOME$/dev/lens-workspace" />
     </exec>
   </tool>
