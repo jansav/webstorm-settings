@@ -92,6 +92,9 @@
   <action id="IntentionActionAsAction_com.intellij.xml.util.CollapseTagIntention">
     <keyboard-shortcut first-keystroke="meta alt c" />
   </action>
+  <action id="IntentionActionAsAction_com.sixrr.xrp.expandemptytag.ExpandEmptyTagIntention">
+    <keyboard-shortcut first-keystroke="meta alt c" />
+  </action>
   <action id="IntentionActionAsAction_org.intellij.idea.lang.javascript.intention.braces.JSAddBracesIntention">
     <keyboard-shortcut first-keystroke="meta alt x" />
   </action>
