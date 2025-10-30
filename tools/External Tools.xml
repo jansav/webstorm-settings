@@ -48,13 +48,6 @@
       <option name="WORKING_DIRECTORY" value="$USER_HOME$/dev/lens-workspace" />
     </exec>
   </tool>
-  <tool name="lint:fix2" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
-    <exec>
-      <option name="COMMAND" value="npm" />
-      <option name="PARAMETERS" value="run lint:fix" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/dev/lens-workspace/lens-desktop-monorepo" />
-    </exec>
-  </tool>
   <tool name="Build types and open first failure" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
     <exec>
       <option name="COMMAND" value="node" />
@@ -73,6 +66,13 @@
     <exec>
       <option name="COMMAND" value="node" />
       <option name="PARAMETERS" value="./webstorm-tools/run-in-monorepo-root $FilePath$ lint:fix" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/dev/lens-workspace" />
+    </exec>
+  </tool>
+  <tool name="Pre-push" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="node" />
+      <option name="PARAMETERS" value="./webstorm-tools/run-in-monorepo-root $FilePath$ check:pre-push" />
       <option name="WORKING_DIRECTORY" value="$USER_HOME$/dev/lens-workspace" />
     </exec>
   </tool>
