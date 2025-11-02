@@ -128,6 +128,9 @@
     <keyboard-shortcut first-keystroke="meta r" />
     <keyboard-shortcut first-keystroke="ctrl r" />
   </action>
+  <action id="Resume">
+    <keyboard-shortcut first-keystroke="f9" />
+  </action>
   <action id="Run" />
   <action id="RunDashboard.Debug" />
   <action id="ShowContent" />
@@ -208,6 +211,9 @@
   </action>
   <action id="Tool_External Tools_lint:fix">
     <keyboard-shortcut first-keystroke="meta alt f" />
+  </action>
+  <action id="TypeScript.Restart.Service">
+    <keyboard-shortcut first-keystroke="meta alt r" />
   </action>
   <action id="Uml.ShowDiff" />
   <action id="UnselectPreviousOccurrence" />
