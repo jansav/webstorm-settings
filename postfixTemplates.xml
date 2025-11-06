@@ -34,7 +34,7 @@
     </template>
     <template id="exp@userDefined" key=".exp" provider="builtin.js" language-level="ES6" topmost="false">
       <conditions />
-      <template name="fakeKey" value="expect($EXPR$)" toReformat="true" toShortenFQNames="true" />
+      <template name="fakeKey" value="expect($EXPR$)" description="" toReformat="true" toShortenFQNames="true" />
     </template>
     <template id="getter@userDefined" key=".getter" provider="builtin.js" language-level="ES5" topmost="false">
       <conditions />
