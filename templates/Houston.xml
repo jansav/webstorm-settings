@@ -317,4 +317,10 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name="tt" value="data-$SELECTION$-test" description="Data-attribute for testing" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
 </templateSet>
