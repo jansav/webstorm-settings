@@ -189,4 +189,10 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name="dis" value="const discover = discoverFor(() =&gt; $RENDERED$);$END$" description="Discover" toReformat="false" toShortenFQNames="true">
+    <variable name="RENDERED" expression="" defaultValue="&quot;rendered&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
 </templateSet>
