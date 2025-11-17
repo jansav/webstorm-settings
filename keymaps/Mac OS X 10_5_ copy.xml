@@ -29,6 +29,7 @@
   <action id="Console.History.Browse" />
   <action id="Console.Jdbc.BrowseHistory" />
   <action id="Console.TableResult.SetDefault" />
+  <action id="DatabaseView.Tools" />
   <action id="DebugClass" />
   <action id="Diff.ApplyLeftSide" />
   <action id="Diff.ApplyRightSide" />
@@ -116,6 +117,7 @@
   <action id="MethodUp" />
   <action id="NextEditorTab" />
   <action id="PreviousEditorTab" />
+  <action id="ProblemsView.QuickFixes" />
   <action id="PublishGroup.UploadTo" />
   <action id="RecentChanges" />
   <action id="ReformatCode" />
@@ -133,6 +135,7 @@
   </action>
   <action id="Run" />
   <action id="RunDashboard.Debug" />
+  <action id="SetShortcutAction" />
   <action id="ShowContent" />
   <action id="StringManipulation.AlignCarets">
     <keyboard-shortcut first-keystroke="ctrl alt a" second-keystroke="c" />
@@ -215,6 +218,7 @@
   <action id="TypeScript.Restart.Service">
     <keyboard-shortcut first-keystroke="meta alt r" />
   </action>
+  <action id="Uml.NodeIntentions" />
   <action id="Uml.ShowDiff" />
   <action id="UnselectPreviousOccurrence" />
   <action id="Unwrap">
