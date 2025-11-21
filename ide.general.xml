@@ -15,7 +15,6 @@
   <component name="StatusBar">
     <option name="widgets">
       <map>
-        <entry key="CodeStyleStatusBarWidget" value="false" />
         <entry key="CwmWireStatsWidgetFactory" value="false" />
         <entry key="Encoding" value="false" />
         <entry key="FlowJSInfo" value="false" />
