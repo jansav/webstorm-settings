@@ -29,6 +29,7 @@
   <action id="Console.History.Browse" />
   <action id="Console.Jdbc.BrowseHistory" />
   <action id="Console.TableResult.SetDefault" />
+  <action id="DatabaseView.Tools" />
   <action id="DebugClass" />
   <action id="Diff.ApplyLeftSide" />
   <action id="Diff.ApplyRightSide" />
@@ -89,6 +90,15 @@
   <action id="Images.Editor.ZoomOut">
     <keyboard-shortcut first-keystroke="meta subtract" />
   </action>
+  <action id="IntentionActionAsAction_com.intellij.xml.util.CollapseTagIntention">
+    <keyboard-shortcut first-keystroke="meta alt c" />
+  </action>
+  <action id="IntentionActionAsAction_com.sixrr.xrp.expandemptytag.ExpandEmptyTagIntention">
+    <keyboard-shortcut first-keystroke="meta alt c" />
+  </action>
+  <action id="IntentionActionAsAction_org.intellij.idea.lang.javascript.intention.braces.JSAddBracesIntention">
+    <keyboard-shortcut first-keystroke="meta alt x" />
+  </action>
   <action id="IntentionActionAsAction_org.intellij.idea.lang.javascript.intention.initialization.JSSplitDeclarationAndInitializationIntention">
     <keyboard-shortcut first-keystroke="meta alt l" />
   </action>
@@ -107,6 +117,7 @@
   <action id="MethodUp" />
   <action id="NextEditorTab" />
   <action id="PreviousEditorTab" />
+  <action id="ProblemsView.QuickFixes" />
   <action id="PublishGroup.UploadTo" />
   <action id="RecentChanges" />
   <action id="ReformatCode" />
@@ -119,8 +130,12 @@
     <keyboard-shortcut first-keystroke="meta r" />
     <keyboard-shortcut first-keystroke="ctrl r" />
   </action>
+  <action id="Resume">
+    <keyboard-shortcut first-keystroke="f9" />
+  </action>
   <action id="Run" />
   <action id="RunDashboard.Debug" />
+  <action id="SetShortcutAction" />
   <action id="ShowContent" />
   <action id="StringManipulation.AlignCarets">
     <keyboard-shortcut first-keystroke="ctrl alt a" second-keystroke="c" />
@@ -197,12 +212,13 @@
   <action id="Tool_External Tools_Open closest package.json">
     <keyboard-shortcut first-keystroke="meta alt 8" />
   </action>
-  <action id="Tool_External Tools_Test and open coverage">
-    <keyboard-shortcut first-keystroke="meta alt c" />
-  </action>
   <action id="Tool_External Tools_lint:fix">
     <keyboard-shortcut first-keystroke="meta alt f" />
   </action>
+  <action id="TypeScript.Restart.Service">
+    <keyboard-shortcut first-keystroke="meta alt r" />
+  </action>
+  <action id="Uml.NodeIntentions" />
   <action id="Uml.ShowDiff" />
   <action id="UnselectPreviousOccurrence" />
   <action id="Unwrap">

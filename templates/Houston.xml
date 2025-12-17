@@ -259,7 +259,7 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="testf" value="import { createContainer, DiContainer } from &quot;@lensapp/injectable&quot;;&#10;import { registerFeature } from &quot;@lensapp/feature-core&quot;;&#10;&#10;describe(&quot;$FILE_IN_KEBABCASE$&quot;, () =&gt; {&#10;  let di: DiContainer;&#10;&#10;  beforeEach(() =&gt; {&#10;    di = createContainer(&quot;irrelevant&quot;);&#10;&#10;    registerFeature(di, feature);&#10;  });&#10;&#10;  it(&quot;$TEST_NAME$&quot;, () =&gt; {&#10;    $END$&#10;  });&#10;});&#10;" description="Test for Feature" toReformat="false" toShortenFQNames="false">
+  <template name="testf" value="import { createContainer, DiContainer } from &quot;@lensapp/injectable&quot;;&#10;import { registerFeature } from &quot;@lensapp/feature-core&quot;;&#10;import { runAllTestUtilityRunnables } from &quot;@lensapp/test-utils-for-production&quot;;&#10;&#10;describe(&quot;$FILE_IN_KEBABCASE$&quot;, () =&gt; {&#10;  let di: DiContainer;&#10;&#10;  beforeEach(() =&gt; {&#10;    di = createContainer(&quot;irrelevant&quot;);&#10;&#10;    registerFeature(di, $END$feature);&#10;    &#10;    di.preventSideEffects();&#10;&#10;    runAllTestUtilityRunnables(di);&#10;  });&#10;&#10;  it(&quot;$TEST_NAME$&quot;, () =&gt; {});&#10;});&#10;" description="Test for Feature" toReformat="false" toShortenFQNames="false">
     <variable name="FILE_IN_KEBABCASE" expression="lowercaseAndDash(regularExpression(fileName(), &quot;\.test\..*&quot;, &quot;&quot;))" defaultValue="" alwaysStopAt="true" />
     <variable name="TEST_NAME" expression="" defaultValue="&quot;some test name&quot;" alwaysStopAt="true" />
     <context>
@@ -312,6 +312,12 @@
   </template>
   <template name="cdi" value="let di: DiContainer;&#10;di = createContainer(&quot;$CONTAINER_NAME$&quot;);" description="Create injectable container" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="CONTAINER_NAME" expression="enum(&quot;some-container&quot;, &quot;irrelevant&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="tt" value="data-$SELECTION$-test" description="Data-attribute for testing" toReformat="false" toShortenFQNames="false">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="TypeScript" value="true" />
