@@ -18,6 +18,8 @@
     <entry key="jetbrains.security.package-checker.depthLimitOfTransitiveDependencies" value="3" source="MANAGER" />
     <entry key="llm.chat.agent.codex.install.codex.version" value="0.98.0" source="MANAGER" />
     <entry key="llm.chat.agent.codex.install.acp.server.version" value="0.0.23" source="MANAGER" />
+    <entry key="typescript.augmentation.deep.resolving.enabled" value="false" source="USER" />
+    <entry key="typescript.service.node.arguments" value="--max-old-space-size=8192" source="USER" />
   </component>
   <component name="StatusBar">
     <option name="widgets">
