@@ -11,11 +11,8 @@
     <entry key="debugger.new.tool.window.layout" value="true" source="SYSTEM" />
     <entry key="terminal.new.ui" value="true" source="SYSTEM" />
     <entry key="completion.cloud.adaptive.debounce.is.active" value="true" source="SYSTEM" />
-    <entry key="llm.chat.agent.codex.install.codex.version" value="0.98.0" source="MANAGER" />
-    <entry key="llm.chat.agent.codex.install.acp.server.version" value="0.0.23" source="MANAGER" />
     <entry key="typescript.augmentation.deep.resolving.enabled" value="false" source="USER" />
     <entry key="typescript.service.node.arguments" value="--max-old-space-size=8192" source="USER" />
-    <entry key="i18n.locale" value="en" source="SYSTEM" />
     <entry key="switched.from.classic.to.islands" value="false" source="SYSTEM" />
   </component>
   <component name="StatusBar">
