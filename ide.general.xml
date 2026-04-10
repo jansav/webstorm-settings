@@ -14,6 +14,7 @@
     <entry key="typescript.augmentation.deep.resolving.enabled" value="false" source="USER" />
     <entry key="typescript.service.node.arguments" value="--max-old-space-size=8192" source="USER" />
     <entry key="switched.from.classic.to.islands" value="false" source="SYSTEM" />
+    <entry key="trace.state.event.service.url" value="https://api.jetbrains.cloud/trace-status" source="MANAGER" />
   </component>
   <component name="StatusBar">
     <option name="widgets">
