@@ -183,4 +183,16 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name="ren" value="const render = renderFor(di);&#10;&#10;const rendered = await render($END$)" description="Render in tests" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="dis" value="const discover = discoverFor(() =&gt; $RENDERED$);$END$" description="Discover" toReformat="false" toShortenFQNames="true">
+    <variable name="RENDERED" expression="" defaultValue="&quot;rendered&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
 </templateSet>

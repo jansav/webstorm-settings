@@ -9,11 +9,17 @@
         <option value="GitHub.CommitStatus" />
       </list>
     </option>
+    <option name="CUSTOM_BOOLEAN_PROPERTIES">
+      <map>
+        <entry key="Change.Log.Filter.on.Branch.Selection" value="false" />
+        <entry key="Navigate.Log.To.Branch.on.Branch.Selection" value="true" />
+      </map>
+    </option>
     <option name="SHOW_CHANGES_FROM_PARENTS" value="true" />
     <option name="SHOW_TAG_NAMES" value="true" />
   </component>
   <component name="VcsApplicationSettings">
-    <option name="PATCH_STORAGE_LOCATION" value="$USER_HOME$/Desktop" />
+    <option name="PATCH_STORAGE_LOCATION" value="$USER_HOME$/Downloads" />
     <option name="COMMIT_FROM_LOCAL_CHANGES" value="false" />
   </component>
   <component name="VcsEditorTab.Settings">

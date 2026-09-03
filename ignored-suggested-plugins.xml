@@ -5,6 +5,7 @@
         <option value="Docker" />
         <option value="com.intellij.kubernetes" />
         <option value="dev.nx.console" />
+        <option value="com.intellij.tailwindcss" />
       </list>
     </option>
   </component>

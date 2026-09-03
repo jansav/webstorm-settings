@@ -8,6 +8,7 @@
     </languageAllowList>
     <option name="showIdeCompletions" value="true" />
     <option name="selectedCompletionModel" value="gpt-41-copilot" />
+    <option name="terminalRulesVersion" value="1" />
     <editAutoApprove>
       <FileSafetyRule>
         <option name="description" value="Github instructions files" />

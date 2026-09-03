@@ -1,11 +1,10 @@
 <application>
   <component name="FindSettings">
+    <option name="caseSensitive" value="true" />
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
-    <option name="regularExpressions" value="true" />
-    <option name="REGULAR_EXPRESSIONS" value="true" />
+    <option name="CASE_SENSITIVE_SEARCH" value="true" />
     <option name="SEARCH_SCOPE" value="All Places" />
-    <option name="FILE_MASK" value="package.json" />
     <mask>*.xml</mask>
     <mask>*.css</mask>
     <mask>*.htm</mask>
@@ -16,12 +15,15 @@
     <mask>*.mts</mask>
     <mask>*.ats</mask>
     <mask>*.cts</mask>
-    <mask>*.ts</mask>
     <mask>*.cjs</mask>
     <mask>*.mjs</mask>
     <mask>*.es6</mask>
     <mask>*.js</mask>
-    <mask>*.json</mask>
-    <mask>package.json</mask>
+    <mask>*.ts</mask>
+    <mask>*.tsx,*.ts</mask>
+    <mask>*.tsx,*.ts,*.json</mask>
+    <mask>*.tsx,*.ts,*.json,!*.package-lock.json</mask>
+    <mask>*.tsx,*.ts,*.json,!package-lock.json</mask>
+    <mask>*.tsx,*.ts,*.json,!package-lock.json,!*d.ts</mask>
   </component>
 </application>
