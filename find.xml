@@ -1,10 +1,9 @@
 <application>
   <component name="FindSettings">
-    <option name="caseSensitive" value="true" />
-    <option name="customScope" value="All Places" />
-    <option name="defaultScopeName" value="All Places" />
-    <option name="CASE_SENSITIVE_SEARCH" value="true" />
-    <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="customScope" value="Project Files" />
+    <option name="defaultScopeName" value="Project Files" />
+    <option name="SEARCH_SCOPE" value="Project Files" />
+    <option name="FILE_MASK" value="*.ts,*.tsx,*.json,*.css,!package-lock.json,!*.snap" />
     <mask>*.xml</mask>
     <mask>*.css</mask>
     <mask>*.htm</mask>
@@ -15,15 +14,13 @@
     <mask>*.mts</mask>
     <mask>*.ats</mask>
     <mask>*.cts</mask>
+    <mask>*.ts</mask>
     <mask>*.cjs</mask>
     <mask>*.mjs</mask>
     <mask>*.es6</mask>
     <mask>*.js</mask>
-    <mask>*.ts</mask>
-    <mask>*.tsx,*.ts</mask>
-    <mask>*.tsx,*.ts,*.json</mask>
-    <mask>*.tsx,*.ts,*.json,!*.package-lock.json</mask>
-    <mask>*.tsx,*.ts,*.json,!package-lock.json</mask>
-    <mask>*.tsx,*.ts,*.json,!package-lock.json,!*d.ts</mask>
+    <mask />
+    <mask>*.ts,*.tsx,*.json,*.css,!package-lock.json</mask>
+    <mask>*.ts,*.tsx,*.json,*.css,!package-lock.json,!*.snap</mask>
   </component>
 </application>
